@@ -1,0 +1,5 @@
+<div class="document-field-item document-field-name"><%= @name %></div>
+
+<div class="document-field-item document-field-value <%= @data_type %>">
+  <%= @value %>
+</div>

@@ -1,0 +1,12 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Billing History</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= '$' + Docyt.currentAdvisor.get('payment_history').amount + ' (' + new Date(Docyt.currentAdvisor.get('payment_history').date).toDateString() + ')' if Docyt.currentAdvisor.get('payment_history')? %></span>
+      </div>
+    </div>
+  </div>
+</div>

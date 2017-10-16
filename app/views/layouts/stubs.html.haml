@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %title Docyt
+    = stylesheet_link_tag    'stubs', media: 'all'
+    %link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css')
+    
+  %body
+    = yield
+    = javascript_include_tag 'stubs'

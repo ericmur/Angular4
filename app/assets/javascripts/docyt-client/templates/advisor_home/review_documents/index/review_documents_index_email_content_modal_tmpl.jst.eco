@@ -1,0 +1,23 @@
+<div class='modal fade in modal-attached-files'>
+  <div class='modal-dialog' style='width: 810px;'>
+    <div class='modal-content'>
+      <div class='custom-modal'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Email Content</h4>
+        </div>
+        <div class='modal-body'>
+          <div class='docs-table-wrapper email-content'>
+            <table class='docs-table'></table>
+            <%- @emailBody %>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='modal-link-btn cancel-link cancel'>Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

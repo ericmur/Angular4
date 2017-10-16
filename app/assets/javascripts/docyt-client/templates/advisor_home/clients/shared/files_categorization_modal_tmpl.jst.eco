@@ -1,0 +1,26 @@
+<div class='modal fade in modal-upload-files'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='custom-modal'>
+        <div class='modal-header'>
+          <button class='close' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Categorize Documents</h4>
+          <p class='modal-user-name'><%= @objectName %></p>
+        </div>
+        <div class='modal-body clearfix'>
+          <div class='upload-files-wrapper'>
+
+
+
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='modal-link-btn cancel-link'>Cancel</a>
+          <button class='main-btn bg-turquise-400' id='save' type='button'>Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

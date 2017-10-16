@@ -1,0 +1,8 @@
+<i class='workflows__search-icon icon icon-search'></i>
+<input class='workflows__search-input' placeholder='Find by Workflow, Client, Document' type='text'>
+<div class='workflows__actions'>
+  <a class='workflows__action main-rounded-btn' id='add-workflow'>
+    <i class='workflows__action-icon icon icon-plus font-14'></i>
+    <span class='workflows__action-text'>Add</span>
+  </a>
+</div>

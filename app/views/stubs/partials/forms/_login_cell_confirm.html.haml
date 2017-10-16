@@ -1,0 +1,16 @@
+.login-form.login-form--cell-phone
+  %p.login-form__cell-phone-text
+    We have texted you a confirmation code on (123) 456 7890.
+    %br
+    %span.in-brown-400.font-light
+      Please enter it below, to verify the phone.
+  %form.login-form__cell-phone-form
+    .main-input__wrap
+      %input.main-input(type="number" placeholder="Confirmation Code")
+      %p.main-input__hint.in-red-400
+        Confirmation Code is incorrect
+    .login-form__foot
+      %a.login-form__cancel-link(href="#")
+        Not now
+      %button.login-form__cell-phone-foot-btn.main-btn.bg-turquise-400(type="submit")
+        Continue

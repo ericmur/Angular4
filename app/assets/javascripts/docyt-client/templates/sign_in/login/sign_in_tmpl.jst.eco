@@ -1,0 +1,51 @@
+<span class='login-form__switch-item in-turquise-400 header-sign-link sign-up-link-js'>Sign Up</span>
+
+<form class='login-form login-form--sign-in' id='sign-in-form'>
+  <div id="confirm-email-alert" class="alert alert-success" role="alert">
+    <%= I18n.translations.en.email_confirmation.messages.web_app_successful %>
+  </div>
+  <div class='login-form__switch'>
+    <span class='login-form__switch-item'>
+      Sign In
+    </span>
+  </div>
+  <div class='login-form__fieldset'>
+    <div class='main-input__wrap'>
+      <div class='relative'>
+        <i class='login-form__input-icon icn icn-user'></i>
+        <input class='login-form__input main-input' placeholder='Email' type='email' id="email">
+      </div>
+    </div>
+    <div class='main-input__wrap'>
+      <div class='relative'>
+        <i class='login-form__input-icon icn icn-key'></i>
+        <input class='login-form__input main-input' placeholder='Password' type='password' id="password">
+      </div>
+      <p class='main-input__hint in-red-400' id="invalid-credentials">
+        Invalid email or password
+      </p>
+    </div>
+  </div>
+  <div class='login-form__foot'>
+    <div class='login-form__foot-remember'>
+      <label class='custom-checkbox'>
+        <input class='custom-checkbox__input' hidden type='checkbox'>
+        <i class='custom-checkbox__icon icn icn-circle'></i>
+        <i class='custom-checkbox__icon icn icn-circle-check'></i>
+        <span class='custom-checkbox__text'>
+          Remember me
+        </span>
+      </label>
+    </div>
+    <div class='text-center'>
+      <button class='main-btn bg-turquise-400' type='submit' id="submit">
+        Sign In
+      </button>
+      <div>
+        <a class='login-form__foot-forgot-link' href='#'>
+          Forgot Password?
+        </a>
+      </div>
+    </div>
+  </div>
+</form>

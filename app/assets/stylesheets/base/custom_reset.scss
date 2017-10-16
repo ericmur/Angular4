@@ -1,0 +1,48 @@
+html{
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+p {
+  margin-bottom: 1rem;
+}
+a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-size: 1.4rem;
+}
+button, textarea {
+  font-family: inherit;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+[hidden] {
+  display: none !important;
+}

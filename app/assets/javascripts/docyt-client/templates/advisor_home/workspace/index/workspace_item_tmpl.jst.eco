@@ -1,0 +1,18 @@
+<button type="button" class="workspace-block select-bussiness-js">
+  <div class="workspace-content bussiness">
+    <div class="workspace-block-image">
+      <% if @avatarUrl: %>
+        <img src="<%= @avatarUrl %>">
+      <% else: %>
+        <img src="https://s-media-cache-ak0.pinimg.com/564x/41/98/59/4198596cfc41db23bb1ef6bb7deb062c.jpg" alt="">
+      <% end %>
+    </div>
+    <p class="workspace-block-name"><%= @name %></p>
+    <p class="workspace-block-type">Business</p>
+    <div class="workspace-block-counters">
+      <span><%= I18n.t('clients.counter', { count: @clients_count }) %></span>
+      <span><%= I18n.t('employees.counter', { count: @employees_count }) %></span>
+      <span><%= I18n.t('contractors.counter', { count: @contractors_count }) %></span>
+    </div>
+  </div>
+</button>

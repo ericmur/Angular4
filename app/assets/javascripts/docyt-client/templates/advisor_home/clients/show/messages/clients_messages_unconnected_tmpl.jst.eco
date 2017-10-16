@@ -1,0 +1,8 @@
+<div class="message-empty-image"></div>
+<h1 class="message-empty-title">Chat with clients.<br>Keep all conversations in one place.</h1>
+<p class="message-empty-text">Securely exchange documents with your clients, ask for missing<br>information and receive feedback on work-in-progress.</p>
+<p class="message-empty-text">When clients are connected to you, they can instantly chat with<br>you, from their mobile phone.</p>
+<div class="message-empty-button">
+  <button class='main-btn bg-turquise-400' id='invite-client' type='button'><%= @inviteButtonTextContent %></button>
+  <span class="invited-text" id="invited-text"></span>
+</div>

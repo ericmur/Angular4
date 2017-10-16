@@ -1,0 +1,11 @@
+<div class='clients__wrap client__settings-page'>
+  <div class='clients__main'>
+    <div id='advisor-header-region'>
+      <h1 class='page-main-title'>Billing</h1>
+    </div>
+    <div class='client__settings-wrapper'>
+      <div id='billing-subscription-region'></div>
+      <div id='billing-personal-region'></div>
+    </div>
+  </div>
+</div>

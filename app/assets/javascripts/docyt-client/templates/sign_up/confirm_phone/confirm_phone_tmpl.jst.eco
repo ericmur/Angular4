@@ -1,0 +1,25 @@
+<form class='login-form login-form--cell-phone' id='confirmation-form'>
+  <p class='login-form__cell-phone-text'>
+    We have texted you a confirmation code on <%- @phone_normalized %>.
+    <br>
+    <span class='in-brown-400 font-light'>
+      Please enter it below, to verify the phone.
+    </span>
+  </p>
+  <form class='login-form__cell-phone-form'>
+    <div class='main-input__wrap'>
+      <input class='main-input' placeholder='Confirmation Code' type='text' id="confirmation-code">
+      <p class='main-input__hint in-red-400' id="invalid-code">
+        Confirmation Code is incorrect
+      </p>
+    </div>
+    <div class='login-form__foot'>
+      <button type="button" id='confirm-remove' class="login-form__foot-forgot-link in-turquise-400 modal-link-btn resend-code-js">
+        Resend code
+      </button>
+      <a class='login-form__cell-phone-foot-btn main-btn bg-turquise-400' type='submit' id="submit-code">
+        Verify
+      </a>
+    </div>
+  </form>
+</div>

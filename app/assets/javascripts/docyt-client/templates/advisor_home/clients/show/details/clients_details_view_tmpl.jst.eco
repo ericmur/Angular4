@@ -1,0 +1,61 @@
+<div class='client-detail-info'>
+  <div class='client-detail-info-col first-col'>
+    <div class='client-detail-field' id='client-detail-name'>
+      <div class='client-detail-info-title'>
+        <span>FULL NAME</span>
+      </div>
+      <div class='client-detail-info-value'>
+        <span><%= @parsed_fullname %></span>
+      </div>
+    </div>
+    <div class='client-detail-field' id='client-detail-birthday'>
+      <div class='client-detail-info-title'>
+        <span>DATE OF BIRTH</span>
+      </div>
+      <div class='client-detail-info-value'>
+        <span><%= @formatedBirthday %></span>
+      </div>
+    </div>
+  </div>
+  <div class='client-detail-info-col second-col'>
+    <div class='client-detail-field' id='client-detail-email'>
+      <div class='client-detail-info-title'>
+        <span>Email</span>
+      </div>
+      <div class='client-detail-info-value'>
+        <a href='mailto:<%= @email %>'><%= @email %></a>
+      </div>
+    </div>
+    <div class='client-detail-field' id='client-detail-phone'>
+      <div class='client-detail-info-title'>
+        <span>Phone</span>
+      </div>
+      <div class='client-detail-info-value'>
+        <span><%= @phone_normalized %></span>
+      </div>
+    </div>
+  </div>
+  <div class='client-detail-info-col third-col'>
+    <% if @isConnected: %>
+      <div class='client-detail-field'>
+        <div class='client-detail-info-title'>
+          <span>Connected Since</span>
+        </div>
+        <div class='client-detail-info-value'>
+          <span><%= @connectedSince %></span>
+        </div>
+      </div>
+    <% end %>
+    <% if @isSupport: %>
+      <div class='client-detail-field total-documents-count-js' style="cursor: pointer;">
+        <div class='client-detail-info-title'>
+          <span>Total Docs</span>
+        </div>
+        <div class='client-detail-info-value'>
+          <span><%= @totalDocsCount %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="hor-separator"></div>

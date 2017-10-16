@@ -1,0 +1,20 @@
+check_expiring_document:
+  cron: "0 23 * * *"
+  class: "CheckExpiringDocumentJob"
+  args:
+  description: "Check for expiring document"
+missed_message_notifications:
+  every: "15m"
+  class: "SendNotificationJob"
+  args:
+  description: "Send email notifications for unread chat messages"
+check_faxes_status:
+  every: "1m"
+  class: "CheckFaxesStatusJob"
+  args:
+  description: "Check and update fax status if sending successful"
+expire_docyt_bot_access:
+  every: "24h"
+  class: "ExpireDocytBotAccessJob"
+  args:
+  description: "Expire Access of document from DocytBot"

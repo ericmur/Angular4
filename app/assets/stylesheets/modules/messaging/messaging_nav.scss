@@ -1,0 +1,44 @@
+.messaging_nav {
+  @extend .client__nav;
+  .clients-wrap {
+    height: calc(100% - 70px);
+    max-height: calc(100vh - 120px);
+  }
+}
+.messaging-title {
+  @extend .workflows-title;
+  color: $grey-500;
+  font-weight: 700;
+  font-size: 14px;
+}
+.messaging-clients-list {
+  margin-left: 15px;
+  height: 100%;
+  max-height: calc(100vh - 110px);
+  .messaging__nav-item {
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    color: $grey-750;
+    &.unread {
+      color: $black-400;
+      font-weight: 600;
+    }
+    &:hover,
+    &.active-chat {
+      color: white;
+    }
+  }
+}
+.messaging__nav-item {
+  @extend .workflow__nav-item;
+  width: 90%;
+  &.active-chat {
+    color: white;
+    background-color: $pink-400;
+  }
+}
+.latest-messages-block {
+  @extend .add-workflow-block;
+}

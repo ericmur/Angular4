@@ -1,0 +1,31 @@
+$all-colors:  white          #fff,
+              black          #000,
+              pink-400       $pink-400,
+              turquise-400   $turquise-400,
+              blue-400       $blue-400,
+              blue-600       $blue-600,
+              blue-800       $blue-800,
+              purple-grey    $purple-grey,
+              grey-100       $grey-100,
+              grey-300       $grey-300,
+              grey-400       $grey-400,
+              grey-500       $grey-500,
+              grey-600       $grey-600,
+              grey-800       $grey-800,
+              brown-400      $brown-400,
+              brown-700      $brown-700,
+              yellow-500     $yellow-500,
+              green-200      $green-200,
+              aqua-400       $aqua-400,
+              red-400        $red-400,
+              orange-500     $orange-500,
+              pink-500       $pink-500;
+
+@each $color in $all-colors {
+  .in-#{nth($color, 1)} {
+    color: nth($color, 2) !important;
+  }
+  .bg-#{nth($color, 1)} {
+    background-color: nth($color, 2) !important;
+  }
+}

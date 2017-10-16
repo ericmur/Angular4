@@ -1,0 +1,23 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Known Geographical Locations</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <div>
+          <span>Mountain View, CA (Last accessed: Today)</span>
+        </div>
+        <div>
+          <span>Sunnyvale, CA (Last accessed: Yesterday)</span>
+        </div>
+        <div>
+          <span>New York, NY (Last accessed: 3 Months ago)</span>
+        </div>
+        <div>
+          <span>Louiville, KY (Last accessed: 4 Months ago)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

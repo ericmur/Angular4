@@ -1,0 +1,128 @@
+{
+    "BIZ INVOICES/RECEIPTS" :
+    {
+        "id": 9020,
+        "icons": ["", "Receipts_icon@2x.png", "Receipts_icon@3x.png"],
+        "display_name": "Invoices & Receipts",
+        "description" : "Account Receivable/Payable Invoices, Receipts",
+        "documents" : [
+            "ACCOUNT_RECEIVABLE_INVOICE",
+            "ACCOUNT_PAYABLE_INVOICE",
+            "BUSINESS_RECEIPT",
+            "ASSET_PURCHASE_INVOICE",
+            "ASSET_SALE_INVOICE",
+            "PETTY_CASH_SLIPS"
+            ]
+    },
+    "BIZ OPS" :
+    {
+        "id": 9021,
+        "icons": ["", "Business_icon@2x.png", "Business_icon@3x.png"],
+        "display_name" : "Operations",
+        "description" : "Your Client Forms, Agreements, Order Forms",
+        "documents" : [
+            "CUSTOMER_FORMS",
+            "SALES_AGREEMENTS",
+            "BIZ_LEASE_AGREEMENT",
+            "BUSINESS_LOAN_AGREEMENT"
+        ]
+    },  
+    "BIZ CERTIFICATES" :
+    {
+        "id": 9017,
+        "icons": ["", "Certificates_icon@2x.png", "Certificates_icon@3x.png"],
+        "display_name" : "Certificates",
+        "description" : "Business Certificates, Licenses, EIN",
+        "documents" : [
+            "CERTIFICATE_OF_INCORPORATION",
+            "CERTIFICATE_OF_GOOD_STANDING",
+            "FEDERAL_EMPLOYER_IDENTIFICATION",
+            "STATE_EMPLOYER_IDENTIFICATION",
+            "SELLERS_PERMIT",
+            "EMP_STOCK_CERTIFICATES",
+            "PARTNERSHIP_AGREEMENT",
+            "BUSINESS_LICENSE",
+            "CORPORATION_BYLAWS",
+            "CORPORATION_ORGANIZATIONAL_CONSENT",
+            "DUNS"
+        ]
+    },   
+    "BIZ CONTRACTS" :
+    {
+        "id": 9024,
+        "icons": ["", "Contracts_icon@2x.png", "Contracts_icon@3x.png"],
+        "display_name" : "Contracts",
+        "description" : "NDAs, Customer/Employee Contracts",
+        "documents" : [
+            "CUSTOMER_AGREEMENTS",
+            "BIZ_NDA",
+            "BIZ_IP_PROTECTION"            
+        ]
+    }, 
+    "BIZ FINANCIALS" :
+    {
+        "id": 9025,
+        "icons": ["", "Financial_icon@2x.png", "Financial_icon@3x.png"],
+        "display_name" : "Financials",
+        "description" : "Quarterly P&Ls, Credit Card Statements",
+        "documents" : [
+            "BIZ_CREDIT_CARD",
+            "BIZ_DEBIT_CARD",
+            "QUARTERLY_FINANCIALS",
+            "BIZ_CREDIT_CARD_STATEMENTS",
+            "BIZ_BANK_STATEMENTS",
+            "BIZ_CLOSING_STATEMENT",             
+            "BIZ_CHECK_COPIES"  
+        ]
+    }, 
+    "BIZ PASSWORDS" :
+    {
+        "id": 9026,
+        "icons": ["", "Passwords_icon@2x.png", "Passwords_icon@3x.png"],
+        "display_name" : "Passwords",
+        "description" : "Account Numbers, Logins, Passwords",
+        "comment": "The ID for this folder is hard coded into StandardFolder",
+        "documents" : [
+            "BIZ_BANK_PASSWORD",
+            "BIZ_CREDIT_CARD_PASSWORD",
+            "BIZ_INSURANCE_PASSWORD",
+            "BIZ_UTILITIES_PASSWORD",
+            "IT_SYSTEMS_PASSWORD",
+            "VENDOR_ACCOUNT_PASSWORD"
+        ]
+    },                      
+    "BIZ TAXES" :
+    {
+        "id": 9014,
+        "icons": ["", "Business_Tax_Icon@2x.png", "Business_Tax_Icon@3x.png"],
+        "display_name" : "Taxes",
+        "description" : "Business Tax Returns & Documents",
+        "documents" : [
+            "CORPORATION_TAX_FEDERAL_RETURN",
+            "CORPORATION_TAX_STATE_RETURN",
+            "1099_K",
+            "SCHEDULE_K1",
+            "571_L",
+            "3586",
+            "CORP_ESTIMATED_TAX_100_ES",
+            "STATE_TAX_EXTENSION",
+            "FEDERAL_TAX_EXTENSION",
+            "SALES_TAX_RETURN_FORM",
+            "BUSINESS_PROPERTY_STATEMENT"
+        ]
+    },                      
+    "CLAIMS" :
+    {
+        "id": 9027,
+        "icons": ["", "Claims_icon@2x.png", "Claims_icon@3x.png"],
+        "display_name" : "Insurance/Claims",
+        "description" : "Insurance Claims, Worker's Comp, Liability Insurance",
+        "documents" : [
+            "BUSINESS_INSURANCE",
+            "LIABILITY_INSURANCE",
+            "BIZ_INSURANCE_CLAIMS",
+            "CUSTOMER_CLAIMS",
+            "WORKERS_COMP_CLAIMS"
+        ]
+    }
+}

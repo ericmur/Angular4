@@ -1,0 +1,12 @@
+<div class='upload-file-item second-step'>
+  <div class='upload-file-name-icon'>
+    <span class='color-icon icon-photo-file'></span>
+    <span class='upload-file-name'><%= @original_file_name %></span>
+  </div>
+  <div class='category-size-wrapper'>
+    <select class='file-category' placeholder='Select category'></select>
+  </div>
+  <div class='upload-file-status'>
+    <span class='color-icon icon-verified'></span>
+  </div>
+</div>

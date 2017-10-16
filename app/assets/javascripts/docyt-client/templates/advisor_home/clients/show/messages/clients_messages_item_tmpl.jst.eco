@@ -1,0 +1,37 @@
+<div class="client__mes-person-card message-item">
+  <div class="client__mes-person-card-edit">
+    <i class="fa fa-caret-down triangle-item"></i>
+
+    <div class="client__mes-menu-bar context-menu" style="display: none;">
+      <% if @sender_id == Docyt.currentAdvisor.id: %>
+        <a class="edit-message"><i class="icon icon-edit"></i>Edit message</a>
+        <a class="delete-message"><i class="icon icon-trashcan"></i>Delete message</a>
+      <% else: %>
+        <a class="mark-unread-message">Mark as Unread</a>
+      <% end%>
+    </div>
+
+  </div>
+
+  <div class="client__mes-avatar-wrapper">
+    <% if @avatarUrl: %>
+      <div class="client__mes-userpic">
+        <img src="<%= @avatarUrl %>" class='header__userpic-img'</img>
+      </div>
+    <% else: %>
+      <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400 avatar-message'></i>
+    <% end %>
+  </div>
+
+  <span class="client__mes-sender-name font-semi-bold"><%= @sender_name %></span>
+  <span class="client__mes-sender-time"><%= @timestamp %></span>
+
+  <div class="client__mes-content">
+    <p class="client__mes-content-text"><%= @text %></p>
+    <div class="edit-message-form" style="display: none;">
+      <input class='added-input edit-message-input' type='text' value="<%= @text %>">
+      <button class="cancel-edit-message main-rounded-btn">Cancel</button>
+      <button class="submit-update-message main-rounded-btn">Update message</button>
+    </div>
+  </div>
+</div>

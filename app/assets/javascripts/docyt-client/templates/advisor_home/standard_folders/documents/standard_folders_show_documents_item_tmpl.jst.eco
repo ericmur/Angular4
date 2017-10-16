@@ -1,0 +1,26 @@
+<div class="clients__client">
+  <div class="clients__client-cell">
+    <i class='client__docs-li-type-icon icon icon-document'></i>
+  </div>
+  <% if @name: %>
+    <div class='clients__client-cell'>
+      <span class='clients__client-name-text'>
+        <%= @name %>
+      </span>
+    </div>
+  <% end %>
+  <div class=' clients__client-cell'>
+    <span class='clients__client-name-text'>
+      <%= @original_file_name %>
+    </span>
+  </div>
+  <div class=' clients__client-cell'>
+    <span class='clients__client-name-text'>
+      <%= $.timeago(@created_at) %>
+    </span>
+  </div>
+  <div class='clients__client-extras clients__client-cell'></div>
+  <div class='clients__client-right clients__client-cell'>
+    <a class="link-detail" href="<%= @detailsUrl %>"></a>
+  </div>
+</div>

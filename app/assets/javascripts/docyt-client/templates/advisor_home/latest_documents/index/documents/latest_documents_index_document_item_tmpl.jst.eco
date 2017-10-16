@@ -1,0 +1,19 @@
+<div class='latest-document-cell'>
+  <span class="latest-document-name-text"><%= @standard_document_name %></span>
+</div>
+
+<div class='latest-document-cell'>
+  <span class="latest-document-name-text">id: <%= @id %></span>
+</div>
+
+<div class='latest-document-cell'>
+  <span class="latest-document-name-text">uploader email: <%= @uploader_email %></span>
+</div>
+
+<div class='latest-document-cell'>
+  <span class="latest-document-name-text">created at: <%= @createdAt %></span>
+</div>
+
+<div class='latest-document-cell'>
+  <span class="latest-document-name-text">updated at: <%= @updatedAt %></span>
+</div>

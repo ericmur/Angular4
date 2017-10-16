@@ -1,0 +1,9 @@
+<div id='contact-documents-drop-zone' class='clients-drop-zone'>
+  <div id='contact-side-menu-region' class='client__nav'></div>
+  <div id='contact-main-pane' class='client-main-pane'>
+    <div id='contact-header-menu-region'></div>
+    <div id='contact-details-region' class='client-details-region'></div>
+    <div id='contact-categories-boxes-region' class='hor-padding'></div>
+    <div id='contact-details-contacts-region' class='hor-padding'></div>
+  </div>
+</div>

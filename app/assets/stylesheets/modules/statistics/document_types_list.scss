@@ -1,0 +1,25 @@
+.document-types__main {
+  @extend .clients__main;
+}
+.statistics__wrap {
+  @extend .clients__wrap;
+}
+.categories-list {
+  @extend .client__docs-list;
+}
+.document-type-li {
+  @extend .clients__client;
+}
+.document__types-cell {
+  @extend .clients__client-cell;
+  padding: 30px 25px 20px;
+  &:first-child {
+    width: 400px;
+  }
+}
+.documents-table-title {
+  font-size: 24px;
+  color: black;
+  opacity: .7;
+  margin-bottom:  20px;
+}

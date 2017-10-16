@@ -1,0 +1,10 @@
+<tr class='docs-table-head'>
+  <th class='docs-checkbox'>
+    <input class='custom-checkbox' id='checkbox-all' type='checkbox'>
+    <label for='checkbox-all'></label>
+  </th>
+  <th>Filename</th>
+  <th>Received</th>
+  <th>Email Subject</th>
+  <th>Email Content</th>
+</tr>

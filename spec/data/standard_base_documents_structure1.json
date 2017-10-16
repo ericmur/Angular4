@@ -1,0 +1,49 @@
+{
+    "PERSONAL" :
+    {
+        "id": 9001,
+        "display_name": "Personal",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, Passport, IDs",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "SOCIAL_SECURITY_CARD",
+            "BIRTH_CERTIFICATE"
+        ]
+    },
+    "TRAVEL" :
+    {
+        "id": 9015,
+        "display_name": "Travel",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, EAD Card, Visa etc.",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "EAD_CARD",
+            "VISA_STAMP"
+        ]
+    },
+    "CAR" :
+    {
+        "id": 9002,
+        "display_name": "Car",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Insurance, Title, Loan Documents etc.",
+        "documents" : [
+            "CAR_PURCHASE_RECEIPT",
+            "AUTO_INSURANCE_CARD",
+            "CAR_TITLE",
+            "CAR_LOAN_AGREEMENT"
+        ]
+    },
+    "CONSUMER" :
+    {
+        "id": 9003,
+        "display_name": "Consumer",
+        "icons": ["", "Reward_icon@2x.png", "Reward_icon@3x.png"],
+        "description" : "Coupons, Gift/Reward Cards, Receipts",
+        "documents" : [
+            "PERSONAL_RECEIPT"
+            ]
+    }
+}

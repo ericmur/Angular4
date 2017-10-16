@@ -1,0 +1,62 @@
+.workflow__wrap {
+  @extend .client__wrap;
+}
+
+.workflow-main-pane {
+  @extend .client__mes;
+}
+
+.workflow-details-header {
+  margin-bottom: 30px;
+}
+
+.workflow__main-title {
+  font-size: 26px;
+  font-weight: 100;
+  color: $brown-600;
+}
+
+.workflow-settings {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.workflow-details-participants {
+  .participants-container {
+    text-align: center;
+  }
+}
+
+.workflow-participant-progress {
+  display: inline-block;
+  + .workflow-participant-progress  {
+    margin-left:  150px;
+  }
+  .workflow-participant-name {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .overlay {
+    .icon-smile {
+      font-size: 48px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .workflow-participant-remains {
+    text-transform: uppercase;
+  }
+}
+
+.workflow-details-chat {
+  @extend .client-details-region;
+  body.two-column & {
+    height: calc(100% - 105px);
+  }
+  .messages-region {
+    body.two-column & {
+      height: calc(100% - 180px);
+    }
+  }
+}

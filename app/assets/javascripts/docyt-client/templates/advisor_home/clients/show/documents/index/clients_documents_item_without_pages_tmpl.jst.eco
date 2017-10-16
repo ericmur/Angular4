@@ -1,0 +1,40 @@
+<tr>
+  <td class='client__docs-cell client__docs-li-type open-document'>
+    <i class='client__docs-li-type-icon icon icon-secure load-document-fields'></i>
+  </td>
+
+  <td class='client__docs-cell client__docs-li-title open-document'>
+    <p class='client__docs-li-text category-name-box'>
+      <%= @categoryName %>
+    </p>
+  </td>
+
+  <% if @firstFourFields.length: %>
+    <% for firstFourField in @firstFourFields: %>
+      <td class='client__docs-cell client__docs-li-title open-document'>
+        <p class='client__docs-li-text-document-field category-name-box'>
+          <% unless firstFourField.data_type == "url": %>
+            <%= firstFourField.name %>: <span class='document-field-value'><%= firstFourField.value %></span>
+          <% else: %>
+            <%= firstFourField.name %>: <span class='document-field-value'><a href="http://<%= firstFourField.value %>"><%= firstFourField.value %></a></span>
+          <% end %>
+        </p>
+      </td>
+    <% end %>
+  <% end %>
+
+
+  <td class='client__docs-cell client__docs-li-actions action-icon-bar'>
+    <i class='actions__main-icon actions__icon icon icon-dots'></i>
+    <div class='actions__icons-list'>
+      <% if @document_fields.length > 4: %>
+        <a class='actions__icon' data-tooltip='Message'>
+          <i class="fa fa-th-list fields-list" aria-hidden="true"></i>
+        </a>
+      <% end %>
+      <a class='actions__icon' data-tooltip='Message'>
+        <i class='icon icon-trashcan'></i>
+      </a>
+    </div>
+  </td>
+</tr>

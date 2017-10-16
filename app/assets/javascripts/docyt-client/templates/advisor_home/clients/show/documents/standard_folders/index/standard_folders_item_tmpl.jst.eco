@@ -1,0 +1,7 @@
+<a class='client__documents-category-content' href="<%= @categoryDocumentsUrl %>">
+  <div class='category-icon'>
+    <img src="<%= @iconUrl %>" alt="">
+  </div>
+  <p class='category-title'><%= @name %></p>
+  <p class='category-count'><%= @documents_count %></p>
+</a>

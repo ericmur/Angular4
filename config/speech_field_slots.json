@@ -1,0 +1,343 @@
+{
+    
+    "DRIVERS_LICENSE":
+    {
+        "field_id" : 1,
+        "display_name" : "License No"
+    },
+    "PASSPORT":
+    {
+        "field_id" : 1,
+        "display_name" : "Passport No"
+    },
+    "ID_CARD":
+    {
+        "field_id" : 2,
+        "display_name" : "ID No"
+    },
+    "STATE_ID_CARD":
+    {
+        "field_id" : 1,
+        "display_name" : "ID No"
+    },
+    "SOCIAL_SECURITY_CARD":
+    {
+        "field_id" : 1,
+        "display_name" : "SSN"
+    },
+    "TRANSCRIPT":
+    {
+        "field_id" : 3,
+        "display_name" : "GPA"
+    },
+    "TRANSCRIPT":
+    {
+        "field_id" : 4,
+        "display_name" : "Credits"
+    },
+    "EMPLOYER_ID_CARD":
+    {
+        "field_id" : 2,
+        "display_name" : "Badge No"
+    },
+    "HOME_DEED":
+    {
+        "field_id" : 2,
+        "display_name" : "Parcel No"
+    },
+    "HOME_INSURANCE":
+    {
+        "field_id" : 2,
+        "display_name" : "Policy No"
+    },
+    "FLOOD_INSURANCE":
+    {
+        "field_id" : 2,
+        "display_name": "Account No"
+    },
+    "EARTHQUAKE_INSURANCE":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "HURRICANE_INSURANCE":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "MORTGAGE_INSURANCE":
+    {
+        "field_id" : 2,
+        "display_name" : "Policy No"
+    },
+    "CELLPHONE_SERVICE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "INTERNET_SERVICE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "TRASH_SERVICE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "ELECTRICITY_SERVICE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "GAS_SERVICE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "WATER_SEWAGE_ACCOUNT":
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "CABLE_DISH_BILL" :
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "SUBSCRIPTION_SERVICES" :
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "MEDICAL_INSURANCE_CARD":
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "MEDICAL_INSURANCE_CARD":
+    {
+        "field_id" : 2,
+        "display_name" : "Group No"
+    },
+    "MEDICAL_INSURANCE_CARD":
+    {
+        "field_id" : 4,
+        "display_name" : "RxBin"
+    },
+    "EVIDENCE_OF_COVERAGE" :
+    {
+        "field_id" : 2,
+        "display_name" : "Policy No"
+    },
+    "DENTAL_INSURANCE_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "DENTAL_INSURANCE_CARD" :
+    {
+        "field_id" : 3,
+        "display_name" : "Group No"
+    },
+    "DENTAL_INSURANCE_CARD" :
+    {
+        "field_id" : 4,
+        "display_name" : "RxBin"
+    },
+    "VISION_INSURANCE_CARD":
+    {
+        "field_id" : 2,
+        "display_name" : "Member No"
+    },
+    "VISION_INSURANCE_CARD":
+    {
+        "field_id" : 3,
+        "display_name" : "Group No"
+    },
+    "LIFE_INSURANCE_DOCUMENT" :
+    {
+        "field_id" : 2,
+        "display_name" : "Policy No"
+    },
+    "AUTO_INSURANCE_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Policy No"
+    },
+    "CAR_TITLE" :
+    {
+        "field_id" : 2,
+        "display_name" : "VIN"
+    },
+    "CAR_REGISTRATION_CARD" :
+    {
+        "field_id" : 4,
+        "display_name" : "License Plate"
+    },
+    "CAR_PURCHASE_RECEIPT" :
+    {
+        "field_id" : 2,
+        "display_name" : "VIN"
+    },
+    "AAA_CARD" :
+    {
+        "field_id" : 1,
+        "display_name" : "Member ID"
+    },
+    "ROADSIDE_ASSISTANCE_CARD" :
+    {
+        "field_id" : 3,
+        "display_name" : "Customer ID"
+    },
+    "ORGAN_DONOR_INFO" :
+    {
+        "field_id" : 2,
+        "display_name" : "Donor ID"
+    },
+    "PHARMACY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "ID No"
+    },
+    "PHARMACY_CARD" :
+    {
+        "field_id" : 3,
+        "display_name" : "RXBin"
+    },
+    "CREDIT_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Card No"
+    },
+    "DEBIT_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Card No"
+    },
+    "SAFE_DEPOSIT_BOX_INFO" :
+    {
+        "field_id" : 2,
+        "display_name" : "Account No"
+    },
+    "OPT_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "USCIS A#"
+    },
+    "EAD_CARD" :
+    {
+        "field_id" : 1,
+        "display_name" : "USCIS A #"
+    },
+    "GREEN_CARD" :
+    {
+        "field_id" : 1,
+        "display_name" : "USCIS A #"
+    },
+    "NATURALIZATION_CERTIFICATE" :
+    {
+        "field_id" : 3,
+        "display_name" : "USCIS A #"
+    },
+    "BUSINESS_LICENSE" :
+    {
+        "field_id" : 1,
+        "display_name" : "License No"
+    },
+    "FEDERAL_EMPLOYER_IDENTIFICATION" :
+    {
+        "field_id" : 1,
+        "display_name" : "EIN No"
+    },
+    "STATE_EMPLOYER_IDENTIFICATION" :
+    {
+        "field_id" : 1,
+        "display_name" : "State ID No"
+    },
+    "DUNS" :
+    {
+        "field_id" : 1,
+        "display_name" : "DUNS No"
+    },
+    "BUSINESS_INSURANCE" :
+    {
+        "field_id" : 1,
+        "display_name" : "Insurance ID No"
+    },
+    "LIABILITY_INSURANCE" :
+    {
+        "field_id" : 1,
+        "display_name" : "Policy No"
+    },
+    "SELLERS_PERMIT" :
+    {
+        "field_id" : 1,
+        "display_name" : "Account No"
+    },
+    "GROCERY_LOYALTY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "MERCHANT_LOYALTY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "GIFT_CARD" :
+    {
+        "field_id" : 3,
+        "display_name" : "Card ID"
+    },
+    "AIRLINE_LOYALTY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Rewards ID"
+    },
+    "RENTAL_CAR_LOYALTY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "HOTEL_LOYALTY_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "MISC_REWARDS_CARD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Member ID"
+    },
+    "AARP" :
+    {
+        "field_id" : 1,
+        "display_name" : "Membership Number"
+    },
+    "COUPONS" :
+    {
+        "field_id" : 4,
+        "display_name" : "Code"
+    },
+    "AIRLINE_VOUCHER" :
+    {
+        "field_id" : 2,
+        "display_name" : "Voucher #"
+    },
+    "GLOBAL_ENTRY_CARD" :
+    {
+        "field_id" : 1,
+        "display_name" : "PASS ID"
+    },
+    "BANK_PASSWORD" :
+    {
+        "field_id" : 2,
+        "display_name" : "Account No."
+    },
+    "BANK_PASSWORD" :
+    {
+        "field_id" : 3,
+        "display_name" : "Routing No."
+    }
+}

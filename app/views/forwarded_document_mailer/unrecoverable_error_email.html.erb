@@ -1,0 +1,26 @@
+<div style="padding: 10px 20px 0; background-color: white; margin: 0 auto; border-bottom: 4px solid #04c7d9; max-width: 560px;">
+  <div style="font-size: 14px; font-family: Sans serif;">
+    <p style="margin-bottom: 20px; text-align: left;">
+      <%= "#{I18n.t('emails.new_message.greeting', receiver_name: @recipient)}" %>
+    </p>
+    <p style="margin-bottom: 20px; text-align: left;">
+      <% if @standard_document_name.present? %>
+        It looks like you sent us a password protected pdf for <%= @standard_document_name %>.
+      <% else %>
+        It looks like you sent us a password protected pdf.
+      <% end %>
+        We do not support password protected pdfs at the moment. Please send us a note at support@docyt.com if you need help to upload this document.
+    </p>
+    <p style="margin-bottom: 40px; text-align: left;">
+      <%= "#{I18n.t('emails.new_message.thank')}" %><br/>
+      <%= "#{I18n.t('emails.new_message.team')}" %>
+    </p>
+  </div>
+  <div style="padding: 10px 0 20px; border-top: 1px solid #f4f4f4; color: #b8b8b8; font-size: 10px; font-family: Sans serif;">
+    <p>
+      <%= "#{I18n.t('emails.new_message.confidential_email')}" %>
+      <a href="" style="color: #04c7d9;"><%= @receiver_email %></a>.
+      <%= "#{I18n.t('emails.new_message.rights')}" %>
+    </p>
+  </div>
+</div>

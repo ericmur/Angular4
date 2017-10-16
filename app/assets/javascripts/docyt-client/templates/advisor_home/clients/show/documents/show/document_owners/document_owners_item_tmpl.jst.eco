@@ -1,0 +1,12 @@
+<div class="document-owner">
+  <div class="document-owner-avatar">
+    <% if @avatarUrl: %>
+      <img src="<%= @avatarUrl %>" class='header__userpic-img'>
+    <% else: %>
+      <i class='clients__client-status-icon icon icon-smile in-blue-400'></i>
+    <% end %>
+  </div>
+  <div class="document-owner-name">
+    <span><%= @owner_name %></span>
+  </div>
+</div>

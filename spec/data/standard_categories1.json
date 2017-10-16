@@ -1,0 +1,32 @@
+{
+    "ACCOUNTANT" :
+    {
+        "display_name" : "TAX ADVISOR",
+        "id": 1,
+        "standard_folders" : [
+            "PERSONAL",
+            "TRAVEL",
+            "CAR"
+            ]
+    },
+    "LAWYER" :
+    {
+        "display_name" : "LAWYER",
+        "id": 2
+    },
+    "FINANCIAL_ADVISOR" :
+    {
+        "display_name" : "FINANCIAL ADVISOR",
+        "id": 3
+    },
+    "DENTIST" :
+    {
+        "display_name" : "DENTIST",
+        "id": 4
+    },
+    "DOCYT_SUPPORT" :
+    {
+        "display_name" : "DOCYT SUPPORT",
+        "id": 6
+    }
+}

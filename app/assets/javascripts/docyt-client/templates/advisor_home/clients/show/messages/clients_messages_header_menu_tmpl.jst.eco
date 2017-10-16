@@ -1,0 +1,23 @@
+<div class="progress" style="display: none;">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+    0%
+  </div>
+</div>
+<div class='client__docs'>
+  <div class='clients__search'>
+    <div class="clients__search-wrapper">
+      <i class='clients__search-icon icon icon-search'></i>
+      <input class='clients__search-input' placeholder='Search messages' type='text'>
+      <span class="clients__search-clear icon-search-clear hidden">
+        <span class="path1"></span>
+        <span class="path2"></span>
+      </span>
+    </div>
+    <div class="clients__message-info">
+      <i class='icon icon-smile in-purple-grey'></i>
+      <span><%= @chatUsersCount %> Participants</span>
+      <i class='client__docs-li-type-icon icon icon-document'></i>
+      <span class="documents-count"><%= @documentsCount %> Documents</span>
+    </div>
+  </div>
+</div>

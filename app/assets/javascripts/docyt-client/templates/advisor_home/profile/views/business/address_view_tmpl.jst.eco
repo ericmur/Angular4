@@ -1,0 +1,51 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Primary Business Address</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <div>
+          <span>123 Main St, STE 100</span>
+        </div>
+        <div>
+          <span>Mountain View, CA</span>
+        </div>
+        <div>
+          <span>94040</span>
+        </div>
+      </div>
+      <div aria-controls='collapse-edition-business-address' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-business-address' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Edit</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-business-address-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-business-address'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Primary business address.</span>
+      </div>
+      <div class='client__settings-edit-field'>
+        <div class='settings-field-name'>
+          <span>Primary Business Address</span>
+        </div>
+        <div class='settings-field-value-edit'>
+          <div class='settings-field-value'>
+            <input class='settings-input' type='text'>
+          </div>
+        </div>
+      </div>
+      <div class='client__settings-edit-field'>
+        <div class='settings-field-name'></div>
+        <div class='settings-field-value-edit'>
+          <div class='settings-save-wrapper'>
+            <input class='settings-save-btn main-btn bg-turquise-400' type='button' value='Save changes'>
+            <div aria-controls='collapse-edition-business-address' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-business-address' data-toggle='collapse'>
+              <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

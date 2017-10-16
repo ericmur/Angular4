@@ -1,0 +1,41 @@
+<td class='client__docs-cell client__docs-li-type'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <i class='client__docs-li-type-icon icon icon-document'></i>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-title'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text category-name-box'>
+      <%= @documentName %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-title'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text category-name-box'>
+      <%= @firstDocumentField %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-title'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text category-name-box'>
+      <%= @secondDocumentField %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-date'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text-secondary'>
+      <%= $.timeago(@created_at) %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-actions'>
+  <i class='actions__main-icon actions__icon icon icon-dots'></i>
+</td>

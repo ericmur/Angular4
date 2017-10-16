@@ -1,0 +1,8 @@
+<textarea class='added-input' type='text' id="message-input"></textarea>
+<button class='added-btn' type='button' id="send-message">
+  <i class='icon icon-plus'></i>
+  <div class="added-context-menu" style="display: none;">
+    <input type="file" class="input-file" accept="application/pdf">
+    <a class="upload-file"><i class="icon icon-upload"></i>Upload a document</a>
+  </div>
+</button>

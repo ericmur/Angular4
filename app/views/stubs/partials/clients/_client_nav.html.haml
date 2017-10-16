@@ -1,0 +1,20 @@
+%aside.client__nav
+  .client__nav-client-info
+    .client__nav-client-info-img-wrap
+      -# = image_tag 'Mitul.png', class: 'client__nav-client-info-img'
+      %i.client__nav-client-info-img-icon.icon.icon-smile.in-blue-400
+    %p.client__nav-client-name
+      Katherine Eliott
+  %nav
+    %a.client__nav-li(href="#")
+      %i.client__nav-li-icon.icon.icon-info
+      %span.client__nav-li-text
+        Client information
+    %a.client__nav-li.client__nav-li--active(href="#")
+      %i.client__nav-li-icon.icon.icon-files
+      %span.client__nav-li-text
+        All Documents (12)
+    %a.client__nav-li(href="#")
+      %i.client__nav-li-icon.icon.icon-comments
+      %span.client__nav-li-text
+        All Messages (24)

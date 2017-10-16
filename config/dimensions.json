@@ -1,0 +1,34 @@
+{
+    "ID-1": {
+        "id": 1,
+        "name": "ID-1",
+        "width": 3.370,
+        "height": 2.125,
+        "unit": "inches",
+        "comment": "Used for Credit/Debit cards, drivers licenses, id cards etc"
+    },
+    "ID-2": {
+        "id": 2,
+        "name": "ID-2",
+        "width": 4.134,
+        "height": 2.913,
+        "unit": "inches",
+        "comment": "Used for visas"
+    },
+    "ID-3": {
+        "id": 3,
+        "name": "ID-3",
+        "width": 3.465,
+        "height": 4.921,
+        "unit": "inches",
+        "comment": "Used for passport booklets - we have a 90 degree turned dimension for booklets, because in iPhone the rectangle shown in camera view when capturing Passport is turned by 90 degrees"
+    },
+    "Letter": {
+        "id": 4,
+        "name": "Letter",
+        "width": 8.5,
+        "height": 11,
+        "unit": "inches",
+        "comment": "US Letter Size paper. Closest ISO size for this is A4"
+    }
+}

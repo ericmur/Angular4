@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <link rel="shortcut icon" href="<%= image_path('favicon.png') %>">
+  <title>
+    <% if content_for(:title) %>
+      <%= yield :title %>
+    <% else %>
+      Docyt – Secure Paperwork Manager for Families
+    <% end %>
+  </title>
+  <%= stylesheet_link_tag  'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <meta name="google-site-verification" content="sa6rHg_KJQM3udYV3E13XSrWWm4TDTaaf4STXhcHU5Q" />
+</head>
+<body>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+</body>

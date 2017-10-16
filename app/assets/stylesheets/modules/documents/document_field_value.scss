@@ -1,0 +1,72 @@
+.currency {
+  > .value-show-wrapper, .value-edit-wrapper {
+    &::before{
+      content: "$";
+      line-height: 21px;
+      margin-left: -2px;
+    }
+  }
+}
+.phone {
+  > .value-show-wrapper, .value-edit-wrapper {
+    &::before{
+      content: "+1 ";
+      line-height: 21px;
+    }
+  }
+}
+.value-edit-wrapper, 
+.value-show-wrapper{
+    display: none;
+    line-height: 18px;
+}
+.value-show-wrapper{
+  &.visible {
+    display: block;
+  }
+}
+.value-edit-wrapper{
+  &.visible {
+    display: flex;
+    display: -webkit-flex;
+  }
+  .value-edit-input {
+    max-width: 100%;
+    width: 100%;
+    border-color: transparent;
+    padding-right: 5px;
+    &:focus {
+      outline: 1px solid $grey-450;
+    }
+  }
+  .picker__input {
+    background-color: transparent;
+  }
+}
+.boolean {
+  .value-edit-wrapper .value-edit-input {
+    padding-right: 0;
+  }
+}
+.empty {
+  min-height: 14px;
+}
+.date, 
+.expiry_date, 
+.due_date, 
+.boolean,
+.state,
+.country {
+  .value-edit-wrapper{
+    display: block;
+  }
+}
+.unvalid {
+  border: solid 1px red;
+}
+.icon-secure:before{
+  content: url(asset_path("Password_icon.svg"));
+}
+.client__docs-li-text-document-field {
+  text-transform: none;
+}

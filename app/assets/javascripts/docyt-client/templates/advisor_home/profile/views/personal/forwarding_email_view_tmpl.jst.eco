@@ -1,0 +1,12 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Document Forwarding Email</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= @emailForwarding %></span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+$icons: sprite-map("icons/*.png");
+
+.icn {
+  display: inline-block;
+  background: $icons;
+}
+
+@each $i in sprite_names($icons) {
+  .icn-#{$i} {
+    background-position: sprite-position($icons, $i);
+  }
+}
+.icn-arrow {
+  width: 14px;
+  height: 8px;
+  background: url("/assets/icons/arrow.png")
+}
+.icn-circle,
+.icn-circle-check {
+  width: 20px;
+  height: 19px;
+}
+.icn-key {
+  width: 14px;
+  height: 14px;
+}
+.icn-phone {
+  width: 14px;
+  height: 14px;
+}
+.icn-sp {
+  width: 16px;
+  height: 16px;
+}
+.icn-user {
+  width: 8px;
+  height: 17px;
+}

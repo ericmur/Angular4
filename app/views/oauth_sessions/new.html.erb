@@ -1,0 +1,38 @@
+<div>
+  <%= flash[:notice] %>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="header">
+        <h1>Sign In</h1>
+        <span>Access your account.</span>
+      </div>
+
+      
+      <form action="/oauth_sessions" method="post">
+
+        <div class="form-group clearfix">
+          Phone:
+          <input type="text" name="phone">
+        </div>
+
+        <div class="form-group clearfix">
+          PIN:
+          <input type="password" name="pin">
+        </div>
+
+        <div class="form-group clearfix">
+         <input type="hidden" name="redirect_uri"
+                value="<%= @redirect_uri %>">
+         <input type="hidden" name="state"
+                value="<%= @state %>">
+         <input type="hidden" name="client_id"
+                 value="<%= @client_id %>">
+        </div>
+
+        <div class="actions">
+          <input type="submit" value="Log In">
+        </div>
+      </form>
+  </div>
+</div>

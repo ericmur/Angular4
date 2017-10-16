@@ -1,0 +1,36 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Upload documents</h4>
+      </div>
+      <div class="modal-body">
+        <p>You are trying to upload <%= I18n.t('clients.documents.counter', { count: @files.length }) %>, but you haven't specified client. Please select one below: </p>
+        <div class="client-select-wrap">
+          <div class="login-form__select-toggle main-select__toggle" id="client-menu">
+            <i class="login-form__select-toggle-icon icn icn-sp"></i>
+            <span class="login-form__select-toggle-text" id="selected-option">
+              Select client
+            </span>
+            <i class="login-form__select-toggle-arrow icn icn-arrow"></i>
+          </div>
+          <p class="main-input__hint in-red-400" id="client-not-selected" >
+            Please select a client
+          </p>
+          <ul class="client-select__menu main-select__menu" id="select-options">
+            <% for item in @clients: %>
+              <li class="client-select__menu-item" data-option="<%- item.get('id') %>">
+              <%= item.get('parsed_fullname') %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id='cancel-upload' class="cancel-link cancel modal-link-btn">Cancel</button>
+        <button type="button" id='confirm-upload' class="main-btn bg-turquise-400">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>

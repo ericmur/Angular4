@@ -1,0 +1,17 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" id='close' class='close' data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Warning</h4>
+      </div>
+      <div class="modal-body">
+        <p>Moving away will cancel the ongoing document upload.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id='continue-upload' class="cancel-link cancel modal-link-btn">I'll stay here</button>
+        <button type="button" id='cancel-upload' class="main-btn bg-turquise-400">Move And Cancel Upload</button>
+      </div>
+    </div>
+  </div>
+</div>

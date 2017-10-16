@@ -1,0 +1,55 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div id="sended-confirm-email-alert" class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <%= I18n.translations.en.email_confirmation.messages.sended %>
+  </div>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Email</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= @email %></span>
+      </div>
+      <div aria-controls='collapse-edition-personal-email' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-email' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Edit</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-personal-email-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-personal-email'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Your email is also a Sign In ID. If you choose to update it, a confirmation email will be sent to the new email id. The update will not take place, until you click on link provided in the confirmation email.</span>
+      </div>
+      <form id='form-personal-email'>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Email</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @email %>' id='input-personal-email'>
+            </div>
+            <div id='email-invalid' class='client__setting-form-error'>
+              <span>Please enter correct email</span>
+            </div>
+            <div id='email-exists' class='client__setting-form-error'>
+              <span>This email is already in use</span>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'></div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-save-wrapper'>
+              <input class='settings-save-btn main-btn bg-turquise-400' type='submit' value='Save changes' id='submit-personal-email'>
+              <div aria-controls='collapse-edition-personal-email' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-email' data-toggle='collapse'>
+                <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

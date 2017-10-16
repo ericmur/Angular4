@@ -1,0 +1,11 @@
+<div class='docs-main'>
+  <h1 class='docs-page-title'>Review Documents</h1>
+  <div class='docs-page-desc'>
+    <p>Docyt has extracted attachments from the emails you forwarded to your Docyt Forwarding email account. Review these below, and assign to your clients.</p>
+  </div>
+
+  <div class="docs-actions-wrapper clearfix" id="documents-review-header-menu-region"></div>
+  <div class="docs-table-wrapper" id="documents-review-list-region"></div>
+  <div class="docs-table-wrapper" id="documents-review-modal-region"></div>
+
+</div>

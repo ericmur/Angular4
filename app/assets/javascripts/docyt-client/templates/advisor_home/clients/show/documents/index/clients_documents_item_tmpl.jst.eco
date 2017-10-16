@@ -1,0 +1,47 @@
+<td class='client__docs-cell client__docs-li-type open-document'>
+  <% if @isIndexPage: %>
+    <i class='client__docs-li-type-icon icon icon-document'></i>
+  <% else: %>
+    <a href="<%= @documentUrl %>" class='client__docs-li-type-icon icon icon-document'></a>
+  <% end %>
+</td>
+
+<% unless(@isIndexPage): %>
+  <td class='client__docs-cell client__docs-li-title open-document'>
+    <p class='client__docs-li-text category-name-box'>
+      <%= @.categoryName %>
+    </p>
+  </td>
+<% else %>
+
+<td class='client__docs-cell client__docs-li-main-title open-document'>
+  <p class='client__docs-li-text-secondary'>
+    <%= @truncatedDocumentName %>
+  </p>
+</td>
+
+<td class='client__docs-cell client__docs-li-date open-document'>
+  <p class='client__docs-li-text-secondary'>
+    <%= $.timeago(@created_at) %>
+  </p>
+</td>
+
+<td class='client__docs-cell client__docs-li-title'>
+  <div class='category-size-wrapper category-size-wrapper-right selectize-wrapper '>
+    <select class='file-category' placeholder='Select category'></select>
+  </div>
+</td>
+
+<td class='client__docs-cell client__docs-li-actions'>
+  <i class='actions__main-icon actions__icon icon icon-dots'></i>
+  <div class='actions__icons-list'>
+    <% unless(@isIndexPage): %>
+      <a class='actions__icon' data-tooltip='Message'>
+        <i class='icon icon-pencil'></i>
+      </a>
+    <% else %>
+    <a class='actions__icon' data-tooltip='Message'>
+      <i class='icon icon-trashcan'></i>
+    </a>
+  </div>
+</td>

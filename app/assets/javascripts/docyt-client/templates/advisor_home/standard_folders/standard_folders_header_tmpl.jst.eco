@@ -1,0 +1,13 @@
+<div class="documents-cat-header">
+  <h1 class="docs-page-title"><%= @titleDocuments %></h1>
+  <div class="documents__search-wrapper">
+    <input class='documents__search-input' placeholder='Search' type='text'>
+    <span class="clients__search-clear icon-search-clear hidden">
+      <span class="path1"></span>
+      <span class="path2"></span>
+    </span>
+  </div>
+  <div class="documents-cat-view pointer toggle-categoires-view-js">
+    <span class="icon icon-grid-list"></span>
+  </div>
+</div>

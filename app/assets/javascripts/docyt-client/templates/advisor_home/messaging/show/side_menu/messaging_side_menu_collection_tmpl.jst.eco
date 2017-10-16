@@ -1,0 +1,4 @@
+<div class="latest-messages-block clearfix">
+  <h2 class="messaging-title pull-left">Latest messages</h2>
+</div>
+<div class="messaging-clients-list"></div>

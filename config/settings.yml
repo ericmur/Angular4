@@ -1,0 +1,63 @@
+# tos_version and policy_version formatting
+# 'YYYYMMDD<PATCH>'
+
+# tos_last_updated and policy_last_updated
+# is the actual date of privacy or policy last update
+
+default: &default
+  tos_version: '20160203001'
+  tos_last_updated: 'February 3th, 2016'
+  policy_version: '20160203001'
+  policy_last_updated: 'February 3th, 2016'
+  itunes_url: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=995800612&mt=8"
+  emails:
+    sid: 'Sid <sid@docyt.com>'
+    noreply: 'Docyt <noreply@docyt.com>'
+    support: 'support@docyt.com'
+    notification: 'Docyt <notifications@docyt.io>'
+
+development:
+  <<: *default
+  app_url_scheme: docytDevelopment.Docyt://
+  assets_bucket: docyt-assets
+  auto_categorization_get_category_url: "http://52.53.184.170/categorize"
+  faye_host: "http://localhost:9293/faye"
+  upload_email_prefix: "ul-localhost"
+  docyt_bot_host: "http://52.53.184.170/get_intent"
+
+test:
+  <<: *default
+  app_url_scheme: docytTest.Docyt://
+  assets_bucket: docyt-assets
+  auto_categorization_get_category_url: "http://52.53.184.170/categorize"
+  faye_host: "http://localhost:9293/faye"
+  upload_email_prefix: "ul-test"
+  docyt_bot_host: "http://52.53.184.170/get_intent"
+
+staging:
+  <<: *default
+  app_url_scheme: docytStaging2.Docyt://
+  assets_bucket: docyt-assets
+  auto_categorization_get_category_url: "http://172.31.25.164/categorize"
+  faye_host: "https://staging.docyt.io:9293/faye"
+  upload_email_prefix: "ul-staging"
+  docyt_bot_host: "http://172.31.25.164/get_intent"
+
+production:
+  <<: *default
+  app_url_scheme: docyt.Docyt://
+  assets_bucket: docyt-assets
+  faye_host: "https://www.docyt.io:9293/faye"
+  upload_email_prefix: "ul"
+  docyt_bot_host: "http://172.31.13.75/get_intent"
+  auto_categorization_get_category_url: "http://172.31.13.75/categorize"
+  
+
+preproduction:
+  <<: *default
+  app_url_scheme: docytPreproduction.Docyt://
+  assets_bucket: docyt-assets
+  faye_host: "https://preproduction.docyt.io:9293/faye"
+  upload_email_prefix: "ul-preproduction"
+  docyt_bot_host: "http://172.31.17.165/get_intent"
+  auto_categorization_get_category_url: "http://172.31.17.165/categorize"

@@ -1,0 +1,5 @@
+<div id='messaging-side-menu-region' class="messaging_nav"></div>
+<div id="messaging-main-pane" class="messaging-main-pane">
+  <div id='chat-region' class="chat-region"></div>
+</div>
+<div id="messaging-document-right-side-region" class="messaging-document-right-side-region"></div>

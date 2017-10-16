@@ -1,0 +1,6 @@
+<div class='clients-drop-zone' id="client-documents-drop-zone">
+  <div id="client-main-pane" class="client-main-pane pdf-client-document-wrapper">
+    <div id='client-details-region' ></div>
+  </div>
+  <div id="client-document-right-side-region" class="client-document-right-side-region"></div>
+</div>

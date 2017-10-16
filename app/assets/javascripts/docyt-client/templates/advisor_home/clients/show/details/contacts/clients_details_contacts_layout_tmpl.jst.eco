@@ -1,0 +1,9 @@
+<div class="clients-detail-tabs-wrapper">
+  <div id="clients-detail-contacts-header"></div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="contacts">
+      <table id="clients-detail-contacts-list" class="client__docs-list"></table>
+    </div>
+  </div>
+</div>
+

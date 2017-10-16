@@ -1,0 +1,32 @@
+<div class='client__settings-userpic-wrapper' id='personal-avatar'>
+  <div class='client__settings-userpic'>
+    <% if @avatarUrl: %>
+      <i class="fa fa-spinner fa-pulse"></i>
+      <img src="<%= @avatarUrl %>" class='header__userpic-img'>
+    <% else: %>
+      <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400'></i>
+    <% end %>
+  </div>
+  <div  class='collapse-btn-wrapper'>
+    <span aria-controls='collapse-edition-personal-avatar' data-target='#collapse-edition-personal-avatar' data-toggle='collapse' class='has-collapse collapsed collapse-btn settings-edit-btn' id='personal-avatar-edit-btn'>Edit</span>
+  </div>
+  <div aria-labelledby='collapse-edition-personal-avatar-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-personal-avatar'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Drag'n'drop your avatar here.</span>
+      </div>
+      <div class='client__setting-form-error' id='avatar-invalid-error'>
+        <span>Please drop an image.</span>
+      </div>
+      <div class='client__settings-edit-field'>
+        <div class='settings-field-value-edit'>
+          <div class='settings-save-wrapper'>
+            <div class='collapse-btn-wrapper'>
+              <span aria-controls='collapse-edition-personal-avatar' data-target='#collapse-edition-personal-avatar' data-toggle='collapse' id='personal-avatar-cancel-btn' class='has-collapse collapsed collapse-btn settings-cancel-btn'>Cancel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

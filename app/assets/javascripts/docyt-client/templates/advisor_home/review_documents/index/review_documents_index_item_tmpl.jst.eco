@@ -1,0 +1,23 @@
+<td class='docs-checkbox'>
+  <input class='custom-checkbox' id='checkbox<%= @id %>' type='checkbox'>
+  <label for='checkbox<%= @id %>'></label>
+</td>
+<td class='docs-item-filename'>
+  <div class='upload-file-name-icon'>
+    <span class='color-icon icon-pdf-file'></span>
+    <a class='upload-file-name' target="_self">
+      <%= @truncatedDocumentName %>
+    </a>
+  </div>
+</td>
+<td class='docs-item-received'>
+  <p class='docs-item-received-time'><%= $.timeago(@created_at) %></p>
+</td>
+<td class='docs-item-subject'>
+  <p class='docs-item-subject-value'><%= @email.subject %></p>
+</td>
+<td class='docs-item-content'>
+  <a class='docs-item-content-icon'>
+    <i class='icon icon-content'></i>
+  </a>
+</td>

@@ -1,0 +1,324 @@
+{
+    "IDENTITY" :
+    {
+        "id": 9001,
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "display_name" : "Identity",    
+        "description" : "Driver’s License, Passport, IDs",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "PASSPORT",
+            "SOCIAL_SECURITY_CARD",
+            "BUSINESS_CARD",
+            "PASSPORT_CARD",
+            "ID_CARD",
+            "STATE_ID_CARD",
+            "STUDENT_ID_CARD",
+            "GLOBAL_ENTRY_CARD"
+        ]
+    },
+    "CAR" :
+    {
+        "id": 9002,
+        "icons": ["", "Car_icon@2x.png", "Car_icon@3x.png"],
+        "display_name" : "Car",
+        "description" : "VIN, Registration, Service Records",
+        "documents" : [
+            "CAR_TITLE",
+            "CAR_REGISTRATION_CARD",
+            "REGISTRATION_RENEWAL_NOTICE",
+            "ACCIDENT_INFO",
+            "POLICE_REPORT",
+            "AAA_CARD",            
+            "CAR_SERVICE_RECEIPT",
+            "CAR_PURCHASE_RECEIPT",
+            "CAR_LOAN_AGREEMENT",
+            "CAR_BILL_OF_SALE",
+            "CAR_WARRANTY",
+            "CAR_ELECTRONIC_CODES",
+            "ROADSIDE_ASSISTANCE_CARD",
+            "TRAFFIC_CITATION"
+        ]
+    },
+    "PASSWORDS" :
+    {
+        "id": 9023,
+        "icons": ["", "Passwords_icon@2x.png", "Passwords_icon@3x.png"],
+        "comment": "The id 9023 for Passwordts category is also hard coded in StandardFolder::PASSWORD_FOLDER_ID",
+        "display_name" : "Passwords",
+        "description" : "Account Numbers, Logins, Passwords",
+        "pages" : false,
+        "documents" : [
+            "BANK_PASSWORD",
+            "CREDIT_CARD_PASSWORD",
+            "INSURANCE_PASSWORD",
+            "UTILITIES_PASSWORD"
+            ]
+    },
+    "CONSUMER" :
+    {
+        "id": 9003,
+        "icons": ["", "Reward_icon@2x.png", "Reward_icon@3x.png"],
+        "display_name" : "Consumer",         
+        "description" : "Coupons, Gift/Reward Cards, Receipts",
+        "documents" : [
+            "GROCERY_LOYALTY_CARD",
+            "COUPONS",
+            "PERSONAL_RECEIPT",
+            "BILL_OF_SALE",
+            "AARP",
+            "MERCHANT_LOYALTY_CARD",
+            "GIFT_CARD",
+            "AIRLINE_LOYALTY_CARD",
+            "RENTAL_CAR_LOYALTY_CARD",
+            "HOTEL_LOYALTY_CARD",
+            "MISC_REWARDS_CARD"
+        ]
+    },
+    "EDUCATION" :
+    {
+        "id": 9004,
+        "icons": ["", "Education_icon@2x.png", "Education_icon@3x.png"],
+        "display_name" : "Education",
+        "description" : "Transcripts, Diploma, Certificates",
+        "documents" : [
+            "TRANSCRIPT",
+            "DIPLOMA",
+            "CERTIFICATE",
+            "STUDENT_LOAN_AGREEMENT",
+            "RECOMMENDATION_LETTER"
+        ]
+    },
+    "EMPLOYMENT" :
+    {
+        "id": 9005,
+        "icons": ["", "Employment_icon@2x.png", "Employment_icon@3x.png"],
+        "display_name" : "Employment",
+        "description" : "Paystubs, Employment Papers, Stock Certificate",
+        "documents" : [
+            "RESUME",
+            "PAYSTUBS",
+            "EMPLOYER_ID_CARD",
+            "EXPENSE_REPORTS",            
+            "EMPLOYMENT_OFFER_LETTER",
+            "EMPLOYMENT_PROOF_LETTER",
+            "EMPLOYMENT_JOB_DUTIES_LETTER",
+            "STOCK_CERTIFICATE",
+            "STOCK_OPTIONS_PLAN",
+            "NON_DISCLOSURE_AGREEMENT",
+            "INTELLECTUAL_PROPERTY_ASSIGNMENT_AGREEMENT",
+            "NON_COMPETE_AGREEMENT",
+            "EMPLOYMENT_CONTRACT",
+            "TIMESHEET",
+            "I9_FORM",
+            "EMPLOYEE_PERFORMANCE_REVIEW",
+            "TERMINATION_LETTER"
+        ]
+    },
+    "FINANCIAL" :
+    {
+        "id": 9006,
+        "icons": ["", "Financial_icon@2x.png", "Financial_icon@3x.png"],
+        "display_name" : "Financial",
+        "description" : "Credit Cards, Debit Cards, Broker Info",
+        "documents" : [
+            "CREDIT_CARD",
+            "DEBIT_CARD",
+            "CHECK_COPIES",
+            "BANK_STATEMENT",
+            "CREDIT_CARD_STATEMENT",
+            "PERSONAL_LOAN_AGREEMENT",
+            "SAFE_DEPOSIT_BOX_INFO",
+            "CREDIT_REPORT",
+            "FINANCIAL_RECEIPT",
+            "401K_ROLLOVER_RECEIPT"
+        ]
+    },
+    "HOME" :
+    {
+        "id": 9007,
+        "icons": ["", "Home_icon@2x.png", "Home_icon@3x.png"],
+        "display_name" : "Home",
+        "description" : "Mortgage, Insurance, Product Manuals",
+        "documents" : [
+            "MORTGAGE_AGREEMENT",
+            "RENTERS_AGREEMENT",
+            "MORTGAGE_MONTHLY_STATEMENT",
+            "HOME_DEED",
+            "CLOSING_STATEMENT",
+            "PROMISSORY_NOTE",
+            "TRUTH_IN_LENDING_STATEMENT",
+            "DEED_OF_TRUST_DOCUMENT",
+            "LEASE_CONTRACT",
+            "HOME_INSURANCE",
+            "FLOOD_INSURANCE",
+            "EARTHQUAKE_INSURANCE",
+            "HURRICANE_INSURANCE",
+            "MORTGAGE_INSURANCE",
+            "BANKRUPTCY_DISCHARGE_DOCUMENT",
+            "PRODUCT_MANUAL"
+        ]
+    },
+    "INSURANCE" :
+    {
+        "id": 9008,
+        "icons": ["", "Insurance_icon@2x.png", "Insurance_icon@3x.png"],
+        "display_name" : "Insurance",
+        "description" : "Medical & Dental IDs, Life Insurance",
+        "documents" : [
+            "MEDICAL_INSURANCE_CARD",
+            "DENTAL_INSURANCE_CARD",
+            "AUTO_INSURANCE_CARD",
+            "MEDICAL_INSURANCE_STATEMENT",
+            "DENTAL_INSURANCE_STATEMENT",
+            "EVIDENCE_OF_COVERAGE",
+            "MEDICAL_INSURANCE_CLAIM",
+            "DENTAL_INSURANCE_CLAIM",
+            "HEALTH_FSA_CLAIM",
+            "CHILDCARE_FSA_CLAIM",
+            "VISION_INSURANCE_CARD",
+            "LIFE_INSURANCE_DOCUMENT",
+            "ACCIDENTAL_DEATH_INSURANCE_DOCUMENT"
+        ]
+    },
+    "LIFE EVENTS" :
+    {
+        "id": 9009,
+        "icons": ["", "Life_icon@2x.png", "Life_icon@3x.png"],
+        "display_name" : "Life Events",
+        "description" : "Will, Birth & Marriage Certificates",
+        "show" : false,
+        "documents" : [
+            "MARRIAGE_CERTIFICATE",
+            "BIRTH_CERTIFICATE",
+            "WILL_DOCUMENT",
+            "POWER_OF_ATTORNEY",
+            "REVOCABLE_LIVING_TRUST_DOCUMENT",
+            "DEATH_CERTIFICATE",
+            "DIVORCE_CERTIFICATE"
+        ]
+    },
+    "MEDICAL" :
+    {
+        "id": 9010,
+        "icons": ["", "Medical_icon@2x.png", "Medical_icon@3x.png"],
+        "display_name" : "Medical",
+        "description" : "Medical/Dental Records, Immunization Card",
+        "documents" : [
+            "IMMUNIZATION_RECORD",
+            "MEDICAL_VISIT_RECORD",
+            "DENTAL_VISIT_RECORD",
+            "PRESCRIPTION",
+            "PHARMACY_CARD",
+            "ORGAN_DONOR_INFO",
+            "DOCTOR_ILLNESS_CERTIFICATE",
+            "EYE_VISION_INFO"
+        ]
+    },
+    "INDIVIDUAL - TAXES" :
+    {
+        "id": 9013,
+        "icons": ["", "Individual_Tax_icon@2x.png", "Individual_Tax_icon@3x.png"],
+        "display_name" : "Taxes - Individual",
+        "description" : "Individual Tax Returns & Documents",
+        "documents" : [
+            "FEDERAL_TAX_RETURN_1040",
+            "STATE_TAX_RETURN",
+            "W2",
+            "W4",
+            "W9",
+            "1098_MORTGAGE_INTEREST_STATEMENT",
+            "STATE_TAX_WITHOLDING_FORM",
+            "FBAR/FATCA",
+            "1099_INT",
+            "1099_DIV",
+            "1099_B",
+            "1099_MISC",
+            "PROPERTY_TAX_FORM",
+            "8879",
+            "3582"
+        ]
+    },
+    "PET" :
+    {
+        "id": 9022,
+        "icons": ["", "Pet_icon@2x.png", "Pet_icon@3x.png"],
+        "display_name" : "Pet",
+        "description" : "Pet Purchase, Vet Inspection, Vaccinations",
+        "show" : false,
+        "documents" : [
+            "PET_PURCHASE",
+            "PET_INSPECTION",
+            "VACCINATIONS"
+        ]
+        
+    },
+    "TRAVEL" :
+    {
+        "id": 9015,
+        "icons": ["", "Travel_icon@2x.png", "Travel_icon@3x.png"],
+        "display_name" : "Travel",
+        "description" : "Reservations, Itineraries, Tickets",
+        "show" : false,
+        "documents" : [
+            "ITINERARY",
+            "HOTEL_RES",
+            "RESTAURANT_RES",            
+            "EVENT_TICKET",
+            "TRAVEL_TICKET",
+            "AIRLINE_VOUCHER",
+            "VISA_STAMP"           
+        ]
+    },    
+    "UTILITIES" :
+    {
+        "id": 9016,
+        "icons": ["", "Utilities_icon@2x.png", "Utilities_icon@3x.png"],
+        "display_name" : "Utilities",
+        "description" : "Phone, Internet, Electricity Bills",
+        "show" : false,
+        "documents" : [
+            "CELLPHONE_SERVICE_ACCOUNT",
+            "INTERNET_SERVICE_ACCOUNT",
+            "TRASH_SERVICE_ACCOUNT",
+            "ELECTRICITY_SERVICE_ACCOUNT",
+            "GAS_SERVICE_ACCOUNT",
+            "WATER_SEWAGE_ACCOUNT",
+            "CABLE_DISH_BILL",
+            "SUBSCRIPTION_SERVICES"
+        ]
+    },
+    "IMMIGRATION" :
+    {
+        "id": 9018,
+        "icons": ["", "Immigration_icon@2x.png", "Immigration_icon@3x.png"],
+        "display_name" : "Immigration",
+        "description" : "Visas, Immigration Forms",
+        "show" : false,
+        "documents" : [
+            "VISA_STAMP",
+            "OPT_CARD",
+            "EAD_CARD",
+            "GREEN_CARD",
+            "NATURALIZATION_CERTIFICATE",
+            "I797",
+            "I94",
+            "I20",
+            "I129",
+            "I140",
+            "I485",
+            "I693_IMMIGRATION_MEDICAL_EVALUATION_RECORD"
+        ]
+    },
+    "MISCELLANEOUS" :
+    {
+        "id": 9019,
+        "comment": "The id 9019 for Miscellaneous category is also hard coded in StandardFolder::MISC_FOLDER_ID",
+        "icons": ["", "Misc_icon@2x.png", "Misc_icon@3x.png"],
+        "display_name" : "Miscellaneous",
+        "description" : "Everything Else",
+        "documents" : [
+            "MISC_DOCUMENT"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Upload documents</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want to upload <%= I18n.t('clients.documents.counter', { count: @files.length }) %> for <%= @objectName %>?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id='cancel-upload' class="cancel-link cancel modal-link-btn">Cancel</button>
+        <button type="button" id='confirm-upload' class="main-btn bg-turquise-400">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>

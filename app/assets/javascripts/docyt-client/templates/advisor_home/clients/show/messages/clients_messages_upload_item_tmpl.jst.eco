@@ -1,0 +1,90 @@
+<div class="client__mes-person-card clearfix message-item">
+  <div class="client__mes-person-card-edit">
+    <i class="fa fa-caret-down triangle-item message-triangle-item"></i>
+    <div class="client__mes-menu-bar message-context-menu" style="display: none;">
+      <% if @sender_id == Docyt.currentAdvisor.id: %>
+        <a class="in-pink-400 delete-message"><i class="icon icon-trashcan"></i>Delete message</a>
+      <% else: %>
+        <a class="mark-unread-message">Mark as Unread</a>
+      <% end%>
+    </div>
+  </div>
+
+  <div class="client__mes-avatar-wrapper">
+    <% if @avatarUrl: %>
+      <div class="client__mes-userpic">
+        <img src="<%= @avatarUrl %>" class='header__userpic-img'></img>
+      </div>
+    <% else: %>
+      <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400 avatar-message'></i>
+    <% end %>
+  </div>
+
+  <span class="client__mes-sender-name font-semi-bold"><%= @sender_name %></span>
+  <span class="client__mes-sender-time"><%= @timestamp %></span>
+
+  <div class="client__mes-content">
+    <% if @uploading: %>
+      <p class="client__mes-content-text">Uploading document:</p>
+    <% else: %>
+      <p class="client__mes-content-text">Shared document:</p>
+    <% end %>
+  </div>
+
+  <div class="message-file-upload-wrapper">
+    <a class="message-file-upload-image show-document-js">
+      <% if @uploading: %>
+        <span class='color-icon icon-xls-file file-icon'></span>
+      <% else: %>
+        <% if @previewImage: %>
+          <span>
+            <img class='first-page-icon file-icon'></img>
+          </span>
+        <% else: %>
+          <% if @hasAccessDocument: %>
+            <span class='color-icon icon-xls-file file-icon'></span>
+          <% else: %>
+            <span class='icon icon-lock'></span>
+          <% end %>
+        <% end %>
+      <% end %>
+    </a>
+    <div class="message-file-upload-info">
+      <% if @uploading: %>
+        <p class="message-file-upload-name"><%= @fileName %></p>
+        <p class="message-file-upload-progress progress-upload">0% of <%= @fileSize %> </p>
+        <div class="upload-file-statusbar">
+          <div class="file-status-line" style="width: 0%;"></div>
+        </div>
+      <% else: %>
+        <a class="show-document-js pointer">
+          <p class="message-file-upload-name"><%= @fileName %></p>
+        </a>
+        <p class="message-file-document-info"> <%= @fileInfo %> </p>
+        <div class="message-document-download-progress">
+          <p class="message-document-download-progress-info">0% of <%= @fileSize %> </p>
+          <div class="upload-file-statusbar">
+            <div class="file-status-line" style="width: 0%;"></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="message-file-upload-icon">
+      <% if @uploading: %>
+        <i class="fa fa-times-circle-o cancel-upload"></i>
+      <% else: %>
+        <i class="fa fa-caret-down triangle-item document-triangle-item"></i>
+          <div class="client__mes-menu-bar document-context-menu" style="display: none;">
+            <% if @fileWithoutCategory: %>
+              <a class="save-to-client-documents-js"><i class="icon icon-download"></i> Save to <%= @clientName %>'s documents</a>
+              <a class="save-to-advisor-documents-js"><i class="icon icon-download"></i> Save to my documents</a>
+            <% end %>
+            <% if @sender_id == Docyt.currentAdvisor.id: %>
+              <a class="delete-file in-pink-400"><i class="icon icon-trashcan"></i>Delete file</a>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

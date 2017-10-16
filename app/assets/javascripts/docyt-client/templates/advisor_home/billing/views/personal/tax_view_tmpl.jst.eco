@@ -1,0 +1,51 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Tax ID</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= @phone_normalized%></span>
+      </div>
+      <div aria-controls='collapse-edition-personal-phone' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-phone' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Edit</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-personal-phone-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-personal-phone'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Change your Tax ID</span>
+      </div>
+      <form id='form-personal-phone'>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Tax ID</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @phone_normalized%>' id='input-personal-phone'>
+            </div>
+            <div id='phone-invalid' class='client__setting-form-error'>
+              <span>Please enter correct Tax ID</span>
+            </div>
+            <div id='phone-exists' class='client__setting-form-error'>
+              <span>Tax ID already exists</span>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class='client__settings-edit-field'>
+        <div class='settings-field-name'></div>
+        <div class='settings-field-value-edit'>
+          <div class='settings-save-wrapper'>
+            <input class='settings-save-btn main-btn bg-turquise-400' type='button' value='Save changes' id='submit-personal-phone'>
+            <div aria-controls='collapse-edition-personal-phone' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-phone' data-toggle='collapse'>
+              <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="document-field-item document-field-name"><%= @name %></div>
+
+<div class="document-field-item document-field-value <%= @data_type %>">
+  <div class="value-show-wrapper <%= @isEmpty %> visible">
+    <%= @value %>
+  </div>
+
+  <div class="value-edit-wrapper">
+    <textarea class="value-edit-input" type="text"><%= @value %></textarea>
+  </div>
+</div>

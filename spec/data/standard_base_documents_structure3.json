@@ -1,0 +1,53 @@
+{
+    "PERSONAL" :
+    {
+        "id": 9001,
+        "display_name": "Personal",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, Passport, IDs",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "SOCIAL_SECURITY_CARD",
+            "BIRTH_CERTIFICATE"
+        ]
+    },
+    "TRAVEL" :
+    {
+        "id": 9015,
+        "display_name": "Travel",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, EAD Card, Visa etc.",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "EAD_CARD",
+            "VISA_STAMP"
+        ]
+    },
+    "CAR" :
+    {
+        "id": 9002,
+        "display_name": "Car",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Insurance, Title, Loan Documents etc.",
+        "documents" : [
+            "AUTO_INSURANCE_CARD",
+            "CAR_TITLE",
+            "CAR_LOAN_AGREEMENT"
+        ]
+    },
+    "PASSWORD" :
+    {
+        "id": 9023,
+        "icons": ["", "Passwords_icon@2x.png", "Passwords_icon@3x.png"],
+        "comment": "The id 9023 for Passwords category is also hard coded in StandardFolder::PASSWORD_FOLDER_ID",
+        "display_name" : "Passwords",
+        "description" : "Account Numbers, Logins, Passwords",
+        "pages" : false,
+        "documents" : [
+            "BANK_PASSWORD",
+            "CREDIT_CARD_PASSWORD",
+            "INSURANCE_PASSWORD",
+            "UTILITIES_PASSWORD"
+            ]
+    }
+}

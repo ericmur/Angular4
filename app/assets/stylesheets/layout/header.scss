@@ -1,0 +1,305 @@
+$header-gap: 7px;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 35px 24px;
+}
+.header--in {
+  border-bottom: 1px solid $pink-400;
+  padding: $header-gap 24px 0;
+}
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+  margin-bottom: $header-gap;
+}
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: 300;
+  color: $pink-400;
+  margin-bottom: $header-gap;
+}
+.header__nav-items {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: $brown-700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 28px;
+  padding: 11px 22px;
+  margin-bottom: $header-gap;
+  margin-right: $header-gap;
+}
+.header__nav-item:hover,
+.header__nav-item--active {
+  box-shadow: 0 0 0px 1px $pink-400;
+}
+.header__notifications {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #4D484A;
+  background-color: $grey-300;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out 0s;
+}
+.header__item-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-bottom: $header-gap;
+  &.active-dropdown {
+    .header__userpic {
+      box-shadow: 0 0 0 2px $pink-400;
+    }
+    .header__dropdown-menu-wrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+    .header__notifications {
+      background-color: $pink-400;
+      color: white;
+    }
+  }
+  &:hover {
+    .header__notifications {
+      background-color: $pink-400;
+      color: white;
+    }
+    .header__userpic {
+      box-shadow: 0 0 0 2px $pink-400;
+    }
+  }
+}
+.header__userpic {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out 0s;
+  .client__nav-client-info-img-icon {
+    font-size: 39px;
+  }
+}
+.header__userpic-img {
+  height: inherit;
+}
+.header__dropdown-menu-wrapper {
+  position: absolute;
+  top: 100%;
+  right: -10px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 120;
+  background-color: white;
+  border-radius: 3px;
+  transition: opacity 0.1s ease-in-out 0s;
+  white-space: nowrap;
+  box-shadow: 0 -2px 10px 1px grey;
+  padding: 2px;
+  &:before {
+    border-color: transparent transparent white;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+  }
+}
+.header__dropdown-menu {
+  a,
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 15px;
+    line-height: 40px;
+    color: $brown-700;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      background-color: $grey-300;
+    }
+    .icon {
+      font-size: 22px;
+      margin-right: 7px;
+      vertical-align: sub;
+    }
+  }
+  .header__dropdown-workspace-wrap {
+    border-bottom: 1px solid rgba($brown-700, .3);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .selected {
+    background-color: $grey-300;
+  }
+  .icon-billing {
+    display: inline-block;
+    height: 23px;
+    width: 24px;
+    background-image: url(asset_path('icons/billing-icon.png'));
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.header__dropdown-image-wrapper {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  text-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.header__dropdown-workspace {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__dropdown-workspace-name {
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.header__dropdown-company-name {
+  font-size: 12px;
+  opacity: .6;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.header__notifications-content {
+  margin: 0 12px 14px;
+  width: 430px;
+}
+.header__notifications-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 -1px 3px 0px grey;
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  &:hover {
+    background-color: $grey-300;
+    transform: scale(1.04);
+    transition: all 0.1s ease-in-out 0s;
+  }
+  .header__notifications-item-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+}
+.header__notifications-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $grey-100;
+  box-shadow: 0 0 5px 0 grey;
+  line-height: 40px;
+  text-align: center;
+  overflow: hidden;
+  img {
+    vertical-align: middle;
+  }
+}
+.header__notifications-message {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  vertical-align: middle;
+  margin-right: 30px;
+  width: 260px;
+  overflow: hidden;
+  &.new {
+    font-weight: 600;
+  }
+}
+.header__notifications-message-about {
+  color: $brown-700;
+  line-height: 18px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header__notifications-message-whom {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0;
+}
+.header__notifications-date {
+  align-self: center;
+  -webkit-align-self: center;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  color: $grey-750;
+}
+.header__notifications-empty {
+  height: 60px;
+  text-align: center;
+}
+.header__notifications-empty-text {
+  font-size: 20px;
+  line-height: 60px;
+  color: $grey-500;
+}
+.header__notifications-spinner {
+  text-align: center;
+  height: 60px;
+  color: $grey-750;
+}
+.fa-pulse {
+  animation: 1s steps(8) 0s normal none infinite running fa-spin;
+}
+.new-notifications {
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $blue-800;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    content: attr(data-notifications);
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+}

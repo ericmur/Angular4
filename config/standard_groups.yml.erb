@@ -1,0 +1,16 @@
+#List of default groups for the user
+#########
+# Please ensure to check group_user.rb#has_relationship? method when you edit this
+# file.
+#########
+
+groups:
+  list: ['Family']
+  content: 
+    Family:
+      labels:
+        "INDIVIDUAL": [<%= GroupUser::SPOUSE %>, <%= GroupUser::KID %>, 'Dad', 'Mom', 'Friend', 'Employee', 'Contractor', 'Co-worker', 'Brother', 'Sister', 'Grandfather', 'Grandma']
+        "BUSINESS" : [<%= GroupUser::SPOUSE %>, <%= GroupUser::KID %>, 'Dad', 'Mom', 'Friend', 'Employee', 'Contractor', 'Co-worker', 'Brother', 'Sister', 'Grandfather', 'Grandma']
+      flat_structure:
+        "Employee": ["DRIVERS_LICENSE", "SOCIAL_SECURITY_CARD", "PAYSTUBS", "EMPLOYMENT_OFFER_LETTER", "I9_FORM", "W2", "EMPLOYEE_PERFORMANCE_REVIEW", "TIMESHEET", "EXPENSE_REPORTS", "EMPLOYMENT_CONTRACT", "STOCK_OPTIONS_PLAN"]
+        "Contractor": ["DRIVERS_LICENSE", "SOCIAL_SECURITY_CARD", "Federal EIN#", "CHECK_COPIES", "1099_MISC"]

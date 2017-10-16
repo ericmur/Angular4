@@ -1,0 +1,22 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {   "appID": "2HZE63473H.docyt.Docyt",
+                "paths": [ "/invite/*" ]
+            },
+            {   "appID": "2HZE63473H.docyt.DocytPreproduction",
+                "paths": [ "/invite/*" ]
+            },
+            {   "appID": "2HZE63473H.docytStagingDebug.Docyt",
+                "paths": [ "/invite/*" ]
+            },
+            {   "appID": "2HZE63473H.docytStaging2.Docyt",
+                "paths": [ "/invite/*" ]
+            },
+            {   "appID": "2HZE63473H.docytDevelopment.Docyt",
+                "paths": [ "/invite/*" ]
+            }
+        ]
+    }
+}

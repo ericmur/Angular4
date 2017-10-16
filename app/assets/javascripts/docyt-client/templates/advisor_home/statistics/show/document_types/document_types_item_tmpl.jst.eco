@@ -1,0 +1,19 @@
+<div class='document__types-cell'>
+  <span class="clients__client-name-text"><%= @standard_folder_name %> / <%= @name %></span>
+</div>
+
+<div class='document__types-cell'>
+  <% if @consumer_id: %>
+    <span class="clients__client-name-text">Created by user</span>
+  <% else: %>
+    <span class="clients__client-name-text">Created by system</span>
+  <% end %>
+</div>
+
+<div class='document__types-cell text-right'>
+  <% if @documents_count > 0: %>
+    <a href="#" class="documents-count-js clients__client-action"><%= @documents_count %> Documents count</a>
+  <% else: %>
+    <span class="clients__client-action disabled"><%= @documents_count %> Documents count</span>
+  <% end %>
+</div>

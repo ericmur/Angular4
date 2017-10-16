@@ -1,0 +1,16 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Remove document</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to proceed and delete this document?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id='confirm-remove' class="cancel-link cancel modal-link-btn">Proceed</button>
+        <button type="button" id='cancel-remove' class="main-btn bg-turquise-400">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

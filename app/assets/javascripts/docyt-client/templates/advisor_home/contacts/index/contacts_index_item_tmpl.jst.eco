@@ -1,0 +1,50 @@
+<div class="clients__client pointer add-contact-js">
+  <div class='clients__client-status clients__client-cell'>
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class='clients__client-status-icon icon icon-smile in-orange-500'></i>
+    <% end %>
+  </div>
+  <div class='clients__client-name clients__client-cell'>
+    <span class='contacts__contact-name-text'>
+      <%= @parsed_fullname %>
+    </span>
+  </div>
+  <div class='clients__client-extras clients__client-cell in-red-400 hidden'>
+    <span class='contacts__exp-documents documents-text'><i class="icon icon-clock"></i> 1 Document Expiring</span>
+  </div>
+    <div class='clients__client-right clients__client-cell'>
+      <% if @isConnected: %>
+        <a class='clients__client-action documents-text' href="<%= @messagesUrl %>" >
+          <%= I18n.t('clients.messages.counter', { count: @unread_messages_count }) %>
+          <i class='clients__client-action-icon icon icon-comments'></i>
+        </a>
+        <a class='clients__client-action documents-text' href="<%= @documentsUrl %>" >
+          <%= I18n.t('clients.documents.counter', { count: @all_documents_count }) %>
+          <i class='clients__client-action-icon icon icon-files'></i>
+        </a>
+      <% end %>
+      <% unless @isDefault: %>
+        <a class="link-detail" href="<%= @detailsUrl %>"></a>
+      <% end %>
+    </div>
+  <% unless @isConnected: %>
+    <div class='clients__client-right clients__client-cell'>
+      <% if @hasInvite: %>
+        <span class="contacts__contact-invited-ago invitation-info-js">
+          <i class="icon icon-hourglass"></i><%= @invitationInfoText %>
+        </span>
+        <button class="main-rounded-btn resend-invite-btn invitation-btn-js">
+          <%= @invitationBtnText %>
+        </button>
+      <% else if !@isDefault: %>
+        <button class="main-rounded-btn resend-invite-btn invitation-btn-js">
+          <i class="icon icon-mail"></i><%= @invitationBtnText %>
+        </button>
+      <% end %>
+    </div>
+  <% end %>
+</div>

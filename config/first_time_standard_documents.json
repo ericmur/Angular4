@@ -1,0 +1,14 @@
+{
+    "INDIVIDUAL" : [
+        "DRIVERS_LICENSE",
+        "AUTO_INSURANCE_CARD",
+        "MEDICAL_INSURANCE_CARD",
+        "CREDIT_CARD"
+    ],
+    "BUSINESS" : [
+        "DRIVERS_LICENSE",
+        "AUTO_INSURANCE_CARD",
+        "MEDICAL_INSURANCE_CARD",
+        "CREDIT_CARD"
+    ]
+}

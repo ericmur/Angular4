@@ -1,0 +1,18 @@
+<div class="clients__search-wrapper">
+  <i class='clients__search-icon icon icon-search'></i>
+  <input class='clients__search-input' placeholder='Find by Name, Email, Phone' type='text'>
+  <span class="clients__search-clear icon-search-clear hidden">
+    <span class="path1"></span>
+    <span class="path2"></span>
+  </span>
+</div>
+<div class='clients__actions'>
+  <a class='clients__action main-rounded-btn' id='add-client'>
+    <i class='clients__action-icon icon icon-plus font-14'></i>
+    <span class='clients__action-text'>Add</span>
+  </a>
+  <a class='clients__action main-rounded-btn'>
+    <i class='clients__action-icon icon icon-mail font-14'></i>
+    <span class='clients__action-text'>Invite</span>
+  </a>
+</div>

@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+      asset-url('icomoon.ttf') format('truetype'),
+      asset-url('icomoon.woff') format('woff'),
+      asset-url('icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icon-pencil: "\e900";
+$icon-sound: "\e901";
+$icon-play: "\e902";
+$icon-facebook: "\e90e";
+$icon-linkedin: "\e90f";
+$icon-twitter: "\e910";
+$icon-smile: "\e903";
+$icon-comments: "\e904";
+$icon-files: "\e905";
+$icon-lists: "\e906";
+$icon-bell: "\e907";
+$icon-bulb: "\e908";
+$icon-clock: "\e909";
+$icon-hourglass: "\e90a";
+$icon-mail: "\e90b";
+$icon-plus: "\e90c";
+$icon-search: "\e90d";
+$icon-document: "\e91d";
+$icon-bigger: "\e911";
+$icon-dots: "\e912";
+$icon-grid-lg: "\e913";
+$icon-grid-list: "\e914";
+$icon-info: "\e915";
+$icon-magic-wand: "\e916";
+$icon-message: "\e917";
+$icon-trashcan: "\e918";
+$icon-check: "\e919";
+$icon-envelope: "\e91a";
+$icon-content: "\e91b";
+$icon-doc-box: "\e91c";
+$icon-booth: "\e91e";
+$icon-business: "\e91f";
+$icon-creditcard: "\e920";
+$icon-handout: "\e921";
+$icon-notepad: "\e922";
+$icon-personal: "\e923";
+$icon-user: "\e924";
+$icon-download: "\e001";
+$icon-edit: "\e002";
+$icon-upload: "\e927";
+$icon-lock: "\e928";
+$icon-o-plus: "\e929";
+$icon-settings: "\e92a";
+
+.icon-pencil:before {
+  content: "\e900";
+}
+.icon-sound:before {
+  content: "\e901";
+}
+.icon-play:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-linkedin:before {
+  content: "\e90f";
+}
+.icon-twitter:before {
+  content: "\e910";
+}
+.icon-smile:before {
+  content: "\e903";
+}
+.icon-booth:before {
+  content: "\e91e";
+}
+.icon-business:before {
+  content: "\e91f";
+}
+.icon-creditcard:before {
+  content: "\e920";
+}
+.icon-handout:before {
+  content: "\e921";
+}
+.icon-notepad:before {
+  content: "\e922";
+}
+.icon-personal:before {
+  content: "\e923";
+}
+.icon-user:before {
+  content: "\e924";
+}
+.icon-doc-box:before {
+  content: "\e91c";
+}
+.icon-content:before {
+  content: "\e91b";
+}
+.icon-check:before {
+  content: "\e919";
+}
+.icon-envelope:before {
+  content: "\e91a";
+}
+.icon-comments:before {
+  content: "\e904";
+}
+.icon-files:before {
+  content: "\e905";
+}
+.icon-lists:before {
+  content: "\e906";
+}
+.icon-bell:before {
+  content: "\e907";
+}
+.icon-bulb:before {
+  content: "\e908";
+}
+.icon-clock:before {
+  content: "\e909";
+}
+.icon-hourglass:before {
+  content: "\e90a";
+}
+.icon-mail:before {
+  content: "\e90b";
+}
+.icon-plus:before {
+  content: "\e90c";
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-bigger:before {
+  content: "\e911";
+}
+.icon-dots:before {
+  content: "\e912";
+}
+.icon-grid-lg:before {
+  content: "\e913";
+}
+.icon-grid-list:before {
+  content: "\e914";
+}
+.icon-info:before {
+  content: "\e915";
+}
+.icon-magic-wand:before {
+  content: "\e916";
+}
+.icon-message:before {
+  content: "\e917";
+}
+.icon-trashcan:before {
+  content: "\e918";
+}
+.icon-document:before {
+  content: "\e91d";
+}
+.icon-search-clear .path1:before {
+  content: "\e925";
+  color: rgb(232, 236, 237);
+}
+.icon-search-clear .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-Row_Collapse_Icon .path1:before {
+  content: "\e96f";
+  color: rgb(255, 255, 255);
+  opacity: 0.4994;
+}
+.icon-Row_Collapse_Icon .path2:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: rgb(4, 199, 217);
+}
+.icon-download:before {
+  content: "\e001";
+}
+.icon-edit:before {
+  content: "\e002";
+}
+.icon-upload:before {
+  content: "\e927";
+}
+.icon-lock:before {
+  content: "\e928";
+}
+.icon-o-plus:before {
+  content: "\e929";
+}
+.icon-settings:before {
+  content: "\e92a";
+}
+.icon-chat-round:before {
+  content: "\e92b";
+}
+.icon-cloud:before {
+  content: "\e92c";
+}
+.icon-signout:before {
+  content: "\e92d";
+}

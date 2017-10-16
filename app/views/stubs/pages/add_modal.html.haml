@@ -1,0 +1,35 @@
+.modal.fade.in
+  .modal-dialog
+    .modal-content
+      .modal-add-client
+        .modal-header
+          %button.close(type="button")
+            %span &times;
+          %h4.modal-title Add Client
+        .modal-body
+          .main-input__wrap
+            .relative
+              %i.login-form__input-icon.icn.icn-user
+              %input.login-form__input.main-input(type="text" placeholder="First Name  Middle  Last")
+            %p.main-input__hint.in-red-400 Please enter your name
+          .main-input__wrap
+            .relative
+              %i.clients__action-icon.icon.icon-envelope.font-14
+              %input.login-form__input.main-input(type="email" placeholder="Email")
+            %p.main-input__hint.in-red-400
+              Please enter correct email
+          .main-input__wrap
+            .relative
+              %i.login-form__input-icon.icn.icn-phone
+              %input.login-form__input.main-input(type="tel" placeholder="Cell Phone")
+            %p.main-input__hint.in-red-400
+              Phone number is incorrect
+          .main-input__wrap
+            .relative
+              %input#by-text.invite-mode(type="checkbox")
+              %label(for="by-text") Invite by Text
+              %input#by-email.invite-mode(type="checkbox")
+              %label(for="by-email") Invite by Email
+        .modal-footer
+          %a.cancel-link(href="#") Cancel
+          %button.main-btn.bg-turquise-400(type="button") Add

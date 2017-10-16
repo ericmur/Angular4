@@ -1,0 +1,4 @@
+<div class="clearfix">
+  <h1 class="workflow__main-title pull-left"><%= @workflowName %></h1>
+  <span class="workflow-settings pull-right"><i class="icon icon-settings"></i></span>
+</div>

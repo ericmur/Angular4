@@ -1,0 +1,15 @@
+<div class="mobile-confirm-main-container">
+  <span class="login-form__switch-item">Enter your Docyt app mobile PIN</span>
+  <div class="mobile-confirm-code-wrapper">
+    <input type="text" class="pincode-input-js">
+    <p class='main-input__hint in-red-400 invalid-pin-code-js'>
+      Please enter only 6 numbers
+    </p>
+    <p class='main-input__hint in-red-400 incorrect-pin-code-js'>
+      PIN code is incorrect
+    </p>
+    <div class="mobile-confirm-submit-wrapper text-right">
+      <button class="main-btn bg-turquise-400 submit-js">Continue</button>
+    </div>
+  </div>
+</div>

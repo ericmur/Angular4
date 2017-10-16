@@ -1,0 +1,49 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-set-info-workflow'>
+        <div class='modal-header'>
+          <button class='close cancel-js' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Workflow Information</h4>
+          <p class="modal-description text-center">Step 2/4</p>
+        </div>
+        <div class='modal-body'>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <label class="form-inline-label">Name</label>
+              <input class='login-form__input main-input name-input-js' placeholder='Workflow Name' type='text' value="<%= @workflowName %>">
+            </div>
+            <p class='main-input__hint in-red-400 name-invalid'>
+              Please enter a correct name
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <label class="form-inline-label">Purpose</label>
+              <input class='login-form__input main-input purpose-input-js' placeholder='Workflow purpose' type='text' value="<%= @workflowPurpose %>">
+            </div>
+            <p class='main-input__hint in-red-400 purpose-invalid'>
+              Please enter a correct purpose
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <label class="form-inline-label">Deadline</label>
+              <input class='login-form__input main-input end-date-input-js' placeholder='Workflow end date' type='text'>
+            </div>
+            <p class='main-input__hint in-red-400 end-date-invalid'>
+              Please select end date
+            </p>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel-js settings-cancel-btn'>Cancel</a>
+          <a class='back-link back-js settings-cancel-btn'>Back</a>
+          <button class='main-btn bg-turquise-400 submit-js' type='button'>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

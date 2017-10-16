@@ -1,0 +1,107 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Payment Method</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span>xxxx xxxx xxxx</span>
+      </div>
+      <div aria-controls='collapse-edition-card-info' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-card-info' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Edit</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-card-info-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-card-info'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Update Payment Method</span>
+      </div>
+      <form id='form-personal-name'>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Credit Card Number</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value for-billing-setting'>
+              <div id="card-element">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span></span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <div id="card-errors">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Cardholder Name</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].holder_name if @credit_cards[0]? %>' id='input-personal-name' placeholder="Your Name">
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Company</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].company if @credit_cards[0]? %>' id='input-company-name' placeholder="Company Name">
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Billing Address</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].bill_address if @credit_cards[0]? %>' id='input-bill-address' placeholder="Street">
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].city if @credit_cards[0]? %>' id='input-personal-city' placeholder="City">
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].state if @credit_cards[0]? %>' id='input-personal-state' placeholder="State">
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].zip if @credit_cards[0]? %>' id='input-personal-zip' placeholder="ZIP">
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @credit_cards[0].country if @credit_cards[0]? %>' id='input-personal-country' placeholder="Country">
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'></div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-save-wrapper'>
+              <input class='settings-save-btn main-btn bg-turquise-400' type='submit' value='Save changes' id='submit-personal-name'>
+              <div aria-controls='collapse-edition-card-info' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-card-info' data-toggle='collapse'>
+                <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

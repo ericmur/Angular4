@@ -1,0 +1,26 @@
+<div class='modal fade in modal-attached-files'>
+  <div class='modal-dialog' style='width: 810px;'>
+    <div class='modal-content'>
+      <div class='custom-modal'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Assign to client</h4>
+          <div class='uploaded-files-count'>
+            <span><%= I18n.t('clients.documents.counter', { count: @documentsSelected }) %> selected</span>
+          </div>
+        </div>
+        <div class='modal-body'>
+          <div class='docs-table-wrapper'>
+            <table class='docs-table block-table'></table>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='modal-link-btn cancel-link cancel'>Cancel</a>
+          <button class='main-btn bg-turquise-400 save' type='button'>Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

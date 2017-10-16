@@ -1,0 +1,5 @@
+<td class='client__docs-cell client__docs-li-title'>
+  <p class='client__docs-li-text-document-field'>
+    <%= @full_name %>
+  </p>
+</td>

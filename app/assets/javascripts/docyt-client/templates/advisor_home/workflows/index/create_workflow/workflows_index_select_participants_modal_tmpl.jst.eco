@@ -1,0 +1,33 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-add-participants'>
+        <div class='modal-header'>
+          <button class='close cancel-js' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Select Participants</h4>
+          <p class="modal-description text-center">Step 3/4</p>
+        </div>
+        <div class='modal-body'>
+          <div class="modal-participants">
+          </div>
+          <div class="modal-participants-find-wrapper text-center">
+            <select class="modal-participants-find clients-search-input-js"></select>
+            <p class='main-input__hint in-red-400 clients-not-found-js'>
+              Clients with the same name or the email is not found
+            </p>
+          </div>
+          <p class='main-input__hint in-red-400 participants-not-added-js'>
+            No participants were added
+          </p>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel-js settings-cancel-btn'>Cancel</a>
+          <a class='back-link back-js settings-cancel-btn'>Back</a>
+          <button class='main-btn bg-turquise-400 submit-js' type='button'>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

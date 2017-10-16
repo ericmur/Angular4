@@ -1,0 +1,24 @@
+{
+    "PERSONAL" :
+    {
+        "display_name": "Personal",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, Passport, IDs",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "SOCIAL_SECURITY_CARD",
+            "BIRTH_CERTIFICATE"
+        ]
+    },
+    "TRAVEL" :
+    {
+        "display_name": "Travel",
+        "icons": ["", "Identity_icon@2x.png", "Identity_icon@3x.png"],
+        "description" : "Driver’s License, EAD Card, Visa etc.",
+        "documents" : [
+            "DRIVERS_LICENSE",
+            "EAD_CARD",
+            "VISA_STAMP"
+        ]
+    }
+}

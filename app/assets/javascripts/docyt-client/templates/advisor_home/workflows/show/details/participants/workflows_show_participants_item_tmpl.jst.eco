@@ -1,0 +1,13 @@
+<div class="progress-radial progress-25">
+  <div class="overlay">
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class="icon icon-smile"></i>
+    <% end %>
+  </div>
+</div>
+<p class="workflow-participant-name"><%= @participantName %></p>
+<p class="workflow-participant-remains in-turquise-400">3 docs remaining</p>

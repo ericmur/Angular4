@@ -1,0 +1,15 @@
+<div class='upload-file-item'>
+  <div class='upload-file-name-icon'>
+    <span id="file-icon" class='color-icon icon-xls-file'></span>
+    <span class='upload-file-name'><%= @original_file_name %></span>
+  </div>
+  <div class='category-size-wrapper'>
+    <p class='upload-file-size'><%= @fileSize %></p>
+  </div>
+  <div class='upload-file-status'>
+    <span class='color-icon icon-verified'></span>
+    <div class='upload-file-statusbar'>
+      <div class='file-status-line' style='width:0%'></div>
+    </div>
+  </div>
+</div>

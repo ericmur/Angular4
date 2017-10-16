@@ -1,0 +1,14 @@
+<div class="client__mes-panel-group">
+  <div class="panel client__mes-panel">
+    <div class="client__mes-panel-heading" id="heading<%= @uniqId %>">
+      <div class="client__mes-panel-title" data-toggle="collapse" data-target="#collapse<%= @uniqId %>" aria-controls="collapse<%= @uniqId %>" aria-expanded="true">
+        <%= @monthGroup %>
+      </div>
+    </div>
+    <div class="collapse in" id="collapse<%= @uniqId %>" aria-labelledby="heading<%= @uniqId %>" aria-expanded="true">
+      <div class="client__mes-panel-body">
+
+      </div>
+    </div>
+  </div>
+</div>

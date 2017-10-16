@@ -1,0 +1,15 @@
+var configData = {} ;
+configData.env = "<%= Rails.env %>";
+configData.fayeHost = "<%= Rails.application.config_for(:settings)['faye_host'] %>";
+configData.cognitoRegion = "<%= ENV['AWS_COGNITO_REGION'] %>";
+configData.cognitoPoolId = "<%= ENV['AWS_COGNITO_POOL_ID'] %>";
+configData.bucketName = "<%= ENV['DEFAULT_BUCKET'] %>";
+configData.bucketRegion = "<%= ENV['AWS_REGION'] %>";
+configData.encryptionAlgorithm = "AES256";
+configData.miscCategory = "<%= StandardFolder::MISC_FOLDER_ID %>";
+configData.passwordCategory = "<%= StandardFolder::PASSWORD_FOLDER_ID %>";
+configData.freeFamilyAccountTypeId = <%= ConsumerAccountType::FREE_FOREVER %>;
+configData.paidFamilyAccountTypeId = <%= ConsumerAccountType::INDIVIDUAL %>;
+configData.businessAccountTypeId = <%= ConsumerAccountType::BUSINESS %>;
+
+configData.stripePublishableKey = "<%= Rails.configuration.stripe[:publishable_key]  %>";

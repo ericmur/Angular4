@@ -1,0 +1,27 @@
+.custom-checkbox {
+  display: flex;
+  cursor: pointer;
+}
+.custom-checkbox__icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.custom-checkbox__icon.icn-circle-check {
+  display: none;
+}
+.custom-checkbox__input:checked {
+  ~ .custom-checkbox__icon.icn-circle-check {
+    display: inline-block;
+  }
+  + .custom-checkbox__icon.icn-circle {
+    display: none;
+  }
+}
+.custom-checkbox__text {
+  display: inline-block;
+  align-self: center;
+  font-size: 14px;
+  color: $grey-500;
+  margin-bottom: 10px;
+}

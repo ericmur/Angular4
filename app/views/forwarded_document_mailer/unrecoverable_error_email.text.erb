@@ -1,0 +1,11 @@
+Hi <%= @recipient %>,
+
+<% if @standard_document_name.present? %>
+It looks like you sent us a password protected pdf for <%= @standard_document_name %>.
+<% else %>
+It looks like you sent us a password protected pdf.
+<% end %>
+We do not support password protected pdfs at the moment. Please send us a note at support@docyt.com if you need help to upload this document.
+
+Thank you,
+Team Docyt

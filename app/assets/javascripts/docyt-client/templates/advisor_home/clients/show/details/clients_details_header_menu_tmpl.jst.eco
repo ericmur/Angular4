@@ -1,0 +1,33 @@
+<div class='client-detail-photos'>
+  <% if @avatarUrl: %>
+    <div class='client-detail-image'>
+      <img src="<%= @avatarUrl %>" class='header__userpic-img'>
+    </div>
+  <% else: %>
+    <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400'></i>
+  <% end %>
+  <div class='client-family-members-wrapper'>
+    <div id='family-members-region' class='client-family-images clearfix'>
+    <% if @group_users: %>
+      <% for user in @group_users: %>
+        <div class='client-family-image'>
+          <% if user.avatar: %>
+            <img src="<%= @groupUserAvatarUrl(user) %>">
+          <% else: %>
+            <i class='icon icon-smile'></i>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+    </div>
+    <div class='client-family-count'>
+      <p><%= @groupUsersCountText %></p>
+    </div>
+  </div>
+  <% unless @isConnected: %>
+    <div class="force-right">
+      <button class='main-btn bg-turquise-400' id='invite-client' type='button'><%= @inviteButtonTextContent %></button>
+      <span id="invited-text"></span>
+    </div>
+  <% end %>
+</div>

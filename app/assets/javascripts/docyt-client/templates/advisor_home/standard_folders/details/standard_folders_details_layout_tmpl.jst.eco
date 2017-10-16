@@ -1,0 +1,9 @@
+<div id='category-details-header-region'></div>
+<div id='category-details-container' class="category-details-container">
+  <div class="empty-search-wrap">
+    <div class="empty-search-icon-wrap">
+      <i class="icon icon-search"></i>
+    </div>
+    <p class="empty-search-text">Search Above<br>or Select a Category from left</p>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class='clients-drop-zone' id="client-documents-drop-zone">
+  <div id='client-side-menu-region' class='client__nav'></div>
+  <div id="client-main-pane" class="client-main-pane">
+    <div id='client-header-menu-region'></div>
+    <div id='client-details-region' class="client-details-region"></div>
+    <div id="client-categories-boxes-region" class="hor-padding"></div>
+    <div id='client-details-contacts-region' class="hor-padding"></div>
+  </div>
+  <div id="client-document-right-side-region" class="client-document-right-side-region"></div>
+</div>

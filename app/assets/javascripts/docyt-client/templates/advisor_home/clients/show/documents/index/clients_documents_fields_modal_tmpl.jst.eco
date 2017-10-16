@@ -1,0 +1,22 @@
+<div class='modal fade in'>
+  <div class='modal-dialog modal-document-fields'>
+    <div class='modal-content'>
+      <div>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'><%= @categoryName %></h4>
+        </div>
+        <div class='modal-body'>
+          <div class='docs-table-wrapper'>
+            <table class='docs-table block-table'></table>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <button class='main-btn bg-turquise-400 cancel' type='button'>Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-add-client'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Add Workflow</h4>
+        </div>
+        <div class='modal-body'>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <i class='login-form__input-icon icn icn-user'></i>
+              <input class='login-form__input main-input' id="name" placeholder='Workflow Name' type='text'>
+            </div>
+            <p class='main-input__hint in-red-400' id="name-invalid">
+              Please enter correct name
+            </p>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel settings-cancel-btn'>Cancel</a>
+          <button class='main-btn bg-turquise-400' id='create-client' type='button'>Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

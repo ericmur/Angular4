@@ -1,0 +1,16 @@
+<span class='clients__table-sort-caption'>
+  View By:
+</span>
+<div class='main-select__wrap inline-block'>
+  <span class='clients__table-sort-toggle main-select__toggle'>
+    <%= @activeSortType %>
+    <i class='icon icon-arrow'></i>
+  </span>
+  <ul class="clients__table-sort-menu main-select__menu">
+    <% for item in @sortTypes: %>
+      <li class="clients__table-sort-menu-item">
+        <%= item %>
+      </li>
+    <% end %>
+  </ul>
+</div>

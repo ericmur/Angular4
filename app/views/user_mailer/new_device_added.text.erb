@@ -1,0 +1,13 @@
+We wanted to notify you that a new device with the device name - '<%= @device.name %>' 
+has been successfully added to your account. In this process, the new device successfully 
+provided a confirmation code sent on your primary phone number.
+
+If you did not add this new device, or believe that your account has been compromised, 
+please immediately take the following steps:
+
+1) Access your account from your primary phone, and update your PIN
+2) Go to Settings > Devices, and remove the newly added device '<%= @device.name %>'
+3) Send an email to <%= @support_email %> to tell us about this issue.
+
+NOTE: This is a system-generated message. Please do not reply to this e-mail.
+For assistance, contact Docyt Support at <%= @support_email %>

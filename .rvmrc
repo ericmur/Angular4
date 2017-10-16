@@ -1,0 +1,2 @@
+rvm use ruby-2.2.4
+rvm gemset use docyt --create

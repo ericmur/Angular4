@@ -1,0 +1,23 @@
+development:
+  status_callback: "http://localhost:3000/twilio_verifications/sms_sent_callback"
+  phone_number: "+14134613835"
+  account_sid: "AC2e91b41e7a84a8146b56d4c4fdbedfcc"
+  auth_token: "d1b9c9e5986cc7b4db64d822bc05b39a"
+  
+test:
+  status_callback: "http://localhost:3000/twilio_verifications/sms_sent_callback"
+  account_sid: "AC008bddb80af75cda5f2c92cf81242434"
+  auth_token: "459aa12c48ca1410e0a20a33631445f9"
+  phone_number: "+15005550006" #Only number that can be used to send with TestCredentials
+  
+staging:
+  status_callback: "http://securestaging.docyt.com/twilio_verifications/sms_sent_callback"
+  phone_number: "+16509037989"
+
+production:
+  status_callback: "http://secure.docyt.com/twilio_verifications/sms_sent_callback"
+  phone_number: "+16509037989"
+
+preproduction:
+  status_callback: "http://securepreproduction.docyt.com/twilio_verifications/sms_sent_callback"
+  phone_number: "+16509037989"

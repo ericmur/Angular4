@@ -1,0 +1,5 @@
+<div id='workflow-side-menu-region' class="workflow_nav"></div>
+<div id="workflow-main-pane" class="workflow-main-pane">
+  <div id='workflow-details-region' class="workflow-details-region"></div>
+</div>
+<div id="workflow-document-right-side-region" class="workflow-document-right-side-region"></div>

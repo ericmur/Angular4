@@ -1,0 +1,3 @@
+<div class="header__notifications-empty">
+  <p class="header__notifications-empty-text">No unread notifications</p>
+</div>

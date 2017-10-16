@@ -1,0 +1,120 @@
+= render 'stubs/partials/header'
+%main.main-container
+  .client__wrap
+    = render 'stubs/partials/clients/client_nav'
+    .client__mes
+      .clients__search
+        %i.clients__search-icon.icon.icon-search
+        %input.clients__search-input(type="text" placeholder="Find by Document Name, Type")
+
+      .client__mes-panel-group
+        
+        .panel.client__mes-panel
+          #headingOne.client__mes-panel-heading
+            .client__mes-panel-title.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne") January 2016
+          #collapseOne.collapse(aria-labelledby="headingOne")
+            .client__mes-panel-body
+              %p.client__mes-date Jan 24, 2016, 9:04 PM
+              .client__mes-card-wrap
+                #collapse-card-one.client__mes-person-card.has-collapse.collapsed(data-toggle="collapse" data-target="#collapse-subcard-one" aria-controls="collapse-subcard-one")
+                  .client__mes-userpic
+                    = image_tag 'Sugam.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor mollis odio non porta. Phasellus vestibulum malesuada elit, sit amet semper erat. Aliquam erat volutpat. Vivamus scelerisque nisl ligula, vitae molestie ex dapibus nec. Nam ex
+                  .collapse-btn
+                #collapse-subcard-one.client__mes-subcard.collapse(aria-labelledby="collapse-card-one")
+                  %p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Vestibulum sed neque lacinia, sagittis felis vitae, interdum dui. Nunc vulputate augue ante, eu volutpat lectus sodales at. Proin interdum, lorem eget tincidunt ornare, nibh quam blandit orci, ac convallis justo libero et est. Praesent nunc orci, fermentum at rhoncus vel, malesuada eget metus. Mauris vehicula ex magna, at maximus quam viverra in. Sed rutrum eget justo ac bibendum.
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor mollis odio non porta. Phasellus vestibulum malesuada elit, sit amet semper erat. Aliquam erat volutpat. Vivamus scelerisque nisl ligula, vitae molestie ex dapibus nec. Nam ex ipsum, iaculis eu sodales eget, lacinia sit amet ipsum. Nullam ultricies interdum sem, quis porttitor sem vehicula eget. Pellentesque tempor diam eget interdum rutrum. Vestibulum eleifend tellus sit amet dolor rutrum, sollicitudin faucibus ligula varius. Maecenas nec lectus eros.
+              .client__mes-card-wrap
+                .client__mes-person-card.collapsed
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    .client__mes-user-info
+                      %span.font-bold /Share
+                      %span.client__mes-hash-tag #Passport
+                      %a.client__mes-user-mail(href="mailto:example@example.com") @Katherine
+                  .collapse-btn
+                .client__mes-subcard
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'Sugam.png', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'Mitul.png', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'Sugam.png', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'scan_bg.jpg', class: 'client__mes-subcard-img'
+                  .client__mes-subcard-img-wrap
+                    = image_tag 'Sugam.png', class: 'client__mes-subcard-img'
+        
+        .panel.client__mes-panel
+          #headingTwo.client__mes-panel-heading
+            .client__mes-panel-title.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo") February 2016
+          #collapseTwo.collapse(aria-labelledby="headingTwo")
+            .client__mes-panel-body
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Vestibulum sed neque lacinia, sagittis felis vitae, interdum dui. Nunc vulputate augue ante, eu volutpat lectus sodales at. Proin interdum, lorem eget tincidunt ornare, nibh quam blandit orci, ac convallis justo libero et est. Praesent nunc orci, fermentum at rhoncus vel, malesuada eget metus. Mauris vehicula ex magna, at maximus quam viverra in. Sed rutrum eget justo ac bibendum.
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor mollis odio non porta. Phasellus vestibulum malesuada elit, sit amet semper erat. Aliquam erat volutpat. Vivamus scelerisque nisl ligula, vitae molestie ex dapibus nec. Nam ex ipsum, iaculis eu sodales eget, lacinia sit amet ipsum. Nullam ultricies interdum sem, quis porttitor sem vehicula eget. Pellentesque tempor diam eget interdum rutrum. Vestibulum eleifend tellus sit amet dolor rutrum, sollicitudin faucibus ligula varius. Maecenas nec lectus eros.
+        
+        .panel.client__mes-panel
+          #headingThree.client__mes-panel-heading
+            .client__mes-panel-title.collapsed(data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree") March 2016
+          #collapseThree.collapse(aria-labelledby="headingThree")
+            .client__mes-panel-body
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'Mitul.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    %p.client__mes-content-text Vestibulum sed neque lacinia, sagittis felis vitae, interdum dui. Nunc vulputate augue ante, eu volutpat lectus sodales at. Proin interdum, lorem eget tincidunt ornare, nibh quam blandit orci, ac convallis justo libero et est. Praesent nunc orci, fermentum at rhoncus vel, malesuada eget metus. Mauris vehicula ex magna, at maximus quam viverra in. Sed rutrum eget justo ac bibendum.
+              .client__mes-card-wrap
+                .client__mes-person-card
+                  .client__mes-userpic
+                    = image_tag 'userpic.png', class: 'client__mes-userpic-img'
+                  .client__mes-content
+                    .client__mes-voicemail
+                      %i.icon.icon-sound
+                      %span.voicemail-title.font-semi-bold Voicemail:
+                      %span.voicemail-lenght 35 seconds
+                      %button.client__mes-play-btn(type="button")
+                        %i.icon.icon-play
+      
+      .client__mes-added-input-wrap
+        %input.added-input(type="text")
+        %button.added-btn(type="button")
+          %i.icon.icon-plus
+
+
+
+
+= render 'stubs/partials/footer'

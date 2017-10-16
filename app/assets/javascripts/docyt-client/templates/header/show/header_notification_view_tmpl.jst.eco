@@ -1,0 +1,19 @@
+<div class='header__notifications-item'>
+  <% if @notifiable: %>
+    <a href="<%= @entityUrl %>" class="header__notifications-item-link"></a>
+  <% end %>
+  <div class='header__notifications-icon'>
+    <img src="<%- App.assetPath['icons/bot.svg'] %>"></img>
+  </div>
+  <div class='header__notifications-message'>
+    <p class='header__notifications-message-about'>
+      <%= @message %>
+    </p>
+    <p class='header__notifications-message-whom'>
+      DocytBot
+    </p>
+  </div>
+  <div class='header__notifications-date'>
+    <p><%= $.timeago(@created_at) %></p>
+  </div>
+</div>

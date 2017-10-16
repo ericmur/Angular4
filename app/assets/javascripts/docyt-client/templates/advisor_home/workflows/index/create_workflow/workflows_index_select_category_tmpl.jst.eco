@@ -1,0 +1,4 @@
+<div class='category-size-wrapper selectize-wrapper'>
+  <select class='file-category categories-input-js' placeholder='Select category'></select>
+  <i class="icon icon-trashcan trash-icon-js pull-right"></i>
+</div>

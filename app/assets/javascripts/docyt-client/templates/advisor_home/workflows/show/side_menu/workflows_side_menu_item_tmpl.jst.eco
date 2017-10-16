@@ -1,0 +1,1 @@
+<a class="workflow__nav-item" href="<%= @url %>"><%= @name %></a>

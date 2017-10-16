@@ -1,0 +1,9 @@
+<div class="category__nav-item-wrap category-item-js">
+  <div class='category-icon'>
+    <img src="<%= @iconUrl %>">
+  </div>
+  <a class="category__nav-item" href="<%= @categoryUrl %>">
+    <p class='category-title'><%= @name %></p>
+    <p class='category-count'><%= @documents_count %></p>
+  </a>
+</div>

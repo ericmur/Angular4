@@ -1,0 +1,52 @@
+<div class="workflows__workflow">
+  <div class='workflows__workflow-status workflows__workflow-cell'>
+    <i class='workflows__workflow-action-icon icon icon-lists'></i>
+  </div>
+  <div class='workflows__workflow-name workflows__workflow-cell'>
+    <span class='workflows__workflow-name-text'>
+      <%= @name %>
+    </span>
+  </div>
+  <div class='workflows__workflow-name workflows__workflow-cell workflow-participants'>
+    <% if @participantsCount > 2: %>
+      <span class='workflows__workflow-name-text'>
+        <%= @namesFirstTwoParticipants %>,
+        <a class="workflows__workflow-action other-participants-js">
+          and <%= I18n.t('participants.counter', { count: @countRemainingParticipants }) %>
+        </a>
+      </span>
+    <% else: %>
+      <span class='workflows__workflow-name-text'>
+        <%= @namesFirstTwoParticipants %>
+      </span>
+    <% end %>
+  </div>
+  <div class='workflows__workflow-name workflows__workflow-cell'>
+    <span class='workflows__workflow-name-text remaining-time-js'>
+      <%= @endTime %>
+    </span>
+  </div>
+  <div class='workflows__workflow-extras workflows__workflow-cell'></div>
+  <div class='workflows__workflow-right workflows__workflow-cell'>
+    <a class='workflows__workflow-action messages-link-js' href="#">
+      <%= @unread_messages_count %> new messages
+      <i class="clients__client-action-icon icon icon-comments"></i>
+    </a>
+    <% if @workflowStatus == 'started': %>
+      <div class="workflow-progress-uploaded-documents">
+        <p class="uploaded-files-title">
+          <%= @countUploadedDocuments %> of <%= @categoriesCountWithDocuments %> Documents Added
+        </p>
+        <div class="upload-file-statusbar">
+          <div class="file-status-line" style="width: 0%;"></div>
+        </div>
+      </div>
+    <% else: %>
+      <a class='workflows__workflow-action documents-progress-js' href="#">
+        <%= @countUploadedDocuments %> Documents
+      </a>
+    <% end %>
+
+    <a class="link-detail" href="<%= @workflowUrl %>"></a>
+  </div>
+</div>

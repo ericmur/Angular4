@@ -1,0 +1,139 @@
+= render 'stubs/partials/header'
+%main.main-container
+  .clients__wrap.client__settings-page
+    .clients__main
+      %h1.page-main-title Personal Profile
+
+      .client__settings-wrapper
+
+        .panel.client__settings-panel
+          #headingOne.client__settings-panel-heading
+            .client__settings-panel-title.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne")
+              %span Personal
+
+          #collapseOne.collapse(aria-labelledby="headingOne")
+            .client__edit-wrapper.clearfix
+              
+              .client__settings-edit-col.left-col
+                .client__settings-userpic-wrapper
+                  .client__settings-userpic
+                    = image_tag 'setting_userpic.png', class: 'header__userpic-img'
+                  %a.settings-edit-btn(href="") Edit 
+              
+              .client__settings-edit-col.right-col
+                .client__settings-edit-fields-wrapper
+                  .client__settings-edit-field
+                    .settings-field-name
+                      %span Name
+                    .settings-field-value-edit
+                      .settings-field-value
+                        %span Gary Stevens
+                      #collapse-edition-one-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-one" aria-controls="collapse-edition-one")
+                        %span.collapse-btn.settings-edit-btn Edit
+                  #collapse-edition-one.client__settings-edition-wrapper.collapse(aria-labelledby="collapse-edition-one-btn")
+                    .collapsed-field-desc
+                      %span Recovery cell phone will be used to send text messages for security alerts, or in case you forget your account password. Landline numbers can not be used for this purpose. If you update the phone number, a security confirmation code will be sent via text message.
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input#factor-auth.settings-checkbox-toggle(type="checkbox")
+                          %label(for="factor-auth")
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input.settings-input(type="text")
+                    .client__settings-edit-field
+                      .settings-field-name
+                      .settings-field-value-edit
+                        .settings-save-wrapper
+                          %input.settings-save-btn.main-btn.bg-turquise-400(type="button" value="Save changes")
+                          #collapse-edition-one-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-one" aria-controls="collapse-edition-one")
+                            %span.collapse-btn.settings-cancel-btn Cancel
+
+                  .client__settings-edit-field
+                    .settings-field-name
+                      %span Email
+                    .settings-field-value-edit
+                      .settings-field-value
+                        %input#factor-auth1.settings-checkbox-toggle(type="checkbox")
+                        %label(for="factor-auth1")
+                      #collapse-edition-one-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-one" aria-controls="collapse-edition-one")
+                        %span.collapse-btn.settings-edit-btn Edit
+                  #collapse-edition-one.client__settings-edition-wrapper.collapse(aria-labelledby="collapse-edition-one-btn")
+                    .collapsed-field-desc
+                      %span Recovery cell phone will be used to send text messages for security alerts, or in case you forget your account password. Landline numbers can not be used for this purpose. If you update the phone number, a security confirmation code will be sent via text message.
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input#factor-auth.settings-checkbox-toggle(type="checkbox")
+                          %label(for="factor-auth")
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input.settings-input(type="text")
+                    .client__settings-edit-field
+                      .settings-field-name
+                      .settings-field-value-edit
+                        .settings-save-wrapper
+                          %input.settings-save-btn.main-btn.bg-turquise-400(type="button" value="Save changes")
+                          #collapse-edition-one-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-one" aria-controls="collapse-edition-one")
+                            %span.collapse-btn.settings-cancel-btn Cancel
+        
+
+        .panel.client__settings-panel
+          #headingThree.client__settings-panel-heading
+            .client__settings-panel-title.collapsed(data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree")
+              %span Business
+
+          #collapseThree.collapse(aria-labelledby="headingThree")
+            .client__edit-wrapper.clearfix
+              
+              .client__settings-edit-col.left-col
+              
+              .client__settings-edit-col.right-col
+                .client__settings-edit-fields-wrapper
+                  .client__settings-edit-field
+                    .settings-field-name
+                      %span Name
+                    .settings-field-value-edit
+                      .settings-field-value
+                        %p Gary StevensStevens
+                        %p Gary Stevens StevensStevens
+                        %p Gary Stevens Stevens
+                        %p Gary Stevens Stevens
+                        %p Gary StevensStevens
+                      #collapse-edition-three-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-three" aria-controls="collapse-edition-three")
+                        %span.collapse-btn.settings-edit-btn Edit
+                  #collapse-edition-three.client__settings-edition-wrapper.collapse(aria-labelledby="collapse-edition-three-btn")
+                    .collapsed-field-desc
+                      %span Recovery cell phone will be used to send text messages for security alerts, or in case you forget your account password. Landline numbers can not be used for this purpose. If you update the phone number, a security confirmation code will be sent via text message.
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input.settings-input(type="text")
+                    .client__settings-edit-field
+                      .settings-field-name
+                        %span Name
+                      .settings-field-value-edit
+                        .settings-field-value
+                          %input.settings-input(type="text")
+                    .client__settings-edit-field
+                      .settings-field-name
+                      .settings-field-value-edit
+                        .settings-save-wrapper
+                          %input.settings-save-btn.main-btn.bg-turquise-400(type="button" value="Save changes")
+                          #collapse-edition-three-btn.has-collapse.collapsed.collapse-btn-wrapper(data-toggle="collapse" data-target="#collapse-edition-three" aria-controls="collapse-edition-three")
+                            %span.collapse-btn.settings-cancel-btn Cancel
+
+
+= render 'stubs/partials/footer'

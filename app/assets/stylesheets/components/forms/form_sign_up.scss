@@ -1,0 +1,95 @@
+.login-form--sign-up {
+  text-align: left;
+  max-width: 410px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  .sign-up-phone-description {
+    font-size: 14px;
+  }
+  .sign-up-phone-submit {
+    margin-top: 108px;
+  }
+  + .login-form--sign-up {
+    padding-left: 40px;
+    margin-left:  40px;
+    border-left: 2px solid $grey-300;
+    box-sizing: content-box;
+  }
+  .main-btn {
+    margin-bottom: 0;
+  }
+  .main-input__hint {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
+}
+.login-form--sign-in {
+  @extend .login-form--sign-up;
+  display: block;
+}
+.login-form__select {
+  margin-bottom: 20px;
+  .biz-type {
+    width: 281px
+  }
+}
+.login-form__select-toggle {
+  display: inline-block;
+  min-height: 48px;
+  padding: 15px 15px 0;
+  border: 1px solid $grey-500;
+  border-radius: 3px;
+  cursor: pointer;
+  &:hover {
+    border-color: $grey-600;
+  }
+}
+.login-form__select-toggle-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.login-form__select-toggle-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: $grey-600;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+.login-form__select-toggle-arrow {
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+.login-form__select-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid $grey-500;
+  border-radius: 3px;
+  z-index: 1;
+  max-height: 115px;
+  overflow-y: auto;
+}
+.login-form__select-menu-item {
+  font-size: 14px;
+  color: $grey-600;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+.entity__select-menu-item {
+  font-size: 14px;
+  color: $grey-600;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}

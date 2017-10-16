@@ -1,0 +1,5 @@
+<td class='client__docs-cell client__docs-li-title'>
+  <p class='client__docs-li-text-document-field'>
+    <%= @name %> (<%= @client_uploaded_documents_count %>)
+  </p>
+</td>

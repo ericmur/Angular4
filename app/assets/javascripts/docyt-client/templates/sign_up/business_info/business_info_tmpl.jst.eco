@@ -1,0 +1,112 @@
+<div class="account-type-main-wrap">
+  <div class="account-type-container">
+    <div class="account-type__desc-wrap">
+      <p class="account-type__desc">Congratulations! You have successfully signed up for your Docyt web account.</p>
+      <p class="account-type__desc"><strong>To get started, complete your account details below.</strong></p>
+    </div>
+    <div class="account-type__content-wrap">
+      <h2 class="account-type__content-title">Tell us about your business</h2>
+      <div class="account-type__content-form">
+        <div class="account-type__image-area">
+          <% if @avatarUrl: %>
+            <div class="account-type__image-wrap">
+              <div class="clients__userpic">
+                <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+              </div>
+            </div>
+          <% else: %>
+            <div class="account-type__image-wrap">
+              <span class="icon icon-smile"></span>
+            </div>
+            <button type="button" class="account-type__image-upload">
+            <span class="account-type__image-upload-text">Upload Business Logo</span>
+              <input type="file" class="avatar-upload-js" accept="image/jpeg, image/jpg, image/png" />
+            </button>
+            <div class='client__setting-form-error avatar-invalid-error-js'>
+              <span>Please drop an image.</span>
+            </div>
+          <% end %>
+        </div>
+        <div class="account-type__data-area">
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Business Name</label>
+            <input type="text" class="acount-type__input main-input biz-name-js" placeholder="Name">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap hidden">
+            <label class="acount-type__input-label" for="entity-type-js">Entity Type</label>
+            <select class="acount-type__input entity-type-js" placeholder="Select">
+            </select>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Entity Type</label>
+            <div class="login-form__select main-select__wrap inline-block">
+              <div class="login-form__select-toggle main-select__toggle biz-type" id="entity-menu">
+                <i class="login-form__select-toggle-icon "></i>
+                <span class="login-form__select-toggle-text" id="entity-selected-option">
+                  Select
+                </span>
+                <i class="login-form__select-toggle-arrow icn icn-arrow"></i>
+              </div>
+              <ul class="login-form__select-menu main-select__menu" id="entity-select-options">
+                <% for item in @entityTypes: %>
+                  <li class="entity__select-menu-item" data-option="<%- item.text %>">
+                    <%= item.text %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Business Type</label>
+            <div class="login-form__select main-select__wrap inline-block">
+              <div class="login-form__select-toggle main-select__toggle biz-type" id="type-menu">
+                <i class="login-form__select-toggle-icon icn icn-sp"></i>
+                <span class="login-form__select-toggle-text" id="selected-option">
+                  Store, Tax Service, etc
+                </span>
+                <i class="login-form__select-toggle-arrow icn icn-arrow"></i>
+              </div>
+              <ul class="login-form__select-menu main-select__menu" id="select-options">
+                <% for item in @advisorTypes: %>
+                  <li class="login-form__select-menu-item" data-option="<%- item.id %>">
+                    <%= item.name %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Business Address</label>
+            <input type="text" class="acount-type__input main-input biz-address1-js" placeholder="Street">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for=""></label>
+            <input type="text" class="acount-type__input main-input biz-address2-js" placeholder="Street (line 2) or Suite Number">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap wrap-city-state-zip">
+            <label class="acount-type__input-label" for=""></label>
+            <div class="city-state-zip">
+              <input type="text" class="acount-type__input main-input biz-city-js" placeholder="City">
+              <input type="text" class="acount-type__input main-input biz-state-js" placeholder="State">
+              <input type="text" class="acount-type__input main-input biz-zip-js" placeholder="ZIP">
+            </div>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for=""></label>
+            <input type="text" class="acount-type__input main-input biz-country-js" placeholder="Country">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+
+          <div class="account-type__get-started-wrap">
+            <button type="button" class="main-btn account-type__get-started-btn biz-continue-js">Continue</button>
+          </div>
+
+        </div>
+      </div>
+      <h5>Don't have a business?<a class="link-detail" href="<%= @selAcctUrl %>">Modify Plan</a></h5>
+    </div>
+  </div>
+</div>

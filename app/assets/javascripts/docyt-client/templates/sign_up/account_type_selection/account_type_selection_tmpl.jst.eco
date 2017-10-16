@@ -1,0 +1,117 @@
+<div class="account-type-main-wrap">
+  <div class="account-type-container">
+    <div class="account-type__desc-wrap">
+      <p class="account-type__desc">Congratulations! You have successfully signed up for your Docyt web account.</p>
+      <p class="account-type__desc"><strong>To get started, complete your account details below.</strong></p>
+    </div>
+    <div class="account-type__content-wrap">
+      <h2 class="account-type__content-title">Complete your profile</h2>
+      <div class="account-type__content-form">
+        <div class="account-type__image-area">
+          <% if @avatarUrl: %>
+            <div class="account-type__image-wrap">
+              <div class="clients__userpic">
+                <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+              </div>
+            </div>
+          <% else: %>
+            <div class="account-type__image-wrap">
+              <span class="icon icon-smile"></span>
+            </div>
+            <div class="account-type__image-tooltip">
+              <p class="account-type__image-toolyip-text">Uploading your picture will let your contacts know who you are.</p>
+            </div>
+            <button type="button" class="account-type__image-upload">
+            <span class="account-type__image-upload-text">Upload</span>
+              <input type="file" class="avatar-upload-js" accept="image/jpeg, image/jpg, image/png" />
+            </button>
+            <div class='client__setting-form-error avatar-invalid-error-js'>
+              <span>Please drop an image.</span>
+            </div>
+          <% end %>
+        </div>
+        <div class="account-type__data-area">
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Name</label>
+            <input type="text" class="acount-type__input main-input user-name-js" value="<%= Docyt.currentAdvisor.get('full_name') %>">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Email</label>
+            <p class="filled-field"><%= Docyt.currentAdvisor.get('email') %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="account-type__content-wrap">
+      <h2 class="account-type__content-title">Select plan</h2>
+      <div class="account-type__plans">
+        <div class="account-type__plans-row">
+          <div class="account-type__plan-col">
+            <div class="account-type__plan-wrap">
+              <p class="account-type__plan-header">Free Forever</p>
+              <div class="account-type__plan-content">
+                <p class="account-type__plan-content-text">Keep your family paperwork encrypted & orgarnized.</p>
+                <ul class="account-type__plan-content-list">
+                  <li>Free Forever for up to 25 pages</li>
+                  <li>Unlimited Messaging</li>
+                  <li>Unlimited Contacts</li>
+                </ul>
+              </div>
+              <div class="account-type__plan-footer">
+                <div class="account-type__plan-footer-content">
+                  <button type="button" class="account-type__plan-footer-select-btn free-continue-js">Continue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account-type__plan-col">
+            <div class="account-type__plan-wrap">
+              <p class="account-type__plan-header">Family</p>
+              <div class="account-type__plan-content">
+                <p class="account-type__plan-content-text">Keep your family paperwork encrypted & organized</p>
+                <ul class="account-type__plan-content-list">
+                  <li>Up to 1000 pages</li>
+                  <li>2 Fax credits every month</li>
+                  <li>Unlimited Messaging</li>
+                  <li>Unlimited Contacts</li>
+                </ul>
+              </div>
+              <div class="account-type__plan-footer">
+                <div class="account-type__plan-footer-content">
+                  <button type="button" class="account-type__plan-footer-select-btn family-try-free-js">Try free for 30 days</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account-type__plan-col">
+            <div class="account-type__plan-wrap">
+              <p class="account-type__plan-header">Business</p>
+              <div class="account-type__plan-content">
+                <p class="account-type__plan-content-text">Running a bussiness? Get your bussiness licenses, invoices, taxes, and employee paperwork organized.</p>
+                <ul class="account-type__plan-content-list">
+                  <li>Up to 2000 pages</li>
+                  <li>5 Fax credits every month</li>
+                  <li>Bussiness Document Types</li>
+                  <li>Manage Employee & Contactor Docs</li>
+                  <li>Document Categorization Service</li>
+                  <li>Accountant Connection</li>
+                  <li>Unlimited Messaging</li>
+                  <li>Unlimited Contacts</li>
+                </ul>
+              </div>
+              <div class="account-type__plan-footer">
+                <div class="account-type__plan-footer-content">
+                  <button type="button" class="account-type__plan-footer-select-btn biz-try-free-js">Try free for 30 days</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="account-type__get-started-wrap">
+      <button type="button" class="main-btn account-type__get-started-btn get-started-js">Get started</button>
+    </div>
+  </div>
+</div>

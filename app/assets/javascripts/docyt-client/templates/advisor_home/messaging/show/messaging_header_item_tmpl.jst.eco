@@ -1,0 +1,31 @@
+<div class="progress" style="display: none;">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+    0%
+  </div>
+</div>
+<div class='chat-members-header'>
+  <div class="chat-members clearfix">
+    <% for chatMember in @chatMembers: %>
+      <div class='chat-member'>
+        <% if chatMember.has('avatarUrl'): %>
+          <div class="clients__userpic">
+            <img src="<%= chatMember.get('avatarUrl') %>" class='clients__userpic-img'>
+          </div>
+        <% else: %>
+          <i class='clients__client-status-icon icon icon-smile in-orange-500'></i>
+        <% end %>
+        <div class="messaging-client-name">
+          <span><%= chatMember.get('parsed_fullname') %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class='clients__search-docs'>
+    <i class='clients__search-icon icon icon-search'></i>
+    <input class='clients__search-input' placeholder='Search Messages' type='text'>
+    <span class="clients__search-clear icon-search-clear hidden">
+      <span class="path1"></span>
+      <span class="path2"></span>
+    </span>
+  </div>
+</div>

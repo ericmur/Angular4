@@ -1,0 +1,14 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>2-Factor Authentication</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <input class='settings-checkbox-toggle' id='factor-auth' type='checkbox' checked>
+          <label for='factor-auth'></label>
+        </input>
+      </div>
+    </div>
+  </div>
+</div>

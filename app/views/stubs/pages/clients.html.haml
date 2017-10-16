@@ -1,0 +1,146 @@
+= render 'stubs/partials/header'
+%main.main-container
+  .clients__wrap
+    .clients__main
+      .clients__search
+        %i.clients__search-icon.icon.icon-search
+        %input.clients__search-input(type="text" placeholder="Find by Name, Status, Workflow")
+      .clients__actions
+        %a.clients__action.main-rounded-btn(href="#")
+          %i.clients__action-icon.icon.icon-plus.font-14
+          %span.clients__action-text Add
+        %a.clients__action.main-rounded-btn(href="#")
+          %i.clients__action-icon.icon.icon-mail.font-14
+          %span.clients__action-text Invite
+        %a.clients__action.main-rounded-btn(href="#")
+          %i.clients__action-icon.icon.icon-bulb.font-20
+          %span.clients__action-text Discover
+      .clients__table-wrap
+        .text-right
+          .clients__table-sort
+            %span.clients__table-sort-caption
+              View By:
+            .main-select__wrap.inline-block
+              %span.clients__table-sort-toggle.main-select__toggle
+                First Name
+                %i.icon.icon-arrow
+              %ul.clients__table-sort-menu.main-select__menu
+                %li.clients__table-sort-menu-item
+                  First Name
+                %li.clients__table-sort-menu-item
+                  ?
+        .clients__list
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-turquise-400
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text.in-grey-500
+                Arjun Singh
+            .clients__client-extras.clients__client-cell
+            .clients__client-right.clients__client-cell
+              %span.clients__client-invited
+                %i.clients__client-invited-icon.icon.icon-hourglass
+                %span.align-middle Invited 3 days ago
+              %a.clients__client-action-btn.main-rounded-btn(href="#")
+                %i.clients__action-icon.icon.icon-mail.font-14
+                %span.clients__action-text Resend Invite
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-pink-400
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text
+                Chase Lockman
+            .clients__client-extras.clients__client-cell
+              %p.clients__client-extra-warn
+                %span.clients__client-extra-warn-icon
+                  !
+                %span.align-middle Ongoing TAX AUDIT
+            .clients__client-right.clients__client-cell
+              %a.clients__client-action.has-new(href="#")
+                2 messages                
+                %i.clients__client-action-icon.icon.icon-comments
+              %a.clients__client-action(href="#")
+                1 workflow
+                %i.clients__client-action-icon.icon.icon-lists
+              %a.clients__client-action(href="#")
+                18 documents
+                %i.clients__client-action-icon.icon.icon-files
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-orange-500
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text
+                Elicia Petroscky
+            .clients__client-extras.clients__client-cell
+            .clients__client-right.clients__client-cell
+              %a.clients__client-action(href="#")
+                2 messages
+                %i.clients__client-action-icon.icon.icon-comments
+              %a.clients__client-action(href="#")
+                1 workflow
+                %i.clients__client-action-icon.icon.icon-lists
+              %a.clients__client-action.disabled(href="#")
+                0 documents
+                %i.clients__client-action-icon.icon.icon-files
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-aqua-400
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text
+                Guarav Jain
+            .clients__client-extras.clients__client-cell
+            .clients__client-right.clients__client-cell
+              %a.clients__client-action(href="#")
+                23 messages
+                %i.clients__client-action-icon.icon.icon-comments
+              %a.clients__client-action.has-new(href="#")
+                16 workflow
+                %i.clients__client-action-icon.icon.icon-lists
+              %a.clients__client-action(href="#")
+                2 documents
+                %i.clients__client-action-icon.icon.icon-files
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-green-200
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text
+                Jarrett Ferrel
+            .clients__client-extras.clients__client-cell
+              %p.clients__client-extra-warn
+                %span.clients__client-extra-icon.icon.icon-clock
+                %span.align-middle 1 Document Expiring
+            .clients__client-right.clients__client-cell
+              %a.clients__client-action(href="#")
+                2 messages
+                %i.clients__client-action-icon.icon.icon-comments
+              %a.clients__client-action(href="#")
+                1 workflow
+                %i.clients__client-action-icon.icon.icon-lists
+              %a.clients__client-action.disabled(href="#")
+                0 documents
+                %i.clients__client-action-icon.icon.icon-files
+          .clients__client
+            .clients__client-status.clients__client-cell
+              %i.clients__client-status-icon.icon.icon-smile.in-blue-400
+            .clients__client-name.clients__client-cell
+              %span.clients__client-name-text
+                Kathryn Elliot
+            .clients__client-extras.clients__client-cell
+              %p.clients__client-extra-warn
+                %span.clients__client-extra-icon
+                  = image_tag 'icons/bot.svg'
+                %span.align-middle 4 Documents Discovered
+            .clients__client-right.clients__client-cell
+              %a.clients__client-action(href="#")
+                12 messages
+                %i.clients__client-action-icon.icon.icon-comments
+              %a.clients__client-action.has-new(href="#")
+                12 workflow
+                %i.clients__client-action-icon.icon.icon-lists
+              %a.clients__client-action(href="#")
+                18 documents
+                %i.clients__client-action-icon.icon.icon-files
+
+
+
+= render 'stubs/partials/footer'

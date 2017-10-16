@@ -1,0 +1,17 @@
+<ul class="nav nav-tabs clients-tabs-header" role="tablist">
+  <% if @contactsCount: %>
+    <li id='contacts-nav' class="client-tab">
+      <a href="<%= @contactsUrl %>" aria-controls="contacts" data-toggle="tab">Client Contacts</a>
+    </li>
+  <% end %>
+  <% if @employeesCount: %>
+    <li id='employees-nav' class="client-tab">
+      <a href="<%= @employeesUrl %>" aria-controls="employees" data-toggle="tab">Employees</a>
+    </li>
+  <% end %>
+  <% if @contractorsCount: %>
+    <li id='contractors-nav' class="client-tab">
+      <a href="<%= @contractorsUrl %>" aria-controls="contractors" data-toggle="tab">Contractors</a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,123 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  clients:
+    counter:
+      one:   "1 client"
+      zero:  ''
+      other: "{{count}} clients"
+    messages:
+      counter:
+        one: "1 message"
+        other: "{{count}} messages"
+    documents:
+      counter:
+          one: "1 document"
+          other: "{{count}} documents"
+    workflows:
+      counter:
+          one: "1 workflow"
+          other: "{{count}} workflows"
+    pages:
+      counter:
+        one:   "1 page |"
+        other: "{{count}} pages |"
+  employees:
+    counter:
+      one:   "1 employee"
+      zero:  ''
+      other: "{{count}} employees"
+  contractors:
+    counter:
+      one:   "1 contractor"
+      zero:  ''
+      other: "{{count}} contractors"
+  contacts:
+    counter:
+      one:   "1 contact"
+      zero:  ''
+      other: "{{count}} contacts"
+  participants:
+    counter:
+      one:   "1 other"
+      other: "{{count}} others"
+  emails:
+    subjects:
+      new_device_added: "Docyt Security Alert - New device added to your Docyt account (Successful)"
+      email_confirmation: "Welcome to Docyt! Please verify Email"
+      welcome_email: "Welcome to Docyt!"
+      invitation: "Invitation to join Docyt"
+      connect_invitation: "Invitation to connect on Docyt"
+      new_message: "You have received a new message from %{sender_name}"
+      new_messages: "You have %{unread_count} new messages from %{sender_name}"
+    new_message:
+      greeting: "Hi %{receiver_name},"
+      view_message: "View Message"
+      view_messages: "View Messages"
+      you_have_new_message: "You have a new message from"
+      you_have_unread_message: "%{sender_name} has sent you a new message on Docyt."
+      you_have_unread_messages: "%{sender_name} has sent you %{unread_count} new messages on Docyt."
+      thank: "Thanks,"
+      team: "The Docyt Team"
+      confidential_email: "This message is a confidential and automatically generated email, for"
+      rights: "If you are not the recipent of this message, please delete this email. Copyright &#169; 2016 Docyt Inc. All right reserved."
+  email_confirmation:
+    messages:
+      web_app_successful: 'Your email has been verified. Please sign in using your new email'
+      phone_successful: 'Email verified successfully.'
+      sended: 'We have sent a verification link to your email. Please click on the link to verify your email.'
+      resend: 'Verification link expired. Please resend verification email from Docyt app.'
+  invitation:
+    body: "Hi {{client_name}},\n\nI’m using a new service to securely exchange important documents with my clients. Its called Docyt, and it keeps all files encrypted.\nCall me on {{advisor_phone}} if you have any questions.\n\nRegards,\n{{advisor_name}}"
+  errors:
+    invitation:
+      require_fullname: 'You need to update your profile with your full name before you invite others'
+      require_type_selection: 'You need to select email or text invitation'
+      require_label_selection: "Require family member or label selection"
+      require_same_phone_number: "Your phone number does not match with invitation"
+      already_invited: "Already invited"
+      invalid_source: "Invalid invitation source"
+      expired: "Invitation expired"
+      already_sended_to_email: "Invitation already sent to that email"
+      already_sended_to_phone_number: "Invitation already sent to that phone number"
+    notification:
+      require_document: 'Require association with Document'
+      require_invitation: 'Require association with Invitation'
+    document:
+      cannot_delete_sharee: "You don't have the permissions to perform that operation. Contact the owner of the document"
+      cannot_share_document: "You do not have permission to share this document. Only the owners or the user who uploaded the document can share it."
+      cannot_revoke_sharee: "You do not have permission to revoke access to this document."
+    group_user:
+      disconnected: "User is no longer connected to your account"
+      cannot_delete_connected: "You cannot delete currently connected user. Please unlink first in order to delete"
+      already_assigned: "This is already assigned to another user"
+      document_conflict: "Both the account you are transferring and the user you are transferring to already have documents"
+      phone_not_unique: "A contact with this phone number is already linked. You can't use the same phone number for two contacts"
+    document_field:
+      invalid_due_date_type: 'A Due date field should have a date type'
+      invalid_expiry_date_type: 'An Expiry field should have a date type'
+      invalid_date_type: 'An Alert field should have a date type'
+      field_not_found: 'Field is not exists or you do not have the permissions to edit this field.'
+    sign_up:
+      user_already_set_web_app: "The account with that phone number already has a web account setup. Go ahead and login with your web account credentials"
+  file_upload:
+    upload_counter: Uploaded {{uploaded_count}} of {{total_count}}

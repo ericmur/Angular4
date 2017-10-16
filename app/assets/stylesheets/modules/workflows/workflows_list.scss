@@ -1,0 +1,81 @@
+.workflows__wrap {
+  @extend .clients__wrap;
+}
+.workflows__main {
+  @extend .clients__main;
+}
+.workflows__search {
+  @extend .clients__search;
+}
+.workflows__search-clear {
+  @extend .clients__search-clear;
+}
+.workflows__search-icon {
+  @extend .clients__search-icon;
+}
+.workflows__search-input {
+  @extend .clients__search-input;
+}
+.workflows__actions {
+  @extend .clients__actions;
+}
+.workflows__workflow {
+  @extend .clients__client;
+  &.disable-panel {
+    .workflows__workflow-action,
+    .workflows__workflow-name-text {
+      color: $grey-500;
+    }
+  }
+}
+.workflows__workflow-status {
+  @extend .clients__client-status;
+}
+.workflows__workflow-status-icon {
+  @extend .clients__client-status-icon;
+}
+.workflows__workflow-cell {
+  @extend .clients__client-cell;
+}
+.workflows__workflow-name {
+  @extend .clients__client-name;
+  &.workflow-participants {
+    min-width: 400px;
+  }
+}
+.workflows__workflow-name-text {
+  @extend .clients__client-name-text;
+  font-size: 16px;
+  .workflows__workflow-action {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.workflows__workflow-extras {
+  @extend .clients__client-extras;
+}
+.workflows__workflow-right {
+  @extend .clients__client-right;
+}
+.workflows__workflow-action {
+  @extend .clients__client-action;
+  font-size: 14px;
+  font-weight: 400;
+}
+.workflows__workflow-action-icon {
+  @extend .clients__client-action-icon;
+}
+
+.workflow-progress-uploaded-documents {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 20px;
+  min-width: 140px;
+  .uploaded-files-title {
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .upload-file-statusbar {
+    width:100%;
+  }
+}

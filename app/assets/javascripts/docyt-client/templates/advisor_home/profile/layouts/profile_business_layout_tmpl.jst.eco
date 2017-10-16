@@ -1,0 +1,16 @@
+<div class='panel client__settings-panel'>
+  <div class='client__settings-panel-heading' id='headingTwo'>
+    <div aria-controls='collapseBusiness' class='client__settings-panel-title' data-target='#collapseBusiness' data-toggle='collapse'>
+      <span>Business</span>
+    </div>
+  </div>
+  <div aria-labelledby='headingTwo' class='collapse in' id='collapseBusiness'>
+    <div class='client__edit-wrapper clearfix'>
+      <div class='client__settings-edit-col left-col'></div>
+      <div class='client__settings-edit-col right-col'>
+        <div id="advisor-business-type-region"></div>
+        <div id="advisor-business-address-region"></div>
+      </div>
+    </div>
+  </div>
+</div>

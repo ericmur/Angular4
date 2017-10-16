@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  &.two-column {
+    height: 100%;
+    overflow-y: auto;
+    .main-container {
+      height: calc(100% - 55px);
+    }
+    .client__wrap {
+      height: 100%;
+    }
+    .client-details-region, .workflow-details-region {
+      height: calc(100% - 85px);
+      > div {
+        height: 100%;
+      }
+    }
+    .messages-region {
+      height: calc(100% - 100px);
+    }
+    .client__mes {
+      height: 100%;
+    }
+    .clients-drop-zone {
+      height: 100%;
+    }
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}

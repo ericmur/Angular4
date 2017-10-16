@@ -1,0 +1,82 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Plan</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <div>
+          <span><%= Docyt.currentAdvisor.get('current_workspace_name') %> ( <%= @subscriptions[0].subscription_type if @subscriptions[0]? %> Billing)</span>
+        </div>
+      </div>
+      <div aria-controls='collapse-edition-subscription-plan' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-subscription-plan' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Update Plan</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-subscription-plan-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-subscription-plan'>
+    <div class='client__settings-edition-content'>
+      <div class="billing-monthly-js">
+        <div class='collapsed-field-desc'>
+          <h4><span>Select the new plan  ( <a href="javascript:void(0)" class="billing-annual">Annual Billing</a> | Monthly Billing ) </span></h4>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name billing-radio'>
+            <label class="radio-family-monthly"><input type="radio" value="">Family </label>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <span>  $<%= @accType.getType('Family').get('monthly_pricing') %> / Month</span>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name billing-radio'>
+            <label class="radio-biz-monthly"><input type="radio" value="">Business </label>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <span>  $<%= @accType.getType('Business').get('monthly_pricing') %> / Month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="billing-annual-js hidden">
+        <div class='collapsed-field-desc'>
+          <h4><span>Select the new plan  ( Annual Billing | <a href="javascript:void(0)" class="billing-monthly">Monthly Billing</a> ) </span></h4>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name billing-radio'>
+            <label class="radio-family-annual"><input type="radio" value="">Family </label>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <span>  $<%= @accType.getType('Family').get('annual_pricing') %> / Year</span>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name billing-radio'>
+            <label class="radio-biz-annual"><input type="radio" value="">Business </label>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <span>  $<%= @accType.getType('Business').get('annual_pricing') %> / Year</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='client__settings-edit-field'>
+        <div class='settings-field-name'></div>
+        <div class='settings-field-value-edit'>
+          <div class='settings-save-wrapper'>
+            <input class='settings-save-btn main-btn bg-turquise-400' type='submit' id='submit-sub-plan' value='Save changes'>
+            <div aria-controls='collapse-edition-subscription-plan' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-subscription-plan' data-toggle='collapse'>
+              <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.add-workflow-block {
+  margin: 20px 0 10px;
+  padding-right: 15px;
+  padding-left: 10px;
+  .workflow-add {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.workflow_nav {
+  @extend .client__nav;
+}
+
+.workflows-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $brown-700;
+}
+
+.workflow__nav-item {
+  @extend .client__nav-li;
+  margin: 5px 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  &.disabled-item {
+    color: $grey-750;
+    font-weight: 400;
+    &:hover {
+      color: white;
+    }
+  }
+  &.active-workflow {
+    color: white;
+    background-color: $pink-400;
+  }
+}

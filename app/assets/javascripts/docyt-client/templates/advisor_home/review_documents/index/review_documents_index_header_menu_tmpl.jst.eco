@@ -1,0 +1,10 @@
+<div class='assign-btn-wrapper'>
+  <button class='assign-btn font-semi-bold'>
+    <i class='icon icon-smile in-purple-grey'></i>
+    Assign to Client
+  </button>
+</div>
+<div class='clients__search'>
+  <i class='clients__search-icon icon icon-search'></i>
+  <input class='clients__search-input' placeholder='Find by Filename, Email' type='text'>
+</div>

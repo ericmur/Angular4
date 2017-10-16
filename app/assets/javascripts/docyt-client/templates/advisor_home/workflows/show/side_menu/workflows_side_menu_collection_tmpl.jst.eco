@@ -1,0 +1,5 @@
+<div class="add-workflow-block clearfix">
+  <h2 class="workflows-title pull-left">Workflows</h2>
+  <span class="workflow-add pull-right create-workflow-js in-turquise-400"><i class="icon icon-o-plus"></i></span>
+</div>
+<div class="workflows-list"></div>

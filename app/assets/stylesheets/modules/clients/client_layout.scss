@@ -1,0 +1,11 @@
+.client__wrap {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid $pink-400;
+  .client__wrap {
+  border-bottom: none;
+  }
+}
+.client-main-pane {
+  flex-grow: 1;
+}

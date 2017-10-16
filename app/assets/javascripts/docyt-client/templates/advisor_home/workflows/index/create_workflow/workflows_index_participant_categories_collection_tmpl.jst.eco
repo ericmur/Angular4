@@ -1,0 +1,20 @@
+<div class="participant-docs-wrapper">
+  <% if @isClient: %>
+    <div class="participant-docs-name-wrapper">
+      <% if @avatarUrl: %>
+        <div class="clients__userpic">
+          <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+        </div>
+      <% else: %>
+        <i class="icon icon-smile"></i>
+      <% end %>
+      <span class="participant-docs-name"><%= @participantName %></span>
+    </div>
+  <% end %>
+  <div class="participants-docs-selects">
+    <div class="participants-docs-selects-list">
+
+    </div>
+    <a class="participants-select-add in-turquise-400 add-select-js">Add More</a>
+  </div>
+</div>

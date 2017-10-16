@@ -1,0 +1,5 @@
+- js = "window.App = window.App || {}; App.assetPath={}; "
+- ['Sugam.png','Gary.png', 'icons/bot.svg'].each do |asset_file|
+  - js << "App.assetPath['#{asset_file}']='#{asset_path(asset_file)}';"
+:javascript
+  #{js}

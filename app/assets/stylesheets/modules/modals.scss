@@ -1,0 +1,531 @@
+.modal-header {
+  padding: 22px;
+  position: relative;
+  margin-bottom: 20px;
+  .modal-title {
+    font-size: 24px;
+    line-height: 1;
+    color: $brown-700;
+    text-align: center;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    border: none;
+    font-size: 36px;
+    line-height: 1;
+    color: $brown-600;
+    background-color: transparent;
+    padding: 0;
+    top: 5px;
+  }
+}
+
+.modal-add-client {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.modal-body {
+  padding: 0 80px 30px;
+  .document-uploaders-list, .document-types-list {
+    overflow-y: auto;
+    height: 400px;
+  }
+}
+.modal-footer {
+  background-color: $grey-300;
+  padding: 15px 40px;
+  text-align: right;
+  .main-btn {
+    margin-bottom: 0;
+  }
+}
+.modal-link-btn {
+  cursor: pointer;
+  color: $blue-800;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Helvetica;
+  line-height: 50px;
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.cancel-link {
+  float: left;
+  line-height: 45px;
+}
+.step-link {
+  margin-right: 60px;
+}
+
+.invite-mode {
+  display: none;
+  & + label {
+    color: $blue-800;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Helvetica;
+    margin-right: 20px;
+    cursor: pointer;
+    &:before {
+      margin-right: 5px;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      border: 1px solid $grey-500;
+      border-radius: 3px;
+      content: '';
+      vertical-align: middle;
+      font-family: 'icomoon';
+      line-height: 23px;
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+  &:checked {
+    & + label:before {
+      content: $icon-check;
+    }
+  }
+}
+
+.main-input__wrap {
+  .icon {
+    color: $icon-grey;
+    font-size: 10px;
+    left: 15px;
+    position: absolute;
+    top: calc(50% - 5px);
+  }
+}
+
+.custom-modal {
+  border-radius: 8px;
+  margin: 0 auto;
+  .modal-body {
+
+  }
+}
+
+.modal-upload-files {
+  text-align: center;
+  .modal-dialog {
+    width: auto;
+    display: inline-block;
+  }
+  .modal-header {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+
+.modal-document-fields {
+  width: 550px;
+  .modal-footer {
+    background-color: #e8eced;
+    padding: 15px 40px;
+    text-align: center;
+  }
+  tr {
+    border-bottom: 1px solid white;
+  }
+}
+
+.uploaded-files-count {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 14px;
+  color: $brown-700;
+}
+
+.modal-user-name {
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0;
+}
+
+.upload-files-wrapper {
+  max-height: 460px;
+  border-top: 1px solid $grey-150;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+}
+
+.upload-file-item {
+  padding: 0 40px;
+  border-bottom: 1px solid $grey-150;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  &.second-step {
+    .upload-file-status {
+      min-width: 32px;
+    }
+  }
+}
+
+.upload-file-name-icon {
+  white-space: nowrap;
+  color: $brown-400;
+  margin-right: 80px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  text-align: left;
+  padding: 12px 0;
+  .color-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+}
+
+.upload-file-name {
+  white-space: nowrap;
+  text-align: left;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 340px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+.category-size-wrapper-right {
+  float: right;
+}
+
+.category-size-wrapper {
+  width: 240px;
+  text-align: left;
+  margin-right: 20px;
+  .file-category {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    color: $brown-700;
+    height: 40px;
+    background-color: white;
+    .selectize-input {
+      border-color: $grey-500;
+      border-radius: 3px;
+      height: 100%;
+      line-height: 26px;
+      input[placeholder] {
+        width: auto !important;
+      }
+      .item {
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 25px);
+        white-space: nowrap;
+        overflow-x: hidden;
+      }
+    }
+  }
+  .selectize-control.single .selectize-input:after {
+    border-top-color: $grey-500;
+    border-width: 10px 8px 0 8px;
+  }
+}
+
+.selectize-dropdown {
+  position: fixed;
+  z-index: 10000;
+  height: auto;
+  &.file-category {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    color: $brown-700;
+    background-color: white;
+  }
+}
+
+.upload-file-size {
+  margin-bottom: 0;
+  color: $brown-600;
+  text-transform: uppercase;
+}
+
+.upload-file-status {
+  min-width: 120px;
+  text-align: center;
+  &.upload-done {
+    .upload-file-statusbar {
+      display: none;
+    }
+    .icon-verified {
+      display: inline-block;
+    }
+  }
+  .icon-verified {
+    display: none;
+  }
+}
+
+.upload-file-statusbar {
+  position: relative;
+  width: 120px;
+  height: 3px;
+  background-color: $grey-450;
+  .file-status-line {
+    position: absolute;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: $blue-700;
+    transition: width 0.5s ease 0s
+  }
+}
+
+.invite-client-modal-title {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.modal-textarea {
+  resize: none;
+  height: 200px;
+  padding: 10px;
+  border-radius: 1px;
+
+}
+
+.modal-select-workflow-type {
+  @extend .modal-add-client;
+  .modal-header {
+    border-bottom-color: white;
+  }
+  .modal-description{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .workflow-type-button {
+    background-color: $grey-300;
+    border: none;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    };
+    .workflow-type-title {
+      float: left;
+      width: 100%;
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+    .workflow-type-description {
+      text-align: left;
+      font-size: 12px;
+    }
+    &.disable {
+      color: lightgray;
+      cursor: not-allowed;
+      position: relative;
+      overflow: hidden;
+      background-color: $grey-150;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-style: solid;
+        border-color: $grey-400 $grey-400 transparent transparent;
+        border-width: 28px;
+      }
+      &:after {
+        position: absolute;
+        content: 'Coming Soon';
+        transform: rotate(45deg);
+        top: 17px;
+        right: -5px;
+        font-weight: bold;
+        font-size: 9px;
+        color: $blue-400;
+      };
+    }
+    &.selected {
+      background-color: darkgray;
+    }
+  }
+}
+
+.modal-set-info-workflow {
+  @extend .modal-select-workflow-type;
+  .back-link {
+    margin-right: 25px;
+  }
+  .modal-description {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .main-input {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 103px);
+  }
+  .form-inline-label {
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 100px;
+  }
+}
+
+.modal-add-participants {
+  @extend .modal-set-info-workflow;
+  .modal-participants {
+    margin: 0 auto;
+    width: 60%;
+    .modal-participant {
+      + .modal-participant {
+        margin-top: 20px;
+      }
+      .icon-smile {
+        font-size: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      .modal-participant-name {
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      .participant-remove {
+        font-size: 16px;
+        line-height: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+  .modal-participants-find-wrapper {
+    margin: 30px auto 0;
+    width: 60%;
+    .modal-participants-find {
+      .selectize-input {
+        border-width: 0 0 1px 0;
+        border-color: black;
+        font-size: 14px;
+        padding: 6px 10px;
+        border-radius: 0;
+        &.focus {
+          box-shadow: none;
+        }
+        &:after {
+          display: none;
+        }
+        input {
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+    .modal-participants-find-submit {
+      text-decoration: none;
+      color: $turquise-400;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .list-clients-found {
+      display: none;
+    }
+  }
+  .modal-participant {
+    margin-top: 10px;
+    .clients__userpic {
+      margin-right: 10px;
+      max-width: 32px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal-set-standard-categories {
+  @extend .modal-set-info-workflow;
+  .participant-docs-wrapper {
+    width: 80%;
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: $grey-150;
+    .participant-docs-name-wrapper{
+      margin-bottom: 10px;
+      .icon {
+        font-size: 32px;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .participant-docs-name {
+        font-size: 16px;
+        font-weight: 300;
+        vertical-align: middle;
+      }
+    }
+  }
+  .participants-docs-selects {
+    margin-left: 45px;
+    .participants-select-add {
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .participants-docs-selects-list {
+    margin-bottom: 10px;
+    .category-size-wrapper {
+      width: 95%;
+      margin-right: 0;
+      display: inline-block;
+      .file-category {
+        width: 90%;
+        float: left;
+      }
+      .icon {
+        font-size: 16px;
+        line-height: 40px;
+        cursor: pointer;
+      }
+    }
+    .participants-docs-select {
+      + .participants-docs-select {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.modal-participants-find {
+  .selectize-dropdown-content {
+    .item {
+      font-size: 14px;
+    }
+    .active {
+      background-color: transparent;
+    }
+  }
+}

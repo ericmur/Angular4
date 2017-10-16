@@ -1,0 +1,36 @@
+<td class="collapse-expand-btn-wrapper <%= @showOrHideExpandIcon %> collapse-expand-btn expand-ico">
+  <% unless @isNested: %>
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+  <% end %>
+</td>
+<td class="client-name">
+  <div class='clients__client-status clients__client-cell'>
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class='clients__client-status-icon icon icon-smile in-pink-400'></i>
+    <% end %>
+  </div>
+  <div class='clients__client-name clients__client-cell'>
+    <span class='clients__client-name-text'>
+      <%= @parsed_fullname %>
+    </span>
+  </div>
+</td>
+<td class='clients__client-right clients__client-cell'>
+  <span class='clients__client-action clients__client-email'><%= @email %></span>
+  <% if @documents_count: %>
+    <span class='clients__client-action'>
+      <%= I18n.t('clients.documents.counter', { count: @documents_count }) %>
+      <i class='clients__client-action-icon icon icon-files'></i>
+    </span>
+  <% end %>
+  <% if @workflows_count: %>
+    <span class='clients__client-action'>
+      <%= I18n.t('clients.workflows.counter', { count: @workflows_count }) %>
+      <i class='clients__client-action-icon icon icon-lists'></i>
+    </span>
+  <% end %>
+</td>

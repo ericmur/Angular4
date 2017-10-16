@@ -1,0 +1,7 @@
+<div class="document-field-item document-field-name"><%= @name %></div>
+
+<div class="document-field-item document-field-value <%= @data_type %>">
+  <div class="value-edit-wrapper">
+    <select class='value-edit-input' placeholder='Select value'></select>
+  </div>
+</div>

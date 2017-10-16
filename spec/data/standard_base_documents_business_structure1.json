@@ -1,0 +1,31 @@
+{
+    "BIZ INVOICES/RECEIPTS" :
+    {
+        "id": 9020,
+        "icons": ["", "Receipts_icon@2x.png", "Receipts_icon@3x.png"],
+        "display_name": "Invoices & Receipts",
+        "description" : "Account Receivable/Payable Invoices, Receipts",
+        "documents" : [
+            "ACCOUNT_RECEIVABLE_INVOICE",
+            "ACCOUNT_PAYABLE_INVOICE",
+            "BUSINESS_RECEIPT",
+            "ASSET_PURCHASE_INVOICE",
+            "ASSET_SALE_INVOICE",
+            "PETTY_CASH_SLIPS"
+            ]
+    },
+    "BIZ OPS" :
+    {
+        "id": 9021,
+        "icons": ["", "Business_icon@2x.png", "Business_icon@3x.png"],
+        "display_name" : "Operations",
+        "description" : "Your Client Forms, Agreements, Order Forms",
+        "documents" : [
+            "CUSTOMER_FORMS",
+            "SALES_AGREEMENTS",
+            "BIZ_LEASE_AGREEMENT",
+            "BIZ_REAL_ESTATE_CLOSING_STATEMENT",            
+            "BUSINESS_LOAN_AGREEMENT"
+        ]
+    }
+}

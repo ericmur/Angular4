@@ -1,0 +1,88 @@
+.login-form-wrap {
+  padding: 20px 40px 0;
+  text-align: center;
+}
+.confirm-email-title {
+  font-size: 18px;
+  margin: 50px 0;
+  text-align: center;
+}
+.mobile-confirm-main-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 100px auto 0;
+  .login-form__switch-item {
+    margin-bottom:  30px;
+  }
+}
+.pincode-input-container {
+  margin-bottom: 30px;
+  @extend .clearfix;
+  .form-control {
+    @extend .main-input;
+    text-align: center;
+    float: left;
+    width: 50px;
+    + .form-control {
+      margin-left: 10px;
+    }
+  }
+}
+.header-sign-link {
+  position: absolute;
+  right: 15px;
+  top: -60px;
+}
+.confirm-credentials-form {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  max-width: 570px;
+  .form-inline-label {
+    font-size: 16px;
+  }
+  .main-input__wrap {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+  .relative {
+    max-width: 410px;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+  }
+  .existed-email {
+    max-width: 410px;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    height: 48px;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    .user-email {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    .change-email {
+      font-size: 14px;
+      color: $turquise-400;
+      cursor: pointer;
+    }
+  }
+}
+.confirm-email {
+  text-align: center;
+}
+#card-element {
+  width: 100%;
+}
+#card-errors {
+  font-size: 12px;
+}

@@ -1,0 +1,53 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-add-client'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Invite <%= @clientName %> to Docyt</h4>
+        </div>
+        <div class='modal-body'>
+          <h6 class="invite-client-modal-title">Include a personal note:</h6>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <textarea class='modal-textarea main-input' id="text" placeholder='Text invitation' type='text'><%= I18n.t('invitation.body', { client_name: @clientName, advisor_phone: @advisorPhone, advisor_name: @advisorName }) %></textarea>
+            </div>
+            <p class='main-input__hint in-red-400' id="invite-text-invalid">
+              Please enter correct text
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <input class='invite-mode' id='by-text' type='checkbox'>
+              <label for='by-text'>Invite by Text Message to <%= @phone_normalized %> (Preferred)</label>
+            </div>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <input class='invite-mode' id='by-email' type='checkbox'>
+              <label for='by-email'>Invite by Email to <%= @email %></label>
+            </div>
+            <p class='main-input__hint in-red-400' id="fullname-invite-error">
+              You need to update your profile with your full name before you invite others
+            </p>
+            <p class='main-input__hint in-red-400' id="checkbox-invite-error">
+              Please choose a method for inviting your client
+            </p>
+            <p class='main-input__hint in-red-400' id="checkbox-invite-no-phone-error">
+              Client doesn't have a phone number
+            </p>
+            <p class='main-input__hint in-red-400' id="checkbox-invite-no-email-error">
+              Client doesn't have an email
+            </p>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel settings-cancel-btn'>Cancel</a>
+          <button class='main-btn bg-turquise-400' id='create-invitation' type='button'>Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class='login-form login-form--cell-phone'>
+  <p class='login-form__cell-phone-text'>
+    For additional security, please provide a cell-phone number.
+    <br>
+    <span class='in-brown-400 font-light'>
+      This will be used to receive recovery passcode, in case you lose access to your email.
+    </span>
+  </p>
+  <form class='login-form__cell-phone-form' id='add-phone-form'>
+    <div class='main-input__wrap'>
+      <div class='relative'>
+        <i class='login-form__input-icon icn icn-phone'></i>
+        <input class='login-form__input main-input' id="phone-number" placeholder='Cell Phone' type='tel'>
+      </div>
+      <p class='main-input__hint in-red-400' id="invalid-phone">
+        Phone number is incorrect or is already taken.
+      </p>
+    </div>
+    <div class='login-form__foot'>
+      <a class='login-form__cell-phone-foot-btn main-btn bg-turquise-400' type='submit' id='submit-phone'>
+        Add
+      </a>
+    </div>
+  </form>
+</div>

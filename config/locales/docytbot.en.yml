@@ -1,0 +1,16 @@
+en:
+  field_response:
+    no_fields:
+      alexa: 'Sorry, I am unable to find this information in your Docket.'
+      app: 'Sorry, I am unable to find this information.'
+  document_response:
+    no_documents:
+      alexa: 'Sorry, I could not find any documents in your Docket, that match your request.'
+      app: 'Sorry, I could not find any documents that match your request.'
+  total_response:
+    no_documents:
+      alexa: 'Sorry, I could not find any business receipts or invoices in your Docket, that match your request.'
+      app: 'Sorry, I could not find any business receipts or invoices that match your request'
+  could_not_understand:
+    alexa: 'Sorry, I am unable to understand what you are asking for.'
+    app: 'Sorry, I am unable to understand what you are asking for.'

@@ -1,0 +1,18 @@
+.login-form.login-form--cell-phone
+  %p.login-form__cell-phone-text
+    For additional secuity, please provide a cell-phone number.
+    %br
+    %span.in-brown-400.font-light
+      This will be used to receive recovery passcode, in case you lose access to your email.
+  %form.login-form__cell-phone-form
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-phone
+        %input.login-form__input.main-input(type="tel" placeholder="Cell Phone")
+      %p.main-input__hint.in-red-400
+        Phone number is incorrect
+    .login-form__cell-phone-foot
+      %a.login-form__cancel-link(href="#")
+        Not now
+      %button.login-form__cell-phone-foot-btn.main-btn.bg-turquise-400(type="submit")
+        Add

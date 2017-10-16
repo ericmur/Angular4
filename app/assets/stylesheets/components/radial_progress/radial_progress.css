@@ -1,0 +1,53 @@
+$barColor: $turquise-400;
+$backColor: #e8eced;
+
+.progress-radial {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #07c8da;
+  transform: rotate(180deg);
+  margin: 0 auto;
+}
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  transform: rotate(-180deg);
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+$step: 1;
+
+$loops: round(100 / $step);
+$increment: 360 / $loops;
+$half: round($loops / 2);
+
+@for $i from 0 through $loops {
+  .progress-#{$i * $step} {
+    @if $i < $half {
+      $nextdeg: 90deg + $increment * $i;
+
+      background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $barColor 50%, $backColor 50%, $backColor);
+    }
+    @else {
+      $nextdeg: -90deg + $increment * ($i - $half);
+
+      background-image: linear-gradient($nextdeg, $barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor);
+    }
+  }
+}

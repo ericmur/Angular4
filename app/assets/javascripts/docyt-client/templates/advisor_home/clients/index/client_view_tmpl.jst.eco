@@ -1,0 +1,32 @@
+<div class="clients__client">
+  <div class='clients__client-status clients__client-cell'>
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class='clients__client-status-icon icon icon-smile in-orange-500'></i>
+    <% end %>
+  </div>
+  <div class='clients__client-name clients__client-cell'>
+    <span class='clients__client-name-text'>
+      <%= @parsed_fullname %>
+    </span>
+  </div>
+  <div class='clients__client-extras clients__client-cell'></div>
+  <div class='clients__client-right clients__client-cell'>
+    <a class='clients__client-action' id="messages-link" href="<%= @messagesUrl %>" >
+      <%= I18n.t('clients.messages.counter', { count: @unread_messages_count }) %>
+      <i class='clients__client-action-icon icon icon-comments'></i>
+    </a>
+    <a class='clients__client-action' id="workflows-link" href="<%= @workflowsUrl %>" >
+      <%= I18n.t('clients.workflows.counter', { count: @workflows_count }) %>
+      <i class='clients__client-action-icon icon icon-lists'></i>
+    </a>
+    <a class='clients__client-action' id="documents-link" href="<%= @documentsUrl %>" >
+      <%= I18n.t('clients.documents.counter', { count: @all_documents_count }) %>
+      <i class='clients__client-action-icon icon icon-files'></i>
+    </a>
+    <a class="link-detail" href="<%= @detailsUrl %>"></a>
+  </div>
+</div>

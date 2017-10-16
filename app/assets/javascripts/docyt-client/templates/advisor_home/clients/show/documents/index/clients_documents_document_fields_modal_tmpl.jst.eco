@@ -1,0 +1,14 @@
+<td>
+  <p class='document-field-name-modal'>
+    <%= @field_name %>:
+  </p>
+</td>
+<td class='client__docs-cell client__docs-li-title open-document'>
+  <p class='client__docs-li-text-document-field category-name-box document-field-value-modal'>
+    <% if @data_type == "url": %>
+      <span><a href="http://<%= @field_value %>"><%= @field_value %></a></span>
+    <% else: %>
+      <span><%= @field_value %></span>
+    <% end %>
+  </p>
+</td>

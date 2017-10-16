@@ -1,0 +1,13 @@
+<div class='panel client__settings-panel'>
+  <div aria-labelledby='headingTwo' class='collapse in' id='collapseBusiness'>
+    <div class='client__edit-wrapper clearfix'>
+      <div class='client__settings-edit-col billing-left-col'></div>
+      <div class='client__settings-edit-col billing-right-col'>
+        <div id="billing-subscription-plan-region"></div>
+        <div id="billing-subscription-bill-history-region"></div>
+        <div id="billing-subscription-next-bill-region"></div>
+        <div id="billing-subscription-available-credits-region"></div>
+      </div>
+    </div>
+  </div>
+</div>

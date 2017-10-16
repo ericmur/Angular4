@@ -1,0 +1,340 @@
+{
+    "GetDocumentFieldInfo" :
+    [
+        [
+            "tell me my %s",
+            "field_name"
+        ],
+        [
+            "what is my %s",
+            "field_name"
+        ],
+        [
+            "my %s",
+            "field_name"
+        ],
+        [
+            "tell me my %s's %s",
+            "contact_type",
+            "field_name"
+        ],
+        [
+            "what is my %s's %s",
+            "contact_type",
+            "field_name"
+        ],
+        [
+            "%s of my %s",
+            "field_name",
+            "contact_type"
+        ],
+        [
+            "my %s's %s",
+            "contact_type",
+            "field_name"
+        ],
+        [
+            "tell me %s's %s",
+            "contact_name",
+            "field_name"
+        ],
+        [
+            "what is %s's %s",
+            "contact_name",
+            "field_name"
+        ],
+        [
+            "%s's %s",
+            "contact_name",
+            "field_name"
+        ],
+        [
+            "%s of %s",
+            "field_name",
+            "contact_name"
+        ]
+    ],
+    "GetDocumentsList" :
+    [
+        [
+            "show me my %s",
+            "document_name"
+        ],
+        [
+            "find me my %s",
+            "document_name"
+        ],
+        [
+            "get me my %s",
+            "document_name"
+        ],
+        [
+            "my %s",
+            "document_name"
+        ],
+        [
+            "show me %s's %s",
+            "contact_name",
+            "document_name"
+        ],
+        [
+            "find me %s's %s",
+            "contact_name",
+            "document_name"
+        ],
+        [
+            "%s's %s",
+            "contact_name",
+            "document_name"
+        ],
+        [
+            "%s of %s",
+            "document_name",
+            "contact_name"
+        ],
+        [
+            "show me my %s's %s",
+            "contact_type",
+            "document_name"
+        ],
+        [
+            "find me my %s's %s",
+            "contact_type",
+            "document_name"
+        ],
+        [
+            "my %s's %s",
+            "contact_type",
+            "document_name"
+        ],
+        [
+            "%s of my %s",
+            "document_name",
+            "contact_type"
+        ]
+    ],
+    "GetExpiringDocumentsList" :
+    [
+        [
+            "which of my documents are expiring %s",
+            "to_date"
+        ],
+        [
+            "my documents that are expiring"
+        ],
+        [
+            "expiring documents"
+        ],
+        [
+            "show me my expiring documents"
+        ],
+        [
+            "show me my documents that have expired"
+        ],
+        [
+            "which of my %s are expiring %s",
+            "document_name",
+            "to_date"
+        ],
+        [
+            "which of %s's documents are expiring %s",
+            "contact_name",
+            "to_date"
+        ],
+        [
+            "%s's expiring documents",
+            "contact_name"
+        ],
+        [
+            "%s's documents that are expiring",
+            "contact_name"
+        ],
+        [
+            "which of %s's %s are expiring %s",
+            "contact_name",
+            "document_name",
+            "to_date"
+        ],
+        [
+            "which of my %s's documents are expiring %s",
+            "contact_type",
+            "to_date"
+        ],
+        [
+            "my %s's expiring documents",
+            "contact_type"
+        ],
+        [
+            "my %s's documents that are expiring",
+            "contact_type"
+        ],
+        [
+            "which of my %s's %s are expiring %s",
+            "contact_type",
+            "document_name",
+            "to_date"
+        ]
+    ],
+    "GetExpiredDocumentsList" :
+    [
+        [
+            "my documents that have expired"
+        ],
+        [
+            "my documents that are expired"
+        ],
+        [
+            "expired documents"
+        ],
+        [
+            "show me my expired documents"
+        ],
+        [
+            "show me my documents that have expired"
+        ],
+        [
+            "%s's documents that are expired",
+            "contact_name"
+        ],
+        [
+            "%s's documents that have expired",
+            "contact_name"
+        ],
+        [
+            "%s's expired documents",
+            "contact_name"
+        ],
+        [
+            "my %s's documents that are expired",
+            "contact_type"
+        ],
+        [
+            "my %s's documents that have expired",
+            "contact_type"
+        ],
+        [
+            "my %s's expired documents",
+            "contact_type"
+        ]
+    ],
+    "GetDocumentExpirationInfo" :
+    [
+        [
+            "when is my %s expiring",
+            "document_name"
+        ],
+        [
+            "when does my %s expire",
+            "document_name"
+        ],
+        [
+            "when does my %s's %s expire",
+            "contact_type",
+            "document_name"
+        ],
+        [
+            "when does %s's %s expire",
+            "contact_name",
+            "document_name"
+        ]
+    ],
+    "GetDueDocumentsList" :
+    [
+        [
+            "my documents that are due"
+        ],
+        [
+            "my documents are due"
+        ],
+        [
+            "my invoices are due"
+        ],
+        [
+            "my invoices that are due"
+        ],
+        [
+            "my credit card statements are due"
+        ],
+        [
+            "my credit card statements that are due"
+        ],
+        [
+            "my bills are due"
+        ],
+        [
+            "my bills that are due"
+        ],
+        [
+            "show me my documents that are due"
+        ],
+        [
+            "find me my documents that are due"
+        ],
+        [
+            "get me my documents that are due"
+        ]
+    ],
+    "GetPastDueDocumentsList" :
+    [
+        [
+            "past due"
+        ],
+        [
+            "show me my documents that are past due"
+        ],
+        [
+            "find me my documents that are past due"
+        ],
+        [
+            "get me my documents that are past due"
+        ],
+        [
+            "show me my past due documents"
+        ],
+        [
+            "find me my past due documents"
+        ],
+        [
+            "get me my past due documents"
+        ]
+    ],
+    "GetCurrencyDocumentsList" :
+    [
+        [
+            "total of my %s invoices",
+            "merchant_name"
+        ],
+        [
+            "show me the total of my %s invoices",
+            "merchant_name"
+        ],
+        [
+            "give me the total of my %s invoices",
+            "merchant_name"
+        ],
+        [
+            "total of my %s receipts",
+            "receipt_type"
+        ],
+        [
+            "show me the total of my %s invoices",
+            "receipt_type"
+        ],
+        [
+            "give me the total of my %s invoices",
+            "receipt_type"
+        ],
+        [
+            "total of my %s expenses",
+            "receipt_type"
+        ],
+        [
+            "show me the total of my %s expenses",
+            "receipt_type"
+        ],
+        [
+            "give me the total of my %s expenses",
+            "receipt_type"
+        ]
+    ]
+}

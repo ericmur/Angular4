@@ -1,0 +1,12 @@
+<div class='panel client__settings-panel'>
+  <div aria-labelledby='headingOne' class='collapse in' id='collapsePersonal'>
+    <div class='client__edit-wrapper clearfix'>
+      <div class='client__settings-edit-col billing-left-col'>
+      </div>
+      <div class='client__settings-edit-col billing-right-col'>
+        <div id='advisor-personal-name-region'></div>
+        <div id='advisor-personal-phone-region'></div>
+      </div>
+    </div>
+  </div>
+</div>

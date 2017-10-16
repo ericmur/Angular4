@@ -1,0 +1,42 @@
+.login-form.login-form--sign-up
+  .login-form__switch
+    %span.login-form__switch-item.in-turquise-400
+      Sign In
+    %span.login-form__switch-item-pipe
+    %span.login-form__switch-item
+      Sign Up
+  .login-form__fieldset
+    .login-form__select.main-select__wrap.inline-block
+      .login-form__select-toggle.main-select__toggle
+        %i.login-form__select-toggle-icon.icn.icn-sp
+        %span.login-form__select-toggle-text
+          Service Provider Type
+        %i.login-form__select-toggle-arrow.icn.icn-arrow
+      %ul.login-form__select-menu.main-select__menu
+        %li.login-form__select-menu-item
+          Type 1
+        %li.login-form__select-menu-item
+          Type 2
+        %li.login-form__select-menu-item
+          Type 3
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-user
+        %input.login-form__input.main-input(type="email" placeholder="Email")
+      %p.main-input__hint.in-red-400
+        Please enter correct email
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-key
+        %input.login-form__input.main-input(type="email" placeholder="Password")
+      %p.main-input__hint.in-red-400
+        Password doesn't match
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-key
+        %input.login-form__input.main-input(type="email" placeholder="Confirm Password")
+      %p.main-input__hint.in-red-400
+        Password doesn't match
+  .text-right
+    %button.main-btn.bg-turquise-400(type="submit")
+      Sign Up

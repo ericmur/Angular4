@@ -1,0 +1,34 @@
+<div style="padding: 10px 20px 0; background-color: white; margin: 0 auto; border-bottom: 4px solid #04c7d9; max-width: 560px;">
+  <div style="font-size: 14px; font-family: Sans serif;">
+    <p style="margin-btoom: 20px;">
+      <%= "#{I18n.t('emails.new_message.greeting', receiver_name: @receiver_name)}" %>
+    </p>
+    <p style="margin-btoom: 20px;">
+      <% if @unread_messages_count > 1 %>
+        <%= "#{I18n.t('emails.new_message.you_have_unread_messages',
+        sender_name: @sender_name, unread_count: @unread_messages_count)}" %>
+      <% else %>
+        <%= "#{I18n.t('emails.new_message.you_have_unread_message', sender_name: @sender_name)}" %>
+      <% end %>
+    </p>
+    <p><%= "#{I18n.t('emails.new_message.thank')}" %></p>
+    <p style="margin-btoom: 40px;"><%= "#{I18n.t('emails.new_message.team')}" %></p>
+    <div style="text-align: center; margin-bottom: 40px;">
+      <a href="<%= missed_messages_url(@chat, @receiver, @sender) %>" style="color: white; background-color: #04c7d9; padding: 15px 50px; border-radius: 4px; display: inline-block; text-decoration: none;">
+        <% if @unread_messages_count > 1 %>
+          <%= "#{I18n.t('emails.new_message.view_messages')}" %>
+        <% else %>
+          <%= "#{I18n.t('emails.new_message.view_message')}" %>
+        <% end %>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding: 10px 0 20px; border-top: 1px solid #f4f4f4; color: #b8b8b8; font-size: 10px; font-family: Sans serif;">
+    <p>
+      <%= "#{I18n.t('emails.new_message.confidential_email')}" %>
+      <a href="" style="color: #04c7d9;"><%= @receiver_email %></a>.
+      <%= "#{I18n.t('emails.new_message.rights')}" %>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-select-workflow-type'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Add Workflow</h4>
+        </div>
+        <div class='modal-body'>
+          <p class="modal-description">Select workflow elements (one or more)</p>
+          <div class='main-input__wrap'>
+            <button class='workflow-type-button select-type-js' type='button'>
+              <span class="workflow-type-title">Document Requests</span>
+              <p class="workflow-type-description">
+                Allows you to request specific types of documents, set deadlines, and send messages to clients.
+              </p>
+            </button>
+            <button class='workflow-type-button disable' type='button'>
+              <span class="workflow-type-title">Client Agreement</span>
+              <p class="workflow-type-description">
+                Allows you to add a terms of service or similar contractual agreement with your clients. Clients can add a digital signature.
+              </p>
+            </button>
+            <button class='workflow-type-button disable' type='button'>
+              <span class="workflow-type-title">Onboarding Q/A</span>
+              <p class="workflow-type-description">
+                Allows you to set specific questions that potential clients have to answer before they get onboarded your business.
+              </p>
+            </button>
+            <p class='main-input__hint in-red-400 type-not-selected-js'>
+              Please select atleast one feature to add to this Workflow before proceeding
+            </p>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel-js settings-cancel-btn'>Cancel</a>
+          <button class='main-btn bg-turquise-400 submit-js' type='button'>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

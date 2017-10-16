@@ -1,0 +1,9 @@
+<td class='client__docs-cell client__docs-li-title open-document'>
+  <p class='client__docs-li-text-document-field category-name-box'>
+    <% unless @data_type == "url": %>
+      <%= @name %>: <span class='document-field-value'><%= @value %></span>
+    <% else: %>
+      <%= @name %>: <span class='document-field-value'><a href="http://<%= @value %>"><%= @value %></a></span>
+    <% end %>
+  </p>
+</td>

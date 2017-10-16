@@ -1,0 +1,12 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Next Billing</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= new Date(@subscriptions[0].subscription_expires_at).toDateString() if @subscriptions[0]? %></span>
+      </div>
+    </div>
+  </div>
+</div>

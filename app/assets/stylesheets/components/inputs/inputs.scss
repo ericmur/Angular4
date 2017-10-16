@@ -1,0 +1,24 @@
+.main-input__wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main-input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid $grey-500;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  &:focus {
+    border-color: $blue-700;
+  };
+}
+.main-input__hint {
+  display: none;
+  font-size: 14px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}

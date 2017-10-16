@@ -1,0 +1,21 @@
+<div class='panel client__settings-panel'>
+  <div class='client__settings-panel-heading' id='headingOne'>
+    <div aria-controls='collapsePersonal' class='client__settings-panel-title' data-target='#collapsePersonal' data-toggle='collapse'>
+      <span>Personal</span>
+    </div>
+  </div>
+  <div aria-labelledby='headingOne' class='collapse in' id='collapsePersonal'>
+    <div class='client__edit-wrapper clearfix'>
+      <div class='client__settings-edit-col left-col'>
+        <div id='advisor-personal-avatar-region'></div>
+      </div>
+      <div class='client__settings-edit-col right-col'>
+        <div id='advisor-personal-name-region'></div>
+        <div id='advisor-personal-email-region'></div>
+        <div id='advisor-personal-password-region'></div>
+        <div id='advisor-personal-phone-region'></div>
+        <div id='advisor-personal-forwarding-email-region'></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<td class='client__docs-cell client__docs-li-type'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+     <i class='client__docs-li-type-icon icon icon-document'></i>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-main-title'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text-secondary'>
+      <%= @documentName %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-date'>
+  <a class='client__docs-link-detail' href="<%= @documentUrl %>">
+    <p class='client__docs-li-text-secondary'>
+      <%= $.timeago(@created_at) %>
+    </p>
+  </a>
+</td>
+
+<td class='client__docs-cell client__docs-li-title'>
+  <div class='category-size-wrapper category-size-wrapper-right selectize-wrapper'>
+    <select class='file-category' placeholder='Select category'></select>
+  </div>
+</td>
+
+<td class='client__docs-cell client__docs-li-actions'>
+  <i class='actions__main-icon actions__icon icon icon-dots'></i>
+  <div class='actions__icons-list'>
+    <a class='actions__icon' data-tooltip='Message'>
+      <i class='icon icon-pencil'></i>
+    </a>
+    <a class='actions__icon' data-tooltip='Message'>
+      <i class='icon icon-trashcan'></i>
+    </a>
+  </div>
+</td>

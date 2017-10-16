@@ -1,0 +1,31 @@
+<div class='client__docs'>
+  <div class='client__content-header clearfix'>
+    <div class='client__breadcrumbs'>
+      <div class='client__breadcrumbs-item'>
+        <% if(!@isIndexPage && @clientHaveContacts): %>
+          <a class='client__breadcrumbs-item-link' href="<%= @backUrl %>">All Documents</a><span> / <%= @contactName %> (<%= @contactLabel %>)</span>
+        <% else: %>
+          <a class='client__breadcrumbs-item-text'>All Documents (Contacts)</a>
+        <% end %>
+      </div>
+      <% if(@standardFolderName): %>
+        <div class='client__breadcrumbs-item'>
+          <a class='client__breadcrumbs-item-text'><%= @standardFolderName %></a>
+        </div>
+      <% end %>
+    </div>
+    <div class='clients__search-docs'>
+      <i class='clients__search-icon icon icon-search'></i>
+      <input class='clients__search-input' placeholder='Find by Document Name, Type' type='text'>
+      <span class="clients__search-clear icon-search-clear hidden">
+        <span class="path1"></span>
+        <span class="path2"></span>
+      </span>
+    </div>
+  </div>
+  <% unless(@isIndexPage): %>
+    <div class="documents-cat-view docs-toggle-view text-right ">
+      <span class="icon icon-grid-list pointer toggle-categoires-view-js"></span>
+    </div>
+  <% end %>
+</div>

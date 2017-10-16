@@ -1,0 +1,1 @@
+<a class="messaging__nav-item client-item-js" href="/messaging/<%= @id %>"><%= @participantNames %></a>

@@ -1,0 +1,2 @@
+class IphoneContactList < UserContactList
+end

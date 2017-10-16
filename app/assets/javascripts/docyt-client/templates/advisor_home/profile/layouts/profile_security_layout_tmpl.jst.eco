@@ -1,0 +1,17 @@
+<div class='panel client__settings-panel'>
+  <div class='client__settings-panel-heading' id='headingTwo'>
+    <div aria-controls='collapseSecurity' class='client__settings-panel-title' data-target='#collapseSecurity' data-toggle='collapse'>
+      <span>Security</span>
+    </div>
+  </div>
+  <div aria-labelledby='headingTwo' class='collapse in' id='collapseSecurity'>
+    <div class='client__edit-wrapper clearfix'>
+      <div class='client__settings-edit-col left-col'></div>
+      <div class='client__settings-edit-col right-col'>
+        <div id="advisor-security-authentication-region"></div>
+        <div id="advisor-security-encryption-region"></div>
+        <div id="advisor-security-locations-region"></div>
+      </div>
+    </div>
+  </div>
+</div>

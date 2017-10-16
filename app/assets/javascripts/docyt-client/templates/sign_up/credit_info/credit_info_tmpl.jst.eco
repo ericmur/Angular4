@@ -1,0 +1,110 @@
+<div class="account-type-main-wrap">
+  <div class="account-type-container">
+    <div class="account-type__desc-wrap">
+      <p class="account-type__desc">Congratulations! You have successfully signed up for your Docyt web account.</p>
+      <p class="account-type__desc"><strong>To get started, complete your account details below.</strong></p>
+    </div>
+    <div class="account-type__content-wrap">
+      <h2 class="account-type__content-title">Please add a credit card to start your trial.</h2>
+      <div class="account-type__content-form">
+        <div class="account-type__data-area">
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Credit Card</label>
+            <div id="card-element">
+            </div>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for=""></label>
+            <div id="card-errors">
+            </div>
+          </div>
+          <br/>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Cardholder Name</label>
+            <input type="text" class="acount-type__input main-input credit-name-js" placeholder="">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Company</label>
+            <input type="text" class="acount-type__input main-input credit-company-js" placeholder="">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for="">Billing Address</label>
+            <input type="text" class="acount-type__input main-input credit-address1-js" placeholder="Street">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for=""></label>
+            <input type="text" class="acount-type__input main-input credit-address2-js" placeholder="Street (line 2) or Suite Number">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap wrap-city-state-zip">
+            <label class="acount-type__input-label" for=""></label>
+            <div class="city-state-zip">
+              <input type="text" class="acount-type__input main-input credit-city-js" placeholder="City">
+              <input type="text" class="acount-type__input main-input credit-state-js" placeholder="State">
+              <input type="text" class="acount-type__input main-input credit-zip-js" placeholder="ZIP">
+            </div>
+          </div>
+          <div class="acount-type__input-wrap main-input-wrap">
+            <label class="acount-type__input-label" for=""></label>
+            <input type="text" class="acount-type__input main-input credit-country-js" placeholder="Country">
+            <p class="main-input__hint in-red-400">Required</p>
+          </div>
+
+          <div class="account-type__get-started-wrap">
+            <button type="button" class="main-btn account-type__get-started-btn credit-submit-js">Submit</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="credit-card-billing sub-monthly">
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Plan</label>
+          <label class="acount-type__input-label credit-card-right" for=""><%= Docyt.currentAdvisor.get('current_workspace_name') %></label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Rate</label>
+          <label class="acount-type__input-label credit-card-right" for="">$<%= @accType.get('monthly_pricing') %> / Month</label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Billing</label>
+          <label class="acount-type__input-label credit-card-right" for="">Monthly</label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Credits</label>
+          <label class="acount-type__input-label credit-card-right" for=""></label>
+        </div>
+        <br/>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for=""></label>
+          <label class="acount-type__input-label credit-card-right" for="">*<a class="link-annual" href="javascript:void(0)">Switch to Annual</a></label>
+        </div>
+      </div>
+      <div class="credit-card-billing sub-annual hidden">
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Plan</label>
+          <label class="acount-type__input-label credit-card-right" for=""><%= Docyt.currentAdvisor.get('current_workspace_name') %></label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Rate</label>
+          <label class="acount-type__input-label credit-card-right" for="">$<%= @accType.get('annual_pricing') %> / Year</label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Billing</label>
+          <label class="acount-type__input-label credit-card-right" for="">Annual</label>
+        </div>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for="">Credits</label>
+          <label class="acount-type__input-label credit-card-right" for=""></label>
+        </div>
+        <br/>
+        <div class="acount-type__input-wrap main-input-wrap">
+          <label class="acount-type__input-label credit-card-left" for=""></label>
+          <label class="acount-type__input-label credit-card-right" for="">*<a class="link-monthly" href="javascript:void(0)">Switch to Monthly</a></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

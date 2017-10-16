@@ -1,0 +1,270 @@
+.docs-wrap {
+  flex-grow: 1;
+  background-color: $grey-100;
+  padding-top: 50px;
+  border-bottom: 1px solid $pink-400;
+}
+
+.docs-main {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.docs-page-title {
+  color: $brown-700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.docs-page-desc {
+  margin: 25px 0 40px;
+  font-size: 12px;
+  line-height: 15px;
+  color: $brown-600;
+}
+
+.docs-actions-wrapper {
+  padding-left: 90px;
+  margin-bottom: 20px;
+  .clients__search {
+    margin-bottom: 0;
+    float: right;
+    width: auto;
+    .clients__search-input {
+      position: relative;
+    }
+  }
+}
+
+.assign-btn-wrapper {
+  float: left;
+}
+
+.active-assign-btn {
+  background-color: $turquise-400 !important;
+  color: white !important;
+}
+
+.selected-assign-client {
+  background-color: $turquise-400 !important;
+  .clients__client-cell {
+    span,
+    .icon-files,
+    .icon-lists {
+      color: white !important;
+      font-weight: 600 !important;
+    }
+  }
+  .clients__client-status-icon {
+    background-color: white;
+    border-radius: 50%;
+  }
+  .clients__client-email {
+    opacity: 1 !important;
+  }
+}
+
+.assign-btn {
+  cursor: pointer;
+  background-color: $grey-300;
+  border-radius: 4px;
+  padding: 8px 11px;
+  font-size: 14px;
+  border: none;
+  color: $purple-grey;
+  .icon {
+    font-size: 24px;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.custom-checkbox {
+  display: none;
+  & + label {
+    color: $blue-800;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Helvetica;
+    margin-right: 20px;
+    cursor: pointer;
+    &:before {
+      margin-right: 5px;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      border: 1px solid $grey-500;
+      border-radius: 3px;
+      content: '';
+      vertical-align: middle;
+      font-family: 'icomoon';
+      line-height: 23px;
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+  &:checked {
+    & + label:before {
+      content: $icon-check;
+    }
+  }
+}
+
+.docs-table {
+  width: 100%;
+  margin-bottom: 50px;
+  tr {
+    border-bottom: 1px solid $grey-150;
+    &:hover {
+      cursor: pointer;
+      background-color: $grey-150;
+    }
+  }
+  td {
+    padding: 0px 20px 5px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .upload-file-name {
+    text-decoration: none;
+    color: $brown-700;
+    &:hover {
+      color: $grey-800;
+    }
+  }
+  .upload-file-name-icon {
+    margin-right: 0;
+  }
+  .docs-checkbox {
+    padding-left: 28px;
+    width: 70px;
+  }
+  .docs-item-filename {
+    width: 400px;
+  }
+  .docs-item-received {
+    width: 200px;
+  }
+  .docs-item-subject {
+    width: 300px;
+  }
+  .docs-item-content {
+    padding-left: 50px;
+  }
+}
+
+.docs-item-content-icon {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 28px;
+    color: $grey-500;
+    &:hover {
+      color: $grey-800;
+    }
+}
+
+.docs-table-head {
+  th {
+    font-size: 14px;
+    line-height: 18px;
+    color: $brown-800;
+    padding: 5px 20px;
+    text-transform: uppercase;
+  }
+}
+
+.docs-item-received-time,
+.docs-item-subject-value {
+  color: $brown-600;
+}
+
+.modal-attached-files {
+  .modal-dialog {
+    width: 810px;
+  }
+  .modal-body {
+    padding: 0 80px 30px;
+    white-space: nowrap;
+    .docs-table-wrapper {
+      max-height: 425px;
+      overflow-y: auto;
+    }
+    .clients__client-status-icon {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+    .clients__client-status {
+      padding-left: 0;
+      width: 32px;
+      padding-right: 0;
+    }
+
+    .clients__client-name-text {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    .clients__client-cell {
+      padding-top: 10px;
+      padding-left: 0;
+      &.clients__client-name {
+        padding-left: 15px;
+      }
+    }
+    .clients__client-action {
+      margin-left: 15px;
+      min-width: 120px;
+      font-size: 12px;
+      line-height: 15px;
+      color: $brown-600;
+      font-weight: 400;
+    }
+    .clients__client-email {
+      opacity: .7;
+    }
+  }
+  .docs-table td {
+    padding-bottom: 0;
+  }
+}
+.email-content {
+  white-space: normal;
+}
+td.collapse-expand-btn-wrapper{
+  padding-right: 0;
+  padding-left: 0;
+  width: 39px;
+}
+.nested {
+  td:first-child{
+    padding-left: 20px;
+    max-width: 100%;
+  }
+}
+.block-table{
+  tr{
+    display: block;
+  }
+}
+.hide-expand-icon {
+  visibility: hidden;
+}
+.expand-ico {
+  background-image: url(asset_path('expand.png'));
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.collapse-ico {
+  background-image: url(asset_path('collapse.png'));
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nested-wrapper {
+  .expand-ico, .collapse-ico{
+    padding-left: 64px !important;
+  }
+}
+.docs-table td.client-name{
+  padding-left: 0;
+}

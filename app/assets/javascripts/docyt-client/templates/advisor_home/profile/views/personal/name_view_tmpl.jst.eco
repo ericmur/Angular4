@@ -1,0 +1,45 @@
+<div class='client__settings-edit-fields-wrapper'>
+  <div class='client__settings-edit-field'>
+    <div class='settings-field-name'>
+      <span>Name</span>
+    </div>
+    <div class='settings-field-value-edit'>
+      <div class='settings-field-value'>
+        <span><%= @full_name %></span>
+      </div>
+      <div aria-controls='collapse-edition-personal-name' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-name' data-toggle='collapse'>
+        <span class='collapse-btn settings-edit-btn'>Edit</span>
+      </div>
+    </div>
+  </div>
+  <div aria-labelledby='collapse-edition-personal-name-btn' class='client__settings-edition-wrapper collapse' id='collapse-edition-personal-name'>
+    <div class='client__settings-edition-content'>
+      <div class='collapsed-field-desc'>
+        <span>Your name will be visible externally to all your current and prospective clients.</span>
+      </div>
+      <form id='form-personal-name'>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'>
+            <span>Name</span>
+          </div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-field-value'>
+              <input class='settings-input' type='text' value='<%= @full_name %>' id='input-personal-name'>
+            </div>
+          </div>
+        </div>
+        <div class='client__settings-edit-field'>
+          <div class='settings-field-name'></div>
+          <div class='settings-field-value-edit'>
+            <div class='settings-save-wrapper'>
+              <input class='settings-save-btn main-btn bg-turquise-400' type='submit' value='Save changes' id='submit-personal-name'>
+              <div aria-controls='collapse-edition-personal-name' class='has-collapse collapsed collapse-btn-wrapper' data-target='#collapse-edition-personal-name' data-toggle='collapse'>
+                <span class='collapse-btn settings-cancel-btn'>Cancel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

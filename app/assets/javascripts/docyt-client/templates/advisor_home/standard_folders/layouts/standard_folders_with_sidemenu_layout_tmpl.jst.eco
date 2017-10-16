@@ -1,0 +1,5 @@
+<div id='categories-side-menu-region' class='categories_nav'></div>
+<div id="category-main-pane" class="category-main-pane">
+  <div id='category-details-region' class="category-details-region"></div>
+</div>
+<div id="category-right-side-region"></div>

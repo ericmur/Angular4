@@ -1,0 +1,5 @@
+<div class='clients__main'>
+  <div id="clients-header-menu-region"></div>
+  <div id="clients-sort-menu-region"></div>
+  <div id="clients-list-region" class="clients__table-wrap"></div>
+</div>

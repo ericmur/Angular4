@@ -1,0 +1,12 @@
+<div class='clients__wrap client__settings-page'>
+  <div class='clients__main'>
+    <div id='advisor-header-region'>
+      <h1 class='page-main-title'>Personal Profile</h1>
+    </div>
+    <div class='client__settings-wrapper'>
+      <div id='advisor-personal-region'></div>
+      <div id='advisor-business-region'></div>
+      <div id='advisor-security-region'></div>
+    </div>
+  </div>
+</div>

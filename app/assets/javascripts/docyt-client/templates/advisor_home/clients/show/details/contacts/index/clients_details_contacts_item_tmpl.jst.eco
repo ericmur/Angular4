@@ -1,0 +1,31 @@
+<tr class="client__docs-li full-width-client-item">
+  <td class="client__docs-cell client__docs-li-type client__docs-tab-type">
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class='clients__client-status-icon icon icon-smile in-orange-500'></i>
+    <% end %>
+  </td>
+  <td class="client__docs-cell client__docs-li-title">
+    <p class="client__docs-li-text">
+      <%= @parsed_fullname %>
+    </p>
+  </td>
+  <td class="client__docs-cell client__docs-li-main-title">
+    <p class="client__docs-li-text-secondary">
+      <%= @get_label %>
+    </p>
+  </td>
+  <td class="client__docs-cell client__docs-li-date">
+    <p class="client__docs-li-text-secondary">
+      <%= @documents_count %> Documents
+      <i class="client__nav-li-icon icon icon-files"></i>
+    </p>
+  </td>
+  <td class="client__docs-cell client__docs-li-actions">
+    <i class="actions__main-icon actions__icon icon icon-dots"></i>
+    <a class="link-detail" href="<%= @showDocumentsContactUrl %>"></a>
+  </td>
+</tr>

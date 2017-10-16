@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="149px" height="100px" viewBox="0 0 149 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Cloud_Services_blue_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UC14---02-Drag-Drop-File" transform="translate(-460.000000, -201.000000)">
+            <g id="Group-5" transform="translate(460.000000, 201.000000)">
+                <g id="Group-7">
+                    <g id="Cloud_Services_blue_icon">
+                        <path d="M34.4108743,99.8661022 C15.6233135,99.8661022 0.340617305,85.4759209 0.340617305,67.8003901 C0.340617305,50.3407703 15.2270037,36.1023104 33.6801782,35.7405135 C40.4236369,14.9897087 60.7407058,0.716236145 83.9495977,0.716236145 C112.960713,0.716236145 136.572107,22.9609121 136.572107,50.3115932 C136.572107,50.8484531 136.55353,51.3736422 136.522568,51.9046668 C144.238224,56.7597482 148.956788,64.9235209 148.956788,73.6358245 C148.956788,88.0901955 136.460645,99.8661022 121.10364,99.8661022 L34.4108743,99.8661022 Z" id="Fill-9687" fill="#FFFFFF"></path>
+                        <g id="Docytbot_icon" transform="translate(82.736099, 53.691312) rotate(-300.000000) translate(-82.736099, -53.691312) translate(57.736099, 31.691312)">
+                            <g id="Rectangle-1-Copy-8-+-Oval-1-Copy-10-+-Rectangle-1-Copy-6-+-Oval-1-Copy-11-+-Rectangle-1-Copy-6-+-Oval-1-Copy-11" transform="translate(0.000000, -0.000000)">
+                                <g id="Rectangle-1-Copy-6-+-Oval-1-Copy-11" transform="translate(33.553165, 30.775528) rotate(-240.000000) translate(-33.553165, -30.775528) translate(28.053165, 15.275528)">
+                                    <rect id="Rectangle-1-Copy-6" fill="#04C7D9" x="0.0602132372" y="0.292139067" width="10.4824225" height="30.4899261" rx="5.24121124"></rect>
+                                    <ellipse id="Oval-1-Copy-11" fill="#FFFFFF" cx="5.30142448" cy="25.5251814" rx="2.0964845" ry="2.10275353"></ellipse>
+                                </g>
+                                <g id="Rectangle-1-Copy-6-+-Oval-1-Copy-11" transform="translate(16.354807, 30.467391) rotate(-120.000000) translate(-16.354807, -30.467391) translate(10.854807, 14.967391)">
+                                    <rect id="Rectangle-1-Copy-6" fill="#FF6890" x="0.0602132372" y="0.292139067" width="10.4824225" height="30.4899261" rx="5.24121124"></rect>
+                                    <ellipse id="Oval-1-Copy-11" fill="#FFFFFF" cx="5.30142448" cy="25.5251814" rx="2.0964845" ry="2.10275353"></ellipse>
+                                </g>
+                                <g id="Rectangle-1-Copy-8-+-Oval-1-Copy-10" transform="translate(19.877680, 0.000000)" fill="#FFC30D">
+                                    <rect id="Rectangle-1-Copy-8" x="-2.84217094e-14" y="0.292139067" width="10.4824225" height="30.4899261" rx="5.24121124"></rect>
+                                </g>
+                                <ellipse id="Oval-1-Copy-10" fill="#FFFFFF" cx="14.5101046" cy="32.3078076" rx="2.0964845" ry="2.10275353"></ellipse>
+                                <ellipse id="Oval-1-Copy-10" fill="#FFFFFF" cx="25.4814189" cy="13.3049339" rx="2.0964845" ry="2.10275353"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

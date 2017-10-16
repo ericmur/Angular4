@@ -1,0 +1,63 @@
+.login-form__foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form__foot-remember {
+  margin-bottom: 20px;
+  .custom-checkbox {
+    display: flex;
+  }
+}
+.login-form__cancel-link {
+  display: inline-block;
+  font-size: 16px;
+  color: $turquise-400;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.login-form {
+  margin: 200px auto 20px;
+}
+.login-form__switch {
+  margin-bottom: 20px;
+}
+.login-form__switch-item {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.login-form__switch-item-pipe {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 18px;
+  background-color: $grey-400;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.login-form__input-icon {
+  position: absolute;
+  left: 15px;
+  top: calc(50% - 8px);
+}
+.login-form__input {
+  padding-left: 35px;
+}
+.login-form__foot-remember {
+  align-self: flex-start;
+  padding-top: 10px;
+}
+.login-form__foot-forgot-link {
+  display: inline-block;
+  font-size: 14px;
+  color: $turquise-400;
+  text-decoration: none;
+  margin-bottom: 20px;
+}

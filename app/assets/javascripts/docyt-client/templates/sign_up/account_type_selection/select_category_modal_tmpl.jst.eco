@@ -1,0 +1,39 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-add-client'>
+        <div class='modal-header'>
+          <button class='close cancel cancel-js' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Select Advisor Category</h4>
+        </div>
+        <div class='modal-body text-center'>
+          <div class="login-form__select main-select__wrap inline-block">
+            <div class="login-form__select-toggle main-select__toggle" id="type-menu">
+              <i class="login-form__select-toggle-icon icn icn-sp"></i>
+              <span class="login-form__select-toggle-text" id="selected-option">
+                Service Provider Type
+              </span>
+              <i class="login-form__select-toggle-arrow icn icn-arrow"></i>
+            </div>
+            <p class="main-input__hint in-red-400" id="advisor-type-invalid" >
+              Please select service provider type
+            </p>
+            <ul class="login-form__select-menu main-select__menu" id="select-options">
+              <% for item in @advisorTypes: %>
+                <li class="login-form__select-menu-item" data-option="<%- item.id %>">
+                  <%= item.name %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel settings-cancel-btn cancel-js'>Cancel</a>
+          <button class='main-btn bg-turquise-400 confirm-js' type='button'>Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

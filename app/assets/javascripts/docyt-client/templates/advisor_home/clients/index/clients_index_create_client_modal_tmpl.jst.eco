@@ -1,0 +1,81 @@
+<div class='modal fade in'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-add-client'>
+        <div class='modal-header'>
+          <button class='close cancel' type='button'>
+            <span>&times;</span>
+          </button>
+          <h4 class='modal-title'>Add <%= @type %></h4>
+        </div>
+        <div class='modal-body'>
+          <% if @type == 'Contact': %>
+            <div class='category-size-wrapper selectize-wrapper'>
+              <select class='file-category group-types-input-js' placeholder='Select group type'></select>
+              <p class='main-input__hint in-red-400 group-invalid-js'>
+                Please select group type for contact
+              </p>
+            </div>
+          <% end %>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <i class='login-form__input-icon icn icn-user'></i>
+              <input class='login-form__input main-input' id="name" placeholder='First Name  Middle  Last' type='text'>
+            </div>
+            <p class='main-input__hint in-red-400' id="name-invalid">
+              Please enter correct name
+            </p>
+            <p class='main-input__hint in-red-400' id="name-exists">
+              This name is already in use
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <i class='clients__action-icon icon icon-envelope font-14'></i>
+              <input class='login-form__input main-input' id="email" placeholder='Email' type='email'>
+            </div>
+            <p class='main-input__hint in-red-400' id="email-invalid">
+              Please enter correct email
+            </p>
+            <p class='main-input__hint in-red-400' id="email-exists">
+              This email is already in use
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <i class='login-form__input-icon icn icn-phone'></i>
+              <input class='login-form__input main-input' id="phone" placeholder='Cell Phone' type='tel'>
+            </div>
+            <p class='main-input__hint in-red-400' id="phone-invalid">
+              Please enter correct phone
+            </p>
+            <p class='main-input__hint in-red-400' id="phone-exists">
+              This phone number is already in use
+            </p>
+          </div>
+          <div class='main-input__wrap'>
+            <div class='relative'>
+              <input class='invite-mode' id='by-text' type='checkbox'>
+              <label for='by-text'>Invite by Text</label>
+              <input class='invite-mode' id='by-email' type='checkbox'>
+              <label for='by-email'>Invite by Email</label>
+            </div>
+            <p class='main-input__hint in-red-400' id="email-invite-error">
+              Please enter email to invite using email
+            </p>
+            <p class='main-input__hint in-red-400' id="phone-invite-error">
+              Please enter phone to invite using text message
+            </p>
+            <p class='main-input__hint in-red-400' id="fullname-invite-error">
+              You need to update your profile with your full name before you invite others
+            </p>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='cancel-link cancel settings-cancel-btn'>Cancel</a>
+          <button class='main-btn bg-turquise-400' id='create-client' type='button'>Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

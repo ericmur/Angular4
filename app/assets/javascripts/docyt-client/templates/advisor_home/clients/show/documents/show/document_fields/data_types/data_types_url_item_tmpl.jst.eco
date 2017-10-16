@@ -1,0 +1,11 @@
+<div class="document-field-item document-field-name"><%= @name %></div>
+
+<div class="document-field-item document-field-value <%= @data_type %>">
+  <div class="value-show-wrapper <%= @data_type %> <%= @isEmpty %> visible">
+    <a href="<%= @value %>"><%= @value %></a> 
+  </div>
+
+  <div class="value-edit-wrapper">
+    <input class="value-edit-input" type="text" value="<%= @value %>">
+  </div>
+</div>

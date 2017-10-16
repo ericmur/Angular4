@@ -1,0 +1,138 @@
+<div class='footer__content'>
+  <nav class='footer__nav'>
+    <div class='footer__nav-list'>
+      <h2 class='footer__nav-list-title'>
+        Family
+      </h2>
+      <ul>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Disaster Proof
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Family Sharing
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Service Provider Lookup
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Workflows
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class='footer__nav-list'>
+      <h2 class='footer__nav-list-title'>
+        Service Providers
+      </h2>
+      <ul>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Client Management
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Messaging
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Analytics
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Pricing
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class='footer__nav-list'>
+      <h2 class='footer__nav-list-title'>
+        Security
+      </h2>
+      <ul>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Data Security
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Compliance
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Terms of Use
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class='footer__nav-list'>
+      <h2 class='footer__nav-list-title'>
+        About Us
+      </h2>
+      <ul>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Company
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Team
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Testimonials
+          </a>
+        </li>
+        <li>
+          <a class='footer__nav-li-link' href='#'>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class='footer__right'>
+    <div class='footer__subscribe'>
+      <h3 class='footer__right-title'>
+        Subscribe
+      </h3>
+      <div class='footer__subscribe-input-wrap main-input__wrap'>
+        <div class='relative'>
+          <input class='footer__subscribe-input main-input' type='text'>
+        </div>
+        <p class='main-input__hint in-red-400'>
+          Password doesn't match
+        </p>
+      </div>
+      <button class='footer__subscribe-submit main-btn bg-turquise-400' type='submit'>
+        <span class='footer__subscribe-submit-icon'></span>
+      </button>
+    </div>
+    <div class='footer__socials'>
+      <h3 class='footer__right-title'>
+        Follow Us
+      </h3>
+      <a class='footer__socials-icon icon icon-facebook' href='#'></a>
+      <a class='footer__socials-icon icon icon-twitter' href='#'></a>
+      <a class='footer__socials-icon icon icon-linked-in' href='#'></a>
+    </div>
+  </div>
+</div>

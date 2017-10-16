@@ -1,0 +1,5 @@
+<h4 class='client-documents-search-result'>
+  Search results for term: "<%= @searchString %>" - <%= @resultSearchCount %> results
+</h4>
+<table class='client__docs-list'>
+</table>

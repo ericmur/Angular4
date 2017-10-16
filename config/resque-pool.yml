@@ -1,0 +1,5 @@
+"high,send_notification,check_faxes_status,send_fax": 1
+"default": 1
+"low,scheduled,mailers,expire_docyt_bot_access": 1 # 1 here refers to the worker pool count (1 worker)
+"flatten_pdf, img_to_pdf_convertation, pdf_to_img_convertation, doc_img_to_pdf_convertation, microsoft_file_to_pdf_convertation": 1 # be careful with this queue,
+                                                      # resource-hungry tasks!

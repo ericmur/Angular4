@@ -1,0 +1,7 @@
+<h1 class="confirm-email-title">
+  We have sent a link to your email: <%= @verifyEmail %>. Please validate this email by clicking on that link.
+</h1>
+<button class='main-btn bg-turquise-400 resend-email-js' type='button'>Resend email</button>
+<div>
+  <a class="modal-link-btn in-turquise-400" href='/profile'>Change Email</a>
+</div>

@@ -1,0 +1,282 @@
+.page-main-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: $brown-700;
+}
+.client__settings-wrapper {
+  margin-top: 25px;
+}
+.client__settings-panel {
+  box-shadow: none;
+  margin-bottom: 30px;
+}
+.client__settings-panel-title {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: $grey-100;
+  color: $brown-700;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 13px 7px;
+  text-transform: uppercase;
+  &:before {
+    float: left;
+    content: '—';
+    font-size: 16px;
+  }
+  &.collapsed {
+    &:before {
+      font-family: 'icomoon';
+      content: $icon-plus;
+      font-size: 12px;
+    }
+  }
+}
+.client__edit-wrapper {
+  margin-top: 25px;
+}
+.client__settings-edit-col {
+  float: left;
+  min-height: 1px;
+  &.left-col {
+    width: 25%;
+  }
+  &.right-col {
+    width: 75%;
+  }
+  &.billing-left-col {
+    width: 15%;
+  }
+  &.billing-right-col {
+    width: 70%;
+  }
+}
+.client__settings-userpic-wrapper {
+  text-align: center;
+  float: left;
+  padding-top: 2px;
+  .collapse-btn-wrapper {
+    float: none;
+  }
+  .fa {
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    z-index: 1;
+  }
+  .client__settings-edition-content {
+    padding: 13px 20px;
+  }
+  .settings-field-value-edit {
+    width: 100%;
+  }
+  .client__setting-form-error {
+    float: none;
+    margin-left: 0;
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 30px;
+    line-height: 20px;
+  }
+  .client__settings-edition-wrapper {
+    top: -20px;
+  }
+  .settings-field-value-edit {
+    margin-bottom: 0;
+  }
+  .settings-save-wrapper {
+    line-height: 1;
+  }
+}
+.client__settings-userpic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.1s ease-in-out 0s;
+  margin: 0 40px 13px;
+  position: relative;
+  .client__nav-client-info-img-icon {
+    font-size: 119px;
+  }
+  img {
+    position: relative;
+    z-index: 5;
+    border: 2px solid $pink-400;
+    border-radius: 50%;
+    width: inherit;
+  }
+  .collapsed-field-desc {
+    margin-bottom: 10px;
+  }
+}
+.settings-edit-btn {
+  text-transform: uppercase;
+  line-height: 17px;
+  font-weight: 300;
+  color: $blue-800;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+.client__settings-edit-field {
+  display: flex;
+  position: relative;
+  padding-top: 15px;
+  &:hover {
+    background-color: $grey-150;
+  }
+  .billing-radio{
+    padding-left: 100px !important;
+    text-align: left !important;
+  }
+}
+.settings-field-name {
+  width: 30%;
+  text-align: right;
+  font-size: 15px;
+  line-height: 20px;
+  color: $purple-grey;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.settings-field-value-edit {
+  width: 65%;
+  padding: 0 10px;
+  margin-bottom: 15px
+}
+.settings-field-value {
+  font-size: 16px;
+  line-height: 20px;
+  color: $brown-800;
+  float: left;
+  > p {
+    font-size: inherit;
+    margin-bottom: -2px;
+  }
+  #input-personal-state {
+    width: 100px;
+  }
+  #input-personal-zip {
+    width: 140px;
+  }
+}
+.collapse-btn-wrapper {
+  float: right;
+  .collapse-btn {
+    line-height: 20px;
+  }
+}
+.client__settings-edition-wrapper {
+  background-color: $grey-150;
+  position: relative;
+  top: -50px;
+}
+.client__settings-edition-content {
+  padding: 13px 30px 20px;
+}
+.collapsed-field-desc {
+  font-size: 12px;
+  line-height: 15px;
+  color: $brown-600;
+  margin-bottom: 30px;
+}
+.settings-cancel-btn {
+  cursor: pointer;
+  line-height: 17px;
+  font-weight: 300;
+  color: $blue-800;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+.settings-input {
+  background-color: transparent;
+  height: 40px;
+  line-height: 40px;
+  width: 180px;
+  border: 1px solid $grey-500;
+  border-radius: 3px;
+  padding-left: 14px;
+  font-size: 14px;
+}
+.settings-save-btn {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+.settings-save-wrapper {
+  line-height: 40px;
+}
+.client__setting-form-error {
+  line-height: 40px;
+  font-size: 12px;
+  color: $red-400;
+  margin-left: 5px;
+  display: none;
+  float: left;
+}
+.settings-checkbox-toggle {
+  margin-left: -9999px;
+  position: absolute;
+  visibility: hidden;
+}
+.settings-checkbox-toggle + label {
+  background-color: $grey-500;
+  border-radius: 20px;
+  height: 24px;
+  padding: 2px;
+  width: 40px;
+  cursor: pointer;
+  display: block;
+  outline: medium none;
+  position: relative;
+  top: -2px;
+}
+.settings-checkbox-toggle + label::before {
+  background-color: $grey-450;
+  border-radius: 20px;
+  right: 1px;
+  transition: background 0.4s ease 0s;
+}
+.settings-checkbox-toggle + label::after {
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(black, 0.3);
+  transition: margin 0.4s ease 0s;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+.settings-checkbox-toggle + label::before,
+.settings-checkbox-toggle + label::after {
+  bottom: 1px;
+  content: "";
+  display: block;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+}
+.settings-checkbox-toggle:checked + label::before {
+  background-color: $green-400;
+}
+.settings-checkbox-toggle:checked + label::after {
+  margin-left: 17px;
+}
+.for-billing-setting {
+  width: 290px;
+}

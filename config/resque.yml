@@ -1,0 +1,5 @@
+development: localhost:6379
+test: localhost:6379
+staging: 172.31.6.100:6379
+production: 172.31.23.119:6379
+preproduction: 172.31.17.189:6379

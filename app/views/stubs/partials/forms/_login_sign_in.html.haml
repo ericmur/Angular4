@@ -1,0 +1,35 @@
+.login-form.login-form--sign-up
+  .login-form__switch
+    %span.login-form__switch-item
+      Sign In
+    %span.login-form__switch-item-pipe
+    %span.login-form__switch-item.in-turquise-400
+      Sign Up
+  .login-form__fieldset
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-user
+        %input.login-form__input.main-input(type="email" placeholder="Email")
+      %p.main-input__hint.in-red-400
+        Please enter correct email
+    .main-input__wrap
+      .relative
+        %i.login-form__input-icon.icn.icn-key
+        %input.login-form__input.main-input(type="email" placeholder="Password")
+      %p.main-input__hint.in-red-400
+        Password doesn't match
+
+  .login-form__foot
+    .login-form__foot-remember
+      %label.custom-checkbox
+        %input.custom-checkbox__input(type="checkbox" hidden)
+        %i.custom-checkbox__icon.icn.icn-circle
+        %i.custom-checkbox__icon.icn.icn-circle-check
+        %span.custom-checkbox__text
+          Remember me
+    .text-center
+      %button.main-btn.bg-turquise-400(type="submit")
+        Sign Up
+      %div
+        %a.login-form__foot-forgot-link(href="#")
+          Forgot Password?

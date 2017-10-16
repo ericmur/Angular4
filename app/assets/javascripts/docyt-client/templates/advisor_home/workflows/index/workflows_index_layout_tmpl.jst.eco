@@ -1,0 +1,5 @@
+<div class='workflows__main'>
+  <div id="workflows-header-menu-region"></div>
+  <div id="workflows-sort-menu-region"></div>
+  <div id="workflows-list-region" class="workflows__table-wrap"></div>
+</div>

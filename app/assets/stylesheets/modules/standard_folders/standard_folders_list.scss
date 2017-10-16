@@ -1,0 +1,26 @@
+.documents-cat-header {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-bottom: 30px;
+  .docs-page-title {
+    font-weight: 300;
+  }
+}
+.documents__search-input {
+  @extend .clients__search-input;
+  position: relative;
+  max-width: 100%;
+  min-width: 400px;
+  padding: 5px 10px 5px 5px;
+  font-size: 14px;
+}
+.documents-cat-view {
+  .icon {
+    font-size: 22px;
+    opacity: .7;
+  }
+}

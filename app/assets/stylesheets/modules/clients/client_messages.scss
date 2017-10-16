@@ -1,0 +1,500 @@
+.client__mes {
+  flex-grow: 1;
+  padding: 30px 35px 0;
+  position: relative;
+  &.drop__zone_active {
+    position: relative;
+    &:before {
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      z-index: 150;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 15, 0.8);
+    }
+    &:after {
+      position: absolute;
+      top: 200px;
+      width: 100%;
+      text-align: center;
+      content: 'Drop here to add a document to this conversation';
+      font-size: 20px;
+      color: white;
+      z-index: 155;
+      padding: 40px 0;
+      background-image: url("cloud_cervices.svg");
+      background-position: 35% 0;
+      background-repeat: no-repeat;
+      text-indent: 170px;
+    }
+  }
+}
+.client__mes-panel {
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.client__mes-panel-title {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: $grey-100;
+  color: $brown-700;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 13px 7px;
+  &:before {
+    float: left;
+    content: '—';
+    font-size: 16px;
+  }
+  &.collapsed {
+    &:before {
+      font-family: 'icomoon';
+      content: $icon-plus;
+      font-size: 12px;
+    }
+  }
+}
+.client__mes-panel-body {
+  margin-top: 30px;
+}
+.clients__message-info {
+  float: right;
+  margin-top: 12px;
+  .icon {
+    font-size: 20px;
+    color: $grey-500;
+    vertical-align: middle;
+    margin-left: 40px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  span {
+    vertical-align: middle;
+    font-size: 14px;
+    color: $pink-400;
+  }
+}
+.client__mes-date {
+  margin-bottom: 5px;
+  padding-left: 7px;
+  font-size: 12px;
+}
+.client__mes-card-wrap {
+  padding: 10px 0;
+  width: calc(100% - 15px);
+}
+.client__mes-person-card {
+  padding: 16px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  position: relative;
+  &.has-collapse {
+    background-color: $grey-150;
+    cursor: pointer;
+  }
+  .collapse-btn {
+    transition: all 0.2s ease 0s;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    align-self: center;
+    margin-left: 10px;
+    border-bottom: 8px solid $grey-500;
+  }
+  &.collapsed {
+    .collapse-btn {
+      border-bottom: none;
+      border-top: 8px solid $grey-500;
+    }
+  }
+  &:hover {
+    background-color: $grey-150;
+    .client__mes-person-card-edit {
+      display: block;
+    }
+  }
+}
+.client__mes-person-card-edit {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: $grey-500;
+  font-size: 22px;
+  display: none;
+  cursor: pointer;
+}
+.client__mes-menu-bar {
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid $grey-500;
+  box-shadow: 0 0 10px 0 rgba(darken($grey-150, 50%), .5);
+  bottom: 5px;
+  background-color: white;
+  z-index: 10;
+  a {
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 16px;
+    display: block;
+    border-radius: 5px;
+    padding: 0 3px;
+    line-height: 40px;
+    color: $brown-700;
+    text-decoration: none;
+    &:hover {
+      background-color: $grey-150;
+    }
+  }
+  .icon {
+    font-size: 22px;
+    margin-right: 5px;
+  }
+}
+.client__mes-person-card-edit {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: $grey-500;
+  font-size: 22px;
+  display: none;
+  cursor: pointer;
+}
+.client__mes-userpic {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-flex;
+  margin-top: 1px;
+}
+.client__mes-avatar-wrapper {
+  margin-right: 10px;
+  float: left;
+}
+.client__mes-userpic-img {
+  height: inherit;
+}
+.client__mes-sender-name,
+.client__mes-sender-time {
+  font-size: 16px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.client__mes-content {
+  padding: 5px 0;
+  font-size: 16px;
+  margin-left: 60px;
+}
+.client__mes-content-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+  white-space: pre;
+}
+.edit-message-form {
+  margin-top: 20px;
+  margin-left: 55px;
+  .added-input {
+    border-radius: 5px;
+    border-radius: 1px solid $grey-500;
+    margin-bottom: 10px;
+  }
+  button {
+    border: none;
+  }
+}
+.client__mes-subcard {
+  transition: all 0.2s ease 0s;
+  margin-left: 85px;
+  margin-top: 10px;
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 20px;
+    color: $brown-700;
+  }
+}
+.client__mes-user-info {
+  font-size: 16px;
+  line-height: 30px;
+}
+.client__mes-user-mail {
+  color: $blue-800;
+  text-decoration: none;
+}
+.client__mes-subcard-img-wrap {
+  display: inline-block;
+  height: 70px;
+  width: 56px;
+  background-color: $grey-150;
+  margin-right: 5px;
+}
+.client__mes-subcard-img {
+  width: inherit;
+  height: inherit;
+}
+.client__mes-voicemail {
+  border-radius: 5px;
+  background-color: $grey-100;
+  padding: 8px 10px;
+  .icon {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  .voicemail-title {
+    margin: 0 10px;
+  }
+}
+.client__mes-play-btn {
+  margin-left: 25px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+.client__mes-added-input-wrap {
+  display: flex;
+  margin-bottom: 40px;
+}
+.added-input {
+  height: 50px;
+  background-color: $grey-150;
+  border: 1px solid $grey-500;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  &:focus {
+    background-color: white;
+  }
+  &[disabled="disabled"] {
+    cursor: not-allowed;
+    background-color: $grey-300;
+  }
+}
+.added-btn {
+  background-color: $grey-150;
+  border: 1px solid $grey-500;
+  border-radius: 0 5px 5px 0;
+  width: 50px;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &[disabled="disabled"] {
+    cursor: not-allowed;
+    background-color: $grey-300;
+  }
+}
+#actions-bar-region {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 35px;
+}
+.avatar-message {
+  font-size: 35px;
+  margin-right: 10px;
+}
+.message-file-upload-wrapper {
+  border-radius: 5px;
+  border: 1px solid $grey-500;
+  padding: 8px 10px 8px 8px;
+  background-color: white;
+  margin-left: 55px;
+  margin-top: 10px;
+  float: left;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.message-file-upload-image {
+  display: block;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid $grey-500;
+  padding: 3px;
+  margin-right: 10px;
+  min-width: 60px;
+  height: 60px;
+  flex-basis: 60px;
+  -webkit-flex-basis: 60px;
+  text-align: center;
+  line-height: 50px;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  img {
+    max-height: 100%;
+    cursor: pointer;
+  }
+  .icon:before {
+    font-size: 30px;
+    line-height: 50px;
+    color: $icon-grey;
+  }
+}
+.message-file-upload-info {
+  float: left;
+  margin-right: 20px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.message-file-document-info {
+  @extend .message-file-upload-progress
+}
+.message-file-upload-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+.message-file-upload-progress {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 200;
+  .upload-file-statusbar {
+    max-width: 150px;
+  }
+}
+.message-file-upload-icon {
+  float: right;
+  color: $grey-500;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+  > i, > a {
+    color: $grey-500;
+  }
+  .client__mes-menu-bar {
+    left: 0;
+    right: auto;
+  }
+}
+.added-context-menu {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid $grey-500;
+  box-shadow: 0 0 10px 0 rgba(darken($grey-150, 50%), .5);
+  background-color: white;
+  width: 210px;
+  height: 60px;
+  .icon {
+    margin-right: 5px;
+  }
+  .input-file {
+    position: absolute;
+    opacity: 0;
+    z-index: 20;
+    right: 0;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    &:hover {
+      + .upload-file {
+        background-color: $grey-150;
+      }
+    }
+  }
+  .upload-file {
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: calc(100% - 16px);
+    line-height: 43px;
+    margin: 8px;
+  }
+}
+
+.message-empty-image {
+  margin-bottom: 50px;
+  background-image: url(asset_path('messages_empty.png'));
+  background-repeat: no-repeat;
+  height: 307px;
+  background-position: center;
+}
+
+.message-empty-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: $grey-blue;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.message-empty-text {
+  color: $light-grey-blue;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.message-empty-button {
+  margin-top: 50px;
+  text-align: center;
+  .main-btn {
+    padding: 7px 50px;
+    font-size: 18px;
+    text-transform: none;
+  }
+  .invited-text {
+    font-size: 18px;
+    color: $grey-blue;
+  }
+}
+
+.clients__search-wrapper {
+  position: absolute;
+  width: 440px;
+}
+
+.message-document-download-progress {
+  display: none;
+}
+
+.message-document-download-progress-info {
+  @extend .message-file-upload-progress;
+}
+
+.load-old-messages-link {
+  @extend .login-form__foot-forgot-link;
+  cursor: pointer;
+}
+
+.no-more-messages-info {
+  font-size: 14px;
+  opacity: .5;
+  margin-bottom: 20px;
+  display: inline-block;
+}

@@ -1,0 +1,13 @@
+<div class="modal-participant">
+  <% if @avatarUrl: %>
+    <div class="clients__userpic">
+      <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+    </div>
+  <% else: %>
+    <i class="icon icon-smile"></i>
+  <% end %>
+  <span class="modal-participant-name"><%= @participantName %></span>
+  <div class="participant-remove pull-right">
+    <i class="icon icon-trashcan remove-participant-js"></i>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class='client__nav-client-info'>
+  <div class='client__nav-client-info-img-wrap'>
+    <% if @avatarUrl: %>
+      <div class="clients__userpic">
+        <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+      </div>
+    <% else: %>
+      <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400'></i>
+    <% end %>
+  </div>
+  <p class='client__nav-client-name'>
+    <%= @parsed_fullname %>
+  </p>
+</div>
+<nav>
+  <a class='client__nav-li' id="details-nav" href="<%= @detailsUrl %>">
+    <i class='client__nav-li-icon icon icon-info'></i>
+    <span class='client__nav-li-text'>
+      Contact information
+    </span>
+  </a>
+  <a class='client__nav-li' id="documents-nav" href="<%= @documentsUrl %>">
+    <i class='client__nav-li-icon icon icon-files'></i>
+    <span class='client__nav-li-text'>
+      All Documents (<%= @documents_count %>)
+    </span>
+  </a>
+  <a class='client__nav-li' id="messages-nav" href="<%= @messagesUrl %>">
+    <i class='client__nav-li-icon icon icon-comments'></i>
+    <span class='client__nav-li-text'>
+      All Messages (<%= @unread_messages_count %>)
+    </span>
+  </a>
+</nav>

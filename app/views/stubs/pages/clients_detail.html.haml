@@ -1,0 +1,182 @@
+= render 'stubs/partials/header'
+%main.main-container
+  .client__wrap
+    = render 'stubs/partials/clients/client_nav'
+    .client__docs
+      .client-detail-photos
+        .client-detail-image
+          = image_tag 'client_detail.png', class: 'header__userpic-img'
+        .client-family-members-wrapper
+          .client-family-images.clearfix
+            .client-family-image
+              = image_tag 'client_detail.png', class: 'header__userpic-img'
+            .client-family-image
+              %i.icon.icon-smile
+            .client-family-image
+              = image_tag 'client_detail.png', class: 'header__userpic-img'
+          .client-family-count
+            %p +3 family members
+
+      .client-detail-info
+        .client-detail-info-col.first-col
+          .client-detail-field
+            .client-detail-info-title
+              %span FULL NAME
+            .client-detail-info-value
+              %span Katherine Ann Eliott
+          .client-detail-field
+            .client-detail-info-title
+              %span DATE OF BIRTH
+            .client-detail-info-value
+              %span September 13, 1976
+        .client-detail-info-col.second-col
+          .client-detail-field
+            .client-detail-info-title
+              %span Email
+            .client-detail-info-value
+              %a(href="mailto:kaelliott@gmail.com") kaelliott@gmail.com
+          .client-detail-field
+            .client-detail-info-title
+              %span Phone
+            .client-detail-info-value
+              %span (222) 387-9088
+
+      .hor-separator
+
+      .clients-detail-tabs-wrapper
+
+        %ul.nav.nav-tabs.clients-tabs-header(role="tablist")
+          %li.client-tab.active
+            %a(href="#contacts" aria-controls="contacts" data-toggle="tab") Client Contacts
+          %li.client-tab
+            %a(href="#employees" aria-controls="employees" data-toggle="tab") Employees
+          %li.client-tab
+            %a(href="#contractors" aria-controls="contractors" data-toggle="tab") Contractors
+
+        .tab-content
+          .tab-pane.active#contacts
+            %table.client__docs-list
+
+              %tr.client__docs-li
+                %td.client__docs-cell.client__docs-li-type
+                  %i.client__docs-li-type-icon.icon.icon-document
+                %td.client__docs-cell.client__docs-li-title
+                  %p.client__docs-li-text
+                    Business Loan Agreement
+                %td.client__docs-cell.client__docs-li-main-title
+                  %p.client__docs-li-text-secondary
+                    ORIGINAL FILENAME.PDF
+                %td.client__docs-cell.client__docs-li-date
+                  %p.client__docs-li-text-secondary
+                    4 Months Old
+                %td.client__docs-cell.client__docs-li-actions
+                  %i.actions__main-icon.actions__icon.icon.icon-dots
+                  .actions__icons-list
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-message
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-magic-wand
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-bigger
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-trashcan
+              %tr.client__docs-li
+                %td.client__docs-cell.client__docs-li-type
+                  %i.client__docs-li-type-icon.icon.icon-document
+                %td.client__docs-cell.client__docs-li-title
+                  %p.client__docs-li-text
+                    W-2
+                %td.client__docs-cell.client__docs-li-main-title
+                  %p.client__docs-li-text-secondary
+                    ORIGINAL FILENAME.PDF
+                %td.client__docs-cell.client__docs-li-date
+                  %p.client__docs-li-text-secondary
+                    4 Months Old
+                %td.client__docs-cell.client__docs-li-actions
+                  %i.actions__main-icon.actions__icon.icon.icon-dots
+                  .actions__icons-list
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-message
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-magic-wand
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-bigger
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-trashcan
+              %tr.client__docs-li
+                %td.client__docs-cell.client__docs-li-type
+                  %i.client__docs-li-type-icon.icon.icon-document
+                %td.client__docs-cell.client__docs-li-title
+                  %p.client__docs-li-text
+                    W-2
+                %td.client__docs-cell.client__docs-li-main-title
+                  %p.client__docs-li-text-secondary
+                    ORIGINAL FILENAME.PDF
+                %td.client__docs-cell.client__docs-li-date
+                  %p.client__docs-li-text-secondary
+                    4 Months Old
+                %td.client__docs-cell.client__docs-li-actions
+                  %i.actions__main-icon.actions__icon.icon.icon-dots
+                  .actions__icons-list
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-message
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-magic-wand
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-bigger
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-trashcan
+              %tr.client__docs-li
+                %td.client__docs-cell.client__docs-li-type
+                  %i.client__docs-li-type-icon.icon.icon-document
+                %td.client__docs-cell.client__docs-li-title
+                  %p.client__docs-li-text
+                    W-2
+                %td.client__docs-cell.client__docs-li-main-title
+                  %p.client__docs-li-text-secondary
+                    ORIGINAL FILENAME.PDF
+                %td.client__docs-cell.client__docs-li-date
+                  %p.client__docs-li-text-secondary
+                    4 Months Old
+                %td.client__docs-cell.client__docs-li-actions
+                  %i.actions__main-icon.actions__icon.icon.icon-dots
+                  .actions__icons-list
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-message
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-magic-wand
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-bigger
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-trashcan
+              %tr.client__docs-li
+                %td.client__docs-cell.client__docs-li-type
+                  %i.client__docs-li-type-icon.icon.icon-document
+                %td.client__docs-cell.client__docs-li-title
+                  %p.client__docs-li-text
+                    W-2
+                %td.client__docs-cell.client__docs-li-main-title
+                  %p.client__docs-li-text-secondary
+                    ORIGINAL FILENAME.PDF
+                %td.client__docs-cell.client__docs-li-date
+                  %p.client__docs-li-text-secondary
+                    4 Months Old
+                %td.client__docs-cell.client__docs-li-actions
+                  %i.actions__main-icon.actions__icon.icon.icon-dots
+                  .actions__icons-list
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-message
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-magic-wand
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-bigger
+                    %a.actions__icon(href="#" data-tooltip="Message")
+                      %i.icon.icon-trashcan
+
+          .tab-pane#employees profile content
+
+          .tab-pane#contractors messages content
+
+
+
+= render 'stubs/partials/footer'

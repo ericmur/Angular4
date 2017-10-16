@@ -1,0 +1,28 @@
+.latest-document-types__main {
+  @extend .clients__main;
+}
+.latest-documents__wrap {
+  @extend .clients__wrap;
+}
+.latest-documents-list {
+  @extend .client__docs-list;
+}
+.latest-document-li {
+  @extend .clients__client;
+}
+.latest-document-cell {
+  @extend .clients__client-cell;
+  padding: 30px 25px 20px;
+  &:first-child {
+    width: 400px;
+  }
+  .latest-document-name-text {
+    font-size: 15px;
+  }
+}
+.latest-documents-table-title {
+  font-size: 24px;
+  color: black;
+  opacity: .7;
+  margin-bottom:  20px;
+}

@@ -1,0 +1,62 @@
+= render 'stubs/partials/header'
+%main.main-container
+  .docs-wrap
+    .docs-main
+      %h1.docs-page-title Review Documents
+      .docs-page-desc
+        %p Docyt has extracted attachments from the emails you forwarded to your Docyt Forwarding email account. Review these below, and assign to your clients.
+
+      .docs-actions-wrapper.clearfix
+        .assign-btn-wrapper
+          %button.assign-btn.font-semi-bold
+            %i.icon.icon-smile.in-purple-grey
+            Assign to Client
+        .clients__search
+          %i.clients__search-icon.icon.icon-search
+          %input.clients__search-input(type="text" placeholder="Find by Filename, Email")
+
+      .docs-table-wrapper
+        %table.docs-table
+          %tr.docs-table-head
+            %th.docs-checkbox
+              %input#checkbox1.custom-checkbox(type="checkbox")
+              %label(for="checkbox1")
+            %th Filename
+            %th Received
+            %th Email Subject
+            %th Email Content
+
+          %tr.docs-item
+            %td.docs-checkbox
+              %input#checkbox2.custom-checkbox(type="checkbox")
+              %label(for="checkbox2")
+            %td.docs-item-filename
+              .upload-file-name-icon
+                %span.color-icon.icon-pdf-file
+                %span.upload-file-name Attachment01.PDF
+            %td.docs-item-received
+              %p.docs-item-received-time 8:34 AM
+            %td.docs-item-subject
+              %p.docs-item-subject-value Fwd: 1Q Sales Tax
+            %td.docs-item-content
+              %a.docs-item-content-icon(href="")
+                %i.icon.icon-content
+
+          %tr.docs-item
+            %td.docs-checkbox
+              %input#checkbox3.custom-checkbox(type="checkbox")
+              %label(for="checkbox3")
+            %td.docs-item-filename
+              .upload-file-name-icon
+                %span.color-icon.icon-photo-file
+                %span.upload-file-name Attachment01.jpg
+            %td.docs-item-received
+              %p.docs-item-received-time 8:34 AM
+            %td.docs-item-subject
+              %p.docs-item-subject-value Fwd: 1Q Sales Tax
+            %td.docs-item-content
+              %a.docs-item-content-icon(href="")
+                %i.icon.icon-content
+
+
+= render 'stubs/partials/footer'

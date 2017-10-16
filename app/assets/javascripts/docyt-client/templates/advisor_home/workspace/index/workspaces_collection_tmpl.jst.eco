@@ -1,0 +1,27 @@
+<div class="workspace-container">
+  <p class="workspace-welcome">Welcome back <%= Docyt.currentAdvisor.get('first_name') %></p>
+  <h2 class="workspace-title">Choose Your Workspace</h2>
+    <div class="workspace-row">
+      <div class="business-workspaces-list"></div>
+      <div class="workspace-col">
+        <button type="button" class="workspace-block select-individual-js">
+        <div class="workspace-content family">
+          <div class="workspace-block-image">
+            <% if @avatarUrl: %>
+              <div class="clients__userpic">
+                <img src="<%= @avatarUrl %>" class='clients__userpic-img'>
+              </div>
+            <% else: %>
+              <i class='client__nav-client-info-img-icon icon icon-smile in-blue-400'></i>
+            <% end %>
+          </div>
+          <p class="workspace-block-name"><%= Docyt.currentAdvisor.get('full_name') %></p>
+          <p class="workspace-block-type">Family</p>
+          <div class="workspace-block-counters">
+            <span><%= I18n.t('contacts.counter', { count: Docyt.currentAdvisor.get('contacts_count') }) %></span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>

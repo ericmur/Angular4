@@ -1,0 +1,35 @@
+.main-select__wrap {
+  position: relative;
+}
+.main-select__menu {
+  display: none;
+}
+.client-select-wrap {
+  position: relative;
+  display: inline-block;
+}
+.client-select__menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc7c8;
+  border-radius: 3px;
+  z-index: 1;
+}
+.client-select__menu-item {
+  font-size: 14px;
+  color: #b4a9ab;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+.show-selectize-block{
+  visibility: visible;
+}
+.hide-selectize-block{
+  visibility: hidden;
+}
